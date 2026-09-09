@@ -1,8 +1,14 @@
 # RECOVERY.md
 
 What can be recovered, from where, and how faithfully. Every claim below was
-tested in this session rather than assumed. Delete this file when the rebuild
-is complete.
+**tested rather than assumed** — re-run any of it and you should get the same
+answer. Delete this file when the rebuild is complete.
+
+This is the empirical companion to the design documents:
+[`ARCHITECTURE.md`](ARCHITECTURE.md) says what the system *is*,
+[`ROADMAP.md`](ROADMAP.md) says where it is *going*, and
+[`MIGRATION.md`](MIGRATION.md) tracks what is still to come across. This file
+says only what is *reachable*, and how intact.
 
 ## The constraint that shapes everything
 
@@ -35,9 +41,9 @@ rows     192,140 messages, 2011-03-19 → 2026-09-07
 ```
 
 No credentials were used or needed — the sheet is shared "anyone with the
-link", which is the documented, deliberate decision recorded in the old
-`corpus/README.md`. That decision is why this recovery worked. It is noted
-here as a recovery fact, not reopened as a question.
+link", which is the documented, deliberate decision recorded in
+[`corpus/README.md`](corpus/README.md). That decision is why this recovery
+worked. It is noted here as a recovery fact, not reopened as a question.
 
 **Consequence: no time fidelity is at risk on the message record.** The
 corpus can be re-pulled at any moment, on any machine, and verified against
@@ -45,9 +51,9 @@ the manifest. It is the one piece of this system that cannot be lost.
 
 ## Verified: the entire engine survived byte-exact on Drive
 
-`MIGRATION.md` warned that the Drive staging copy is lossy because "every
-`.md` file was converted to a Google Doc on upload." That is true — **and it
-is only true of `.md` files.** Everything else was stored as raw bytes and
+[`MIGRATION.md`](MIGRATION.md) warned that the Drive staging copy is lossy
+because "every `.md` file was converted to a Google Doc on upload." That is
+true — **and it is only true of `.md` files.** Everything else was stored as raw bytes and
 comes back exactly as it went in.
 
 Confirmed intact in Drive folder `wiki-brain-main-1`
@@ -68,7 +74,7 @@ The `bin/` toolchain is complete — including `build-site` (49 KB), `intake`
 `export-corpus`, `verify-master`, `aesgcm.py` and 28 others.
 
 **The machine that builds the wiki is not lost.** Only its contents are at
-risk.
+risk. All 41 files are now in [`legacy/`](legacy/README.md).
 
 ## Verified: how badly the `.md` pages were damaged
 
@@ -109,7 +115,7 @@ frontmatter blocks by inference is exactly the wrong foundation to pour.
 | :--- | :------- |
 | `wiki/` subject dirs | 12 — `work timeline self places people mind meta interests legal health assets .obsidian` |
 | `wiki/people/` | 100+ pages (paginated; full count not yet enumerated) |
-| Whole tree | 1,000+ files per `MIGRATION.md` |
+| Whole tree | 1,000+ files per [`MIGRATION.md`](MIGRATION.md) |
 | Wikilinks | ~3,150 per the `_config.yml` comment |
 
 ## The second constraint: bulk transfer is throttled
@@ -126,12 +132,12 @@ here.
 
 1. **Push the real clone from the Mac.** Byte-exact, keeps git history, and
    makes every "lossy" row above irrelevant. The procedure is already
-   written in the old repo's `MIGRATION.md` (`--allow-unrelated-histories`,
+   written in [`MIGRATION.md`](MIGRATION.md) (`--allow-unrelated-histories`,
    union the `.gitignore`, merge the `README.md` — **do not force-push**).
    If the folder was never a git repo, zip it and share the link instead.
-2. **Pull `bin/` and `app.py` from Drive.** Byte-exact, ~41 files, viable
-   through the connector. Do this if the Mac push stalls — it restores the
-   engine independently of the content.
+2. ~~**Pull `bin/` and `app.py` from Drive.**~~ **Done** — all 41 files are
+   in [`legacy/`](legacy/README.md), byte-exact. The engine is restored
+   independently of the content, so this no longer depends on the Mac push.
 3. **Re-pull the corpus** and `bin/corpus-verify` against the manifest.
 4. **Only then** consider Drive `.md` reconstruction, and only for pages the
    Mac copy turns out not to have.
@@ -141,8 +147,23 @@ here.
 | Piece | State |
 | :---- | :---- |
 | Corpus | **Verified recoverable** — byte-exact, re-pullable on demand |
-| `_config.yml` | **Restored** — byte-exact |
-| `.gitignore` | **Restored** — byte-exact, unioned with corpus rules |
-| `bin/` + `app.py` | Reachable byte-exact on Drive, not yet pulled |
+| `_config.yml` | **Restored** — byte-exact from Drive |
+| `.gitignore` | **Restored** — byte-exact, unioned with the corpus rules |
+| Six-layer architecture, `kb/`, `bin/wb-*` | **On `main`** — rebuilt in PR #1 |
+| Original `bin/` (40 tools) + `app.py` | **Pulled** — byte-exact in [`legacy/`](legacy/README.md) |
 | Wiki body (`wiki/`, `raw/`, governing docs) | **Waiting on a push from the Mac** |
-| `/Volumes/MUSIC/TAKEOUT` | Not reachable; ingestion design deferred |
+| `/Volumes/MUSIC/TAKEOUT` | Not reachable; ingestion design in [`ROADMAP.md`](ROADMAP.md) §4 |
+
+## Note on two toolchains
+
+`main` carries `bin/wb-*` — the new six-layer tooling, written fresh. Drive
+carries the *original* `bin/` (40 tools: `build-site`, `intake`,
+`wiki-crosslink`, …) that built the wiki as it was. These are different
+systems, not duplicates. The original tools are what a faithful "as it was"
+restoration would run; the `wb-*` tools are what the rebuilt architecture
+runs. Deciding which survives is a real decision and it is not made here.
+
+Both are now in the tree — `bin/wb-*` at the root, the originals under
+[`legacy/`](legacy/README.md), unwired. That is deliberate: keeping the old
+engine readable costs nothing, and losing it a second time would cost
+everything.
