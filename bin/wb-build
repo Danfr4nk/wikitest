@@ -499,7 +499,12 @@ and it still contains every error they were written to catch.</p>
 <li><a href="archive/index.html">Browse the 497-page archive</a><div class="t">snapshot, unedited, searchable by title</div></li>
 </ul>
 <h2>For agents</h2>
+<p>The whole wiki as plain text — one fetch, no crawling, records delimited by a
+rule and a <code>=== NODE:</code> or <code>=== PAGE:</code> line.</p>
 <ul class="nodes">
+<li><a href="corpus.txt">corpus.txt</a><div class="t"><strong>everything</strong> — {len(public)} nodes and all 497 archive pages, one plaintext document</div></li>
+<li><a href="corpus-kb.txt">corpus-kb.txt</a><div class="t">the knowledge base alone — small enough for one context window</div></li>
+<li><a href="corpus-archive.txt">corpus-archive.txt</a><div class="t">the 497-page snapshot alone</div></li>
 <li><a href="llms.txt">llms.txt</a><div class="t">discovery document</div></li>
 <li><a href="graph.json">graph.json</a><div class="t">full graph — nodes, citations, typed edges</div></li>
 <li><a href="agent/manifest.json">agent/manifest.json</a><div class="t">endpoint map</div></li>
@@ -557,6 +562,9 @@ and it still contains every error they were written to catch.</p>
         "endpoints": {
             "graph": f"{base}/graph.json",
             "discovery": f"{base}/llms.txt",
+            "corpus": f"{base}/corpus.txt",
+            "corpus_kb": f"{base}/corpus-kb.txt",
+            "corpus_archive": f"{base}/corpus-archive.txt",
             "node": f"{base}/node/{{id-with-colon-as-hyphen}}.html",
         },
         "reading_guidance": [
@@ -588,10 +596,23 @@ and it still contains every error they were written to catch.</p>
         "- Contradictions are preserved unresolved. Ambiguity is a valid answer.",
         f"- {withheld} sensitive node(s) are withheld. Absence here is not evidence of absence.",
         "",
+        "## Plain text — the whole thing, no crawling",
+        "",
+        "If you are a model, start here. One fetch, no HTML, records delimited by",
+        "a rule of '=' followed by '=== NODE: <id>' or '=== PAGE: <path>'.",
+        "",
+        f"- [Knowledge base]({base}/corpus-kb.txt) — the checked nodes. ~330 KB. Read this first.",
+        f"- [Archive]({base}/corpus-archive.txt) — the 497-page snapshot the nodes cite. ~7.3 MB.",
+        f"- [Everything]({base}/corpus.txt) — both, concatenated. ~7.6 MB.",
+        "",
+        "The archive is deliberately unedited and is wrong in the places the nodes",
+        "record. Where the two disagree, the nodes are the later reading.",
+        "",
         "## Feeds",
         "",
         f"- [Full graph]({base}/graph.json)",
         f"- [Agent manifest]({base}/agent/manifest.json)",
+        f"- [Browsable archive]({base}/archive/index.html)",
         "",
     ]
     for layer in sorted(by_layer):
