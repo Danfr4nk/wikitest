@@ -1,0 +1,1269 @@
+{
+  "note": "Thread-level metadata only. Contents are gitignored \u2014 same reasoning as corpus/messages.csv: these are other people's private words, and git history is permanent. Re-fetchable from the public Drive tree; see raw/SOURCES.md.",
+  "source": "src:facebook-export-2026-06-23",
+  "fetched": "2026-09-09",
+  "threads": 99,
+  "total_messages": 9327,
+  "note_partial": "First 100 of ~500 conversations. Counts are floors.",
+  "thread_index": [
+    {
+      "file": "1RhSrqz12l3ax5jn3UJhYAYNpEHWceHJr.txt",
+      "bytes": 615559,
+      "messages": 5736,
+      "from_dan": 3229,
+      "counterparties": [
+        "Tom Maison"
+      ],
+      "years": [
+        "2008",
+        "2022"
+      ]
+    },
+    {
+      "file": "1feyUt8ZwCOx0jP0MAXgMTx2A8skEg0N2.txt",
+      "bytes": 72315,
+      "messages": 644,
+      "from_dan": 335,
+      "counterparties": [
+        "Zachariah Harshman"
+      ],
+      "years": [
+        "2011",
+        "2021"
+      ]
+    },
+    {
+      "file": "1ZH-XTK4n81bo7cVsAHdlZBghQgNRqgfE.txt",
+      "bytes": 58181,
+      "messages": 441,
+      "from_dan": 259,
+      "counterparties": [
+        "Rebekah Fullem"
+      ],
+      "years": [
+        "2013",
+        "2020"
+      ]
+    },
+    {
+      "file": "1wqzlq9oHO_uZsm16lBFTClxnFNrfe0k-.txt",
+      "bytes": 55842,
+      "messages": 426,
+      "from_dan": 297,
+      "counterparties": [
+        "RJ Ritchey"
+      ],
+      "years": [
+        "2019",
+        "2022"
+      ]
+    },
+    {
+      "file": "1PJWMhsz00BHI-tIfgPp3UmMH0_NzoRj-.txt",
+      "bytes": 77753,
+      "messages": 422,
+      "from_dan": 422,
+      "counterparties": [],
+      "years": [
+        "2010",
+        "2021"
+      ]
+    },
+    {
+      "file": "1cQ-DJlzBjoi070W2E4J78y_M9O5-NTR-.txt",
+      "bytes": 35551,
+      "messages": 285,
+      "from_dan": 180,
+      "counterparties": [
+        "Nathan King"
+      ],
+      "years": [
+        "2010",
+        "2017"
+      ]
+    },
+    {
+      "file": "1SE-05WDWpYwZxPL0VrLTz_xinLLNtd-Q.txt",
+      "bytes": 40789,
+      "messages": 254,
+      "from_dan": 93,
+      "counterparties": [
+        "Suzanne Frank"
+      ],
+      "years": [
+        "2010",
+        "2022"
+      ]
+    },
+    {
+      "file": "1b4yP_zhJKXNxbYxdvW8STzdsSTVOIFh8.txt",
+      "bytes": 22845,
+      "messages": 104,
+      "from_dan": 45,
+      "counterparties": [
+        "Stephanie Nalbone"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "1rc4X0S9l97k-HuiRE6ripuXeqlZwNC4b.txt",
+      "bytes": 9941,
+      "messages": 86,
+      "from_dan": 44,
+      "counterparties": [
+        "Phil Lacher"
+      ],
+      "years": [
+        "2014",
+        "2020"
+      ]
+    },
+    {
+      "file": "1y8k1YrlfxyDEgQBnzE59VJkb_9ESiJ77.txt",
+      "bytes": 9129,
+      "messages": 85,
+      "from_dan": 49,
+      "counterparties": [
+        "Marc Charles"
+      ],
+      "years": [
+        "2017",
+        "2018"
+      ]
+    },
+    {
+      "file": "1HCosmWA-XES3hpsB4fdDwmCbiOLNUbp5.txt",
+      "bytes": 9586,
+      "messages": 70,
+      "from_dan": 39,
+      "counterparties": [
+        "Matthew Palermo"
+      ],
+      "years": [
+        "2018",
+        "2020"
+      ]
+    },
+    {
+      "file": "1Xg-abJEk8DUhS5dyVNaSUPXXqN4ph1ov.txt",
+      "bytes": 6705,
+      "messages": 63,
+      "from_dan": 32,
+      "counterparties": [
+        "Ryan Scherich"
+      ],
+      "years": [
+        "2020",
+        "2020"
+      ]
+    },
+    {
+      "file": "1bjb1MXdnnAJ5-wXyYAV1cZVb97VlClPI.txt",
+      "bytes": 6672,
+      "messages": 47,
+      "from_dan": 28,
+      "counterparties": [
+        "Seth LeDonne"
+      ],
+      "years": [
+        "2020",
+        "2020"
+      ]
+    },
+    {
+      "file": "1HUMHJHscxxEX3wEi0xrxeDkCDZsVqxNi.txt",
+      "bytes": 9070,
+      "messages": 45,
+      "from_dan": 34,
+      "counterparties": [
+        "Lindsay Smith"
+      ],
+      "years": [
+        "2018",
+        "2018"
+      ]
+    },
+    {
+      "file": "1WdlkdQe9_c43V1yJDUhH9IhOGPUFdPSE.txt",
+      "bytes": 5682,
+      "messages": 42,
+      "from_dan": 28,
+      "counterparties": [
+        "Ryan Lisac"
+      ],
+      "years": [
+        "2013",
+        "2017"
+      ]
+    },
+    {
+      "file": "1w3gZ1enOkvqnNUtwyAapySD_DGgR0rRs.txt",
+      "bytes": 5717,
+      "messages": 42,
+      "from_dan": 20,
+      "counterparties": [
+        "Phil Spinuzza"
+      ],
+      "years": [
+        "2012",
+        "2012"
+      ]
+    },
+    {
+      "file": "1HX7XCA3HLGMIByQVOsRiG5anDSzlYLXQ.txt",
+      "bytes": 4627,
+      "messages": 35,
+      "from_dan": 21,
+      "counterparties": [
+        "Lukyan Mraz"
+      ],
+      "years": [
+        "2015",
+        "2016"
+      ]
+    },
+    {
+      "file": "1MuHdTAMFVsPjwj1nQy2zk-ZAmggELJxH.txt",
+      "bytes": 3228,
+      "messages": 24,
+      "from_dan": 16,
+      "counterparties": [
+        "Nicole Lynne"
+      ],
+      "years": [
+        "2017",
+        "2018"
+      ]
+    },
+    {
+      "file": "1j5Zb2iATlZrqJK0KDCdT_C35TSiqSAWl.txt",
+      "bytes": 4905,
+      "messages": 24,
+      "from_dan": 9,
+      "counterparties": [
+        "Rachel Rauch"
+      ],
+      "years": [
+        "2012",
+        "2013"
+      ]
+    },
+    {
+      "file": "1mlkpOtlapkMUe1SvKG8f798pVclkhl1Q.txt",
+      "bytes": 2447,
+      "messages": 23,
+      "from_dan": 10,
+      "counterparties": [
+        "Nithin Haresh"
+      ],
+      "years": [
+        "2011",
+        "2011"
+      ]
+    },
+    {
+      "file": "1pB29UMNZDQLnPaDeoBtc3gJqyvGn9RSD.txt",
+      "bytes": 2842,
+      "messages": 20,
+      "from_dan": 12,
+      "counterparties": [
+        "Trevor Bevins"
+      ],
+      "years": [
+        "2019",
+        "2021"
+      ]
+    },
+    {
+      "file": "1D4EBeye54m_aqktMFhtWUaYHJqTRjJnM.txt",
+      "bytes": 5699,
+      "messages": 19,
+      "from_dan": 11,
+      "counterparties": [
+        "Nathaniel Goossen"
+      ],
+      "years": [
+        "2011",
+        "2019"
+      ]
+    },
+    {
+      "file": "1a3D6AdkMEcB5fkHItUKLn9RzBWhnbi_B.txt",
+      "bytes": 2575,
+      "messages": 19,
+      "from_dan": 13,
+      "counterparties": [
+        "Will Stewart"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1fKo7QWtzp9IgbtTybEUZQOoNLGUn5rSp.txt",
+      "bytes": 2500,
+      "messages": 19,
+      "from_dan": 13,
+      "counterparties": [
+        "Luke Mosco"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1v0EJcHBxcGAfPfOZq9o3DRJc2qvOmjN_.txt",
+      "bytes": 3404,
+      "messages": 17,
+      "from_dan": 8,
+      "counterparties": [
+        "Ross Thompson"
+      ],
+      "years": [
+        "2009",
+        "2014"
+      ]
+    },
+    {
+      "file": "1ojA4MMJ19G1SS8K7u6WjnUnbEPV-IveK.txt",
+      "bytes": 1613,
+      "messages": 15,
+      "from_dan": 3,
+      "counterparties": [
+        "Suzanne Frank",
+        "Tom Maison"
+      ],
+      "years": [
+        "2020",
+        "2020"
+      ]
+    },
+    {
+      "file": "1w6kZJzbouo5UJfyDEcT97l588ygBymF8.txt",
+      "bytes": 1835,
+      "messages": 15,
+      "from_dan": 5,
+      "counterparties": [
+        "Zachary Shumar"
+      ],
+      "years": [
+        "2012",
+        "2017"
+      ]
+    },
+    {
+      "file": "1T8kOQnQZ0gN_6nzTgjNArCQy58mELv5B.txt",
+      "bytes": 3303,
+      "messages": 14,
+      "from_dan": 9,
+      "counterparties": [
+        "Tia Antesberger"
+      ],
+      "years": [
+        "2014",
+        "2014"
+      ]
+    },
+    {
+      "file": "1tbQpg9NcIV9eZx_wU8MW2jtsJvSKU-XC.txt",
+      "bytes": 1613,
+      "messages": 14,
+      "from_dan": 14,
+      "counterparties": [],
+      "years": [
+        "2017",
+        "2018"
+      ]
+    },
+    {
+      "file": "1IupLz817XlajY-C2_v8y0wqXxahH8YEd.txt",
+      "bytes": 1818,
+      "messages": 13,
+      "from_dan": 7,
+      "counterparties": [
+        "Nick Mattie"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1gSkI9W3NcYaaYsTPPMryza80t37zWeKi.txt",
+      "bytes": 1720,
+      "messages": 13,
+      "from_dan": 0,
+      "counterparties": [
+        "Rick Frank"
+      ],
+      "years": [
+        "2010",
+        "2015"
+      ]
+    },
+    {
+      "file": "12ZgrCKFgZ-GZUjzs7AobEtiMIHKGtAL0.txt",
+      "bytes": 1183,
+      "messages": 11,
+      "from_dan": 11,
+      "counterparties": [],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "15hUxSzpYoSt02JqBTYp_Kdtqf342PnVf.txt",
+      "bytes": 8085,
+      "messages": 11,
+      "from_dan": 0,
+      "counterparties": [
+        "Facebook user",
+        "Mahan Izi",
+        "Christian Gonda",
+        "Emily G",
+        "Roberto Carlos Mojica",
+        "Leo Christov Moore"
+      ],
+      "years": [
+        "2011",
+        "2011"
+      ]
+    },
+    {
+      "file": "1DpHgDf2cLc5fAlshK9rLVtmxSr8EYgx-.txt",
+      "bytes": 1745,
+      "messages": 11,
+      "from_dan": 7,
+      "counterparties": [
+        "New Breed Tattoos"
+      ],
+      "years": [
+        "2018",
+        "2019"
+      ]
+    },
+    {
+      "file": "1Ua5Oz6hPjymrvi0hjzJlYjdyejUbwFYK.txt",
+      "bytes": 1790,
+      "messages": 11,
+      "from_dan": 5,
+      "counterparties": [
+        "Suzanne Frank"
+      ],
+      "years": [
+        "2018",
+        "2018"
+      ]
+    },
+    {
+      "file": "1bQ6zLAkgy3myLgq1SpW0CBeIvl4Msn_-.txt",
+      "bytes": 5639,
+      "messages": 11,
+      "from_dan": 5,
+      "counterparties": [
+        "Thomas Andrus Hopton"
+      ],
+      "years": [
+        "2008",
+        "2011"
+      ]
+    },
+    {
+      "file": "1CNgGs0cfeG9BsK7gMUJDGMfKOEFqNBmk.txt",
+      "bytes": 3815,
+      "messages": 8,
+      "from_dan": 2,
+      "counterparties": [
+        "Lisa Collingwood Frank"
+      ],
+      "years": [
+        "2009",
+        "2015"
+      ]
+    },
+    {
+      "file": "1IqbztIH-_V1vVNW9pDPGP5m16LGWtotV.txt",
+      "bytes": 1439,
+      "messages": 8,
+      "from_dan": 6,
+      "counterparties": [
+        "Nick Sokol"
+      ],
+      "years": [
+        "2020",
+        "2020"
+      ]
+    },
+    {
+      "file": "1mWsLVDWfhPb5c8tpGQMHHJdtX6Q5xquo.txt",
+      "bytes": 1413,
+      "messages": 8,
+      "from_dan": 6,
+      "counterparties": [
+        "Will Purbaugh"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1FSUOIwUjYpab3duW9n4v1YDbrnUW2oHN.txt",
+      "bytes": 949,
+      "messages": 7,
+      "from_dan": 1,
+      "counterparties": [
+        "Matt Fitzgibbon"
+      ],
+      "years": [
+        "2011",
+        "2011"
+      ]
+    },
+    {
+      "file": "1IyuA-gPfIrLFJSm_-mZpzXw1Fig9QMOd.txt",
+      "bytes": 875,
+      "messages": 7,
+      "from_dan": 5,
+      "counterparties": [
+        "Matt Dunn"
+      ],
+      "years": [
+        "2012",
+        "2022"
+      ]
+    },
+    {
+      "file": "1PV-6d7y_1_QFczkxYpw19i0ZDvCpEtPO.txt",
+      "bytes": 811,
+      "messages": 7,
+      "from_dan": 3,
+      "counterparties": [
+        "Maye Santiago"
+      ],
+      "years": [
+        "2022",
+        "2022"
+      ]
+    },
+    {
+      "file": "1oamQj15S0HQBSLbDP7Dzx2at8-sUdIky.txt",
+      "bytes": 810,
+      "messages": 7,
+      "from_dan": 6,
+      "counterparties": [
+        "Sean Teets"
+      ],
+      "years": [
+        "2017",
+        "2018"
+      ]
+    },
+    {
+      "file": "11qFOaxamREi0TXwmkIcwPPRG6P7K3IEK.txt",
+      "bytes": 854,
+      "messages": 6,
+      "from_dan": 4,
+      "counterparties": [
+        "Tim Frazee"
+      ],
+      "years": [
+        "2013",
+        "2013"
+      ]
+    },
+    {
+      "file": "19Eal6fpXBXDV5rD42X5dhWdYzsSclJ1h.txt",
+      "bytes": 1845,
+      "messages": 6,
+      "from_dan": 4,
+      "counterparties": [
+        "Vanessa Frank"
+      ],
+      "years": [
+        "2011",
+        "2013"
+      ]
+    },
+    {
+      "file": "19Vxn-pG1B6U0GhyFK4wD9-x9a1k2_gMM.txt",
+      "bytes": 1037,
+      "messages": 6,
+      "from_dan": 2,
+      "counterparties": [
+        "Tammie Dychko Dunlap"
+      ],
+      "years": [
+        "2013",
+        "2014"
+      ]
+    },
+    {
+      "file": "1VAd0Px6jSdkNp0v63nExCZPVL0K9_m-N.txt",
+      "bytes": 818,
+      "messages": 6,
+      "from_dan": 5,
+      "counterparties": [
+        "Robert Ritchey"
+      ],
+      "years": [
+        "2020",
+        "2021"
+      ]
+    },
+    {
+      "file": "1Xcqy9pibDky4_eaQMCmqrfkwhsrieqS_.txt",
+      "bytes": 1127,
+      "messages": 6,
+      "from_dan": 2,
+      "counterparties": [
+        "Yamez Blannon"
+      ],
+      "years": [
+        "2013",
+        "2020"
+      ]
+    },
+    {
+      "file": "1hZJ3b1-iHy61U-F9spMyS4rewGEyT9xo.txt",
+      "bytes": 887,
+      "messages": 6,
+      "from_dan": 3,
+      "counterparties": [
+        "Oscar Lindquist"
+      ],
+      "years": [
+        "2011",
+        "2011"
+      ]
+    },
+    {
+      "file": "19lLeH-U965Tj6iQdFadIi_scYRWyq8bd.txt",
+      "bytes": 700,
+      "messages": 5,
+      "from_dan": 0,
+      "counterparties": [
+        "Suzanne Frank",
+        "Bryan K Rossini"
+      ],
+      "years": [
+        "2013",
+        "2013"
+      ]
+    },
+    {
+      "file": "1CGp8K-zDVubXQmo5UE9vkbMnpSTGzR0m.txt",
+      "bytes": 758,
+      "messages": 5,
+      "from_dan": 4,
+      "counterparties": [
+        "Matthew George"
+      ],
+      "years": [
+        "2016",
+        "2016"
+      ]
+    },
+    {
+      "file": "1ZbsglVDIMwLbS7OppmXMnQAV8WlI_RZk.txt",
+      "bytes": 1613,
+      "messages": 5,
+      "from_dan": 3,
+      "counterparties": [
+        "Zack Lauer"
+      ],
+      "years": [
+        "2019",
+        "2019"
+      ]
+    },
+    {
+      "file": "1aXeO91hIfpH6tvir08vwyI9fYgr-c30W.txt",
+      "bytes": 1449,
+      "messages": 5,
+      "from_dan": 5,
+      "counterparties": [],
+      "years": [
+        "2022",
+        "2022"
+      ]
+    },
+    {
+      "file": "19kaM_MEdoKJ8uzkqjFmQNB-rKwQ7fAT1.txt",
+      "bytes": 557,
+      "messages": 4,
+      "from_dan": 2,
+      "counterparties": [
+        "Mollie Hitchins"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "1GM0rrwv7gHuVfkqFtJeYGIITxZT_QjsB.txt",
+      "bytes": 621,
+      "messages": 4,
+      "from_dan": 3,
+      "counterparties": [
+        "Suzanne Frank"
+      ],
+      "years": [
+        "2020",
+        "2020"
+      ]
+    },
+    {
+      "file": "1XIQn2feHx4RJuKp_h1q321yNyQiu7XPN.txt",
+      "bytes": 552,
+      "messages": 4,
+      "from_dan": 2,
+      "counterparties": [
+        "Tom Solomon"
+      ],
+      "years": [
+        "2013",
+        "2013"
+      ]
+    },
+    {
+      "file": "1kukwb9w5ZJyHpYBzGsrF6q7VqmSN4uJQ.txt",
+      "bytes": 1147,
+      "messages": 4,
+      "from_dan": 2,
+      "counterparties": [
+        "STICK Tattoo Company"
+      ],
+      "years": [
+        "2018",
+        "2018"
+      ]
+    },
+    {
+      "file": "1uGQRkoFS9Ssj0BvLL0-fnh2Vw2Re33HN.txt",
+      "bytes": 663,
+      "messages": 4,
+      "from_dan": 2,
+      "counterparties": [
+        "Tyler Kurosky"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1zoVDOZNCR3Bcox_RksbCEUy8ezHZN01Y.txt",
+      "bytes": 932,
+      "messages": 4,
+      "from_dan": 1,
+      "counterparties": [
+        "Tara Niesslein"
+      ],
+      "years": [
+        "2019",
+        "2019"
+      ]
+    },
+    {
+      "file": "114coYoD0QHoT1E_DCMmUwRWorDIA7Ej6.txt",
+      "bytes": 369,
+      "messages": 3,
+      "from_dan": 1,
+      "counterparties": [
+        "Nicholas Russilino"
+      ],
+      "years": [
+        "2014",
+        "2014"
+      ]
+    },
+    {
+      "file": "11zRAEiH2UU5UVYl6SeyP9yCVB9HW--ce.txt",
+      "bytes": 441,
+      "messages": 3,
+      "from_dan": 3,
+      "counterparties": [],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1F-UMbt0icHZuDQNq65H_qvNLtm-7Ba3z.txt",
+      "bytes": 603,
+      "messages": 3,
+      "from_dan": 0,
+      "counterparties": [
+        "Rick Hamborsky"
+      ],
+      "years": [
+        "2018",
+        "2021"
+      ]
+    },
+    {
+      "file": "1FKe3AC6hXa0Ac23gG3FuFsd3z-VNwsge.txt",
+      "bytes": 704,
+      "messages": 3,
+      "from_dan": 3,
+      "counterparties": [],
+      "years": [
+        "2011",
+        "2017"
+      ]
+    },
+    {
+      "file": "1LEe3qooQv_4ma3mK1gnY6Jx3HzeKWsPF.txt",
+      "bytes": 526,
+      "messages": 3,
+      "from_dan": 3,
+      "counterparties": [],
+      "years": [
+        "2020",
+        "2020"
+      ]
+    },
+    {
+      "file": "1LIa03EinaDiSIk9TIIadXHtQpf9GEbuo.txt",
+      "bytes": 578,
+      "messages": 3,
+      "from_dan": 1,
+      "counterparties": [
+        "Kevin Egan"
+      ],
+      "years": [
+        "2012",
+        "2012"
+      ]
+    },
+    {
+      "file": "1QwB70E-3CxVoR6mNE_d-kgqSiMfvuebx.txt",
+      "bytes": 664,
+      "messages": 3,
+      "from_dan": 1,
+      "counterparties": [
+        "Sike Mible"
+      ],
+      "years": [
+        "2012",
+        "2014"
+      ]
+    },
+    {
+      "file": "1RInHlK8p-3y6Zfl1taLnMqjYBpOO4lWo.txt",
+      "bytes": 1621,
+      "messages": 3,
+      "from_dan": 0,
+      "counterparties": [
+        "Samantha Lizabeth Lynch",
+        "Andy Frank",
+        "Wendy Beth"
+      ],
+      "years": [
+        "2015",
+        "2015"
+      ]
+    },
+    {
+      "file": "10Ii_eA8O7IhJt5fxlRdmRgws72BkaRJy.txt",
+      "bytes": 270,
+      "messages": 2,
+      "from_dan": 0,
+      "counterparties": [
+        "Marge Fike"
+      ],
+      "years": [
+        "2019",
+        "2020"
+      ]
+    },
+    {
+      "file": "12IZi9I9IyUZGgPfLEMpGRPOL0rICbjer.txt",
+      "bytes": 711,
+      "messages": 2,
+      "from_dan": 1,
+      "counterparties": [
+        "OriJeanel Inque"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "16YxEEBfsWECsVvbWCOnrUg_aJ6FXKVpr.txt",
+      "bytes": 510,
+      "messages": 2,
+      "from_dan": 0,
+      "counterparties": [
+        "Messenger"
+      ],
+      "years": [
+        "2019",
+        "2019"
+      ]
+    },
+    {
+      "file": "17q-F_imMWE-78O3m42nVRH5i-nh-Jlsr.txt",
+      "bytes": 1981,
+      "messages": 2,
+      "from_dan": 1,
+      "counterparties": [
+        "Senoraanita Lee"
+      ],
+      "years": [
+        "2012",
+        "2012"
+      ]
+    },
+    {
+      "file": "1IODuaLgGgrWziAw3PGA9yAoB21mOQmqu.txt",
+      "bytes": 807,
+      "messages": 2,
+      "from_dan": 2,
+      "counterparties": [],
+      "years": [
+        "2019",
+        "2019"
+      ]
+    },
+    {
+      "file": "1Rp8sYizH3wfOBPhQwc8ssMwTTS2ZYms7.txt",
+      "bytes": 457,
+      "messages": 2,
+      "from_dan": 0,
+      "counterparties": [
+        "Vernice Harris"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1UO8jQSXyb2FrxLiQkrUo71NJaGllzXuI.txt",
+      "bytes": 428,
+      "messages": 2,
+      "from_dan": 1,
+      "counterparties": [
+        "Michelle Peters"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "1VaL3-HgD1l2zgmcbYoSXzc48bZ1mVX6e.txt",
+      "bytes": 412,
+      "messages": 2,
+      "from_dan": 1,
+      "counterparties": [
+        "Victor Mario Fiano"
+      ],
+      "years": [
+        "2018",
+        "2018"
+      ]
+    },
+    {
+      "file": "1Zx-O8sL8uUN7PRJY_mysuswv-EcEn2c6.txt",
+      "bytes": 460,
+      "messages": 2,
+      "from_dan": 1,
+      "counterparties": [
+        "Jon Michniak"
+      ],
+      "years": [
+        "2018",
+        "2018"
+      ]
+    },
+    {
+      "file": "1fpF0VKcCzoE4_XFPoB6gr8u5nHbTIIm4.txt",
+      "bytes": 537,
+      "messages": 2,
+      "from_dan": 0,
+      "counterparties": [
+        "Shanto Haque Shanto"
+      ],
+      "years": [
+        "2022",
+        "2022"
+      ]
+    },
+    {
+      "file": "1-2zgu-F9sjJvOuf8pd5XOX4o30k4Lpvg.txt",
+      "bytes": 544,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Senoraanita Lee"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "112HafOsrUIjtWP4ZaYnODGYBsPiJjBbM.txt",
+      "bytes": 484,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Sarah MacGregor"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "11yNB8KXWW8UZSm1Xld9I6UJkiUbEgHwN.txt",
+      "bytes": 233,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Racer Ex"
+      ],
+      "years": [
+        "2010",
+        "2010"
+      ]
+    },
+    {
+      "file": "14aDYzOK62WCoHHfssqpwZrBzCy6gwdFb.txt",
+      "bytes": 253,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Shellyann Bibel"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "14ofaiVG13C1xV0JRZ4XFRCLXL3rykyWc.txt",
+      "bytes": 276,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Ryann Thompson"
+      ],
+      "years": [
+        "2010",
+        "2010"
+      ]
+    },
+    {
+      "file": "1DHi_1oPZH2MdV7aYQVKWOrti3oxvzCKX.txt",
+      "bytes": 352,
+      "messages": 1,
+      "from_dan": 1,
+      "counterparties": [],
+      "years": [
+        "2007",
+        "2007"
+      ]
+    },
+    {
+      "file": "1HDEvCsMNMqnvLg0xUNiaWCorz7gHBEq7.txt",
+      "bytes": 427,
+      "messages": 1,
+      "from_dan": 1,
+      "counterparties": [],
+      "years": [
+        "2016",
+        "2016"
+      ]
+    },
+    {
+      "file": "1HZ95ccqGWXFhuUMCRT_1oZt1Z_NgazFC.txt",
+      "bytes": 398,
+      "messages": 1,
+      "from_dan": 1,
+      "counterparties": [],
+      "years": [
+        "2019",
+        "2019"
+      ]
+    },
+    {
+      "file": "1Kr_297ISc0t4g2KO2qPSpcwDfRirOC1h.txt",
+      "bytes": 233,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Rahblah Yan"
+      ],
+      "years": [
+        "2018",
+        "2018"
+      ]
+    },
+    {
+      "file": "1MUExNqUqpSj3jcS292WM4lmXr4a9d9b7.txt",
+      "bytes": 353,
+      "messages": 1,
+      "from_dan": 1,
+      "counterparties": [],
+      "years": [
+        "2013",
+        "2013"
+      ]
+    },
+    {
+      "file": "1MazvuTJ0_zluPiucVcjhw3UPbqK__ifL.txt",
+      "bytes": 270,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Wendy Beth"
+      ],
+      "years": [
+        "2016",
+        "2016"
+      ]
+    },
+    {
+      "file": "1TM3h5AwI5mz6XL5AwPkE8_Fxo1_4Zj9u.txt",
+      "bytes": 264,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Robert Showalter"
+      ],
+      "years": [
+        "2014",
+        "2014"
+      ]
+    },
+    {
+      "file": "1ZxHK5jP3zo4mX0F9cRCIXLEBRl0NVgfI.txt",
+      "bytes": 1318,
+      "messages": 1,
+      "from_dan": 1,
+      "counterparties": [],
+      "years": [
+        "2015",
+        "2015"
+      ]
+    },
+    {
+      "file": "1_frwpoXTKnebee03k2JhXJWr71ctRoV8.txt",
+      "bytes": 201,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Sely Kourouma"
+      ],
+      "years": [
+        "2017",
+        "2017"
+      ]
+    },
+    {
+      "file": "1coxgtv_nn_P-fFvTGrhjCgY-_J8m2k81.txt",
+      "bytes": 411,
+      "messages": 1,
+      "from_dan": 1,
+      "counterparties": [],
+      "years": [
+        "2008",
+        "2008"
+      ]
+    },
+    {
+      "file": "1h_hMYuTuaBMjYk8UNdAaonajsph5RIVa.txt",
+      "bytes": 237,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Facebook user"
+      ],
+      "years": [
+        "2018",
+        "2018"
+      ]
+    },
+    {
+      "file": "1jclwzb6pwUvD4ZjOu8Xnd2i7c3zO77mW.txt",
+      "bytes": 233,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Lindsay Carolla"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "1kXwRfnORl8oiU4T-DvIooZl5aEokf83l.txt",
+      "bytes": 750,
+      "messages": 1,
+      "from_dan": 1,
+      "counterparties": [],
+      "years": [
+        "2008",
+        "2008"
+      ]
+    },
+    {
+      "file": "1sKXWjM1puovO47tmpWPk6zct9A94MyBs.txt",
+      "bytes": 766,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Ryan Maher"
+      ],
+      "years": [
+        "2009",
+        "2009"
+      ]
+    },
+    {
+      "file": "1zCZMcYHC9si4C5X9WkpFqM06_DzboePa.txt",
+      "bytes": 621,
+      "messages": 1,
+      "from_dan": 0,
+      "counterparties": [
+        "Widows-Stocker Brenda"
+      ],
+      "years": [
+        "2011",
+        "2011"
+      ]
+    },
+    {
+      "file": "1GGmJ0KJqb1PqrHyGmBTJSFKTGucJocQ8.txt",
+      "bytes": 782,
+      "messages": 0,
+      "from_dan": 0,
+      "counterparties": [],
+      "years": [
+        "2011",
+        "2011"
+      ]
+    },
+    {
+      "file": "1RU1Y3-RzRnRBy5-50Si8mCdPafXy1Ka9.txt",
+      "bytes": 9123,
+      "messages": 0,
+      "from_dan": 0,
+      "counterparties": [],
+      "years": []
+    }
+  ]
+}

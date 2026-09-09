@@ -122,6 +122,37 @@ def coverage_report(month: str, coverage: collections.Counter) -> str:
     return f"{month}: {n:,} messages\n  {verdict}"
 
 
+MONTHS = {m: i for i, m in enumerate(
+    "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(), 1)}
+
+
+def load_facebook():
+    """Parse the export's block structure — NAME / rule / text / timestamp.
+
+    Parsing the BLOCK rather than the line is not a style preference. Nothing in
+    a message's text carries its speaker, so a first-person sentence lifted out
+    of its block reads identically whoever typed it. That is exactly how the
+    prior wiki recorded another person's DUI as an unexplained fact about the
+    subject (kb/data/0031). Every hit this returns carries its speaker.
+    """
+    import collections
+    root = pathlib.Path(ROOT / "raw" / "facebook-threads")
+    block = re.compile(
+        r"^([A-Z][A-Za-z.'\- ]{2,40})\n_{6,}\n+(.*?)\n+"
+        r"((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d{4})[^\n]*)",
+        re.M | re.S)
+    rows, coverage = [], collections.Counter()
+    for path in sorted(root.glob("*.txt")):
+        text = path.read_text(encoding="utf-8", errors="replace").replace("\r", "")
+        for who, msg, stamp, day, year in block.findall(text):
+            month = MONTHS.get(stamp[:3], 0)
+            date = f"{year}-{month:02d}-{int(day):02d}" if month else year
+            coverage[date[:7]] += 1
+            rows.append((date, who.strip() == "Dan Frank", who.strip(), msg.strip()))
+    rows.sort(key=lambda r: r[0])
+    return rows, coverage
+
+
 def window_months(lo: str, hi: str) -> list[str]:
     out = []
     y, m = int(lo[:4]), int(lo[5:7]) if len(lo) >= 7 else 1
@@ -146,11 +177,22 @@ def main() -> int:
     ap.add_argument("--max", type=int, default=25)
     ap.add_argument("--coverage", metavar="YYYY-MM", help="report coverage for a window and exit")
     ap.add_argument("--pull", action="store_true", help="fetch the corpus if absent")
+    ap.add_argument("--facebook", action="store_true",
+                    help="search the Facebook threads instead of the message corpus. A "
+                         "genuinely independent channel, and it covers 2021-2022, which the "
+                         "corpus very nearly does not.")
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args()
 
-    manifest = ensure_corpus(args.pull)
-    rows, coverage = load(None)
+    if args.facebook:
+        rows, coverage = load_facebook()
+        if not rows:
+            raise SystemExit(
+                "no Facebook threads on disk (raw/facebook-threads/*.txt is gitignored).\n"
+                "Re-fetch them from the public Drive tree — see raw/SOURCES.md.")
+    else:
+        ensure_corpus(args.pull)
+        rows, coverage = load(None)
 
     if args.coverage:
         print(coverage_report(args.coverage, coverage))
@@ -211,7 +253,7 @@ def main() -> int:
 
     print()
     for i, date, mine, sender, text in hits[:args.max]:
-        print(f"## {date}  {'OUT' if mine else 'in '}")
+        print(f"## {date}  {'OUT' if mine else 'in '}  {sender or ''}".rstrip())
         if args.context:
             for j in range(max(0, i - args.context), min(len(rows), i + args.context + 1)):
                 d2, m2, _, t2 = rows[j]
