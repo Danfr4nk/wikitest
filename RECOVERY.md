@@ -74,7 +74,7 @@ The `bin/` toolchain is complete — including `build-site` (49 KB), `intake`
 `export-corpus`, `verify-master`, `aesgcm.py` and 28 others.
 
 **The machine that builds the wiki is not lost.** Only its contents are at
-risk.
+risk. All 41 files are now in [`legacy/`](legacy/README.md).
 
 ## Verified: how badly the `.md` pages were damaged
 
@@ -135,9 +135,9 @@ here.
    written in [`MIGRATION.md`](MIGRATION.md) (`--allow-unrelated-histories`,
    union the `.gitignore`, merge the `README.md` — **do not force-push**).
    If the folder was never a git repo, zip it and share the link instead.
-2. **Pull `bin/` and `app.py` from Drive.** Byte-exact, ~41 files, viable
-   through the connector. Do this if the Mac push stalls — it restores the
-   engine independently of the content.
+2. ~~**Pull `bin/` and `app.py` from Drive.**~~ **Done** — all 41 files are
+   in [`legacy/`](legacy/README.md), byte-exact. The engine is restored
+   independently of the content, so this no longer depends on the Mac push.
 3. **Re-pull the corpus** and `bin/corpus-verify` against the manifest.
 4. **Only then** consider Drive `.md` reconstruction, and only for pages the
    Mac copy turns out not to have.
@@ -150,7 +150,7 @@ here.
 | `_config.yml` | **Restored** — byte-exact from Drive |
 | `.gitignore` | **Restored** — byte-exact, unioned with the corpus rules |
 | Six-layer architecture, `kb/`, `bin/wb-*` | **On `main`** — rebuilt in PR #1 |
-| Original `bin/` (40 tools) + `app.py` | Reachable byte-exact on Drive, not yet pulled |
+| Original `bin/` (40 tools) + `app.py` | **Pulled** — byte-exact in [`legacy/`](legacy/README.md) |
 | Wiki body (`wiki/`, `raw/`, governing docs) | **Waiting on a push from the Mac** |
 | `/Volumes/MUSIC/TAKEOUT` | Not reachable; ingestion design in [`ROADMAP.md`](ROADMAP.md) §4 |
 
@@ -162,3 +162,8 @@ carries the *original* `bin/` (40 tools: `build-site`, `intake`,
 systems, not duplicates. The original tools are what a faithful "as it was"
 restoration would run; the `wb-*` tools are what the rebuilt architecture
 runs. Deciding which survives is a real decision and it is not made here.
+
+Both are now in the tree — `bin/wb-*` at the root, the originals under
+[`legacy/`](legacy/README.md), unwired. That is deliberate: keeping the old
+engine readable costs nothing, and losing it a second time would cost
+everything.
