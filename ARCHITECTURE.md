@@ -210,6 +210,45 @@ This is what makes bulk-ingesting an unaudited archive safe. Its errors are
 quarantined at L1 as *things that were said*, and no amount of them can
 masquerade as *things that are so*.
 
+## Staleness
+
+The invariant guarantees a conclusion can be **traced** to its evidence. It says
+nothing about what happens when that evidence later moves.
+
+A node whose source was rewritten last week still validates, still builds, and
+still reads as current. Nothing distinguishes *checked and survived* from
+*nobody looked* — and over a corpus that grows by re-reading its own material,
+the second silently becomes the majority.
+
+So `bin/wb-validate` flags a node dated earlier than something it cites, and
+`rechecked` clears the flag:
+
+```toml
+created   = "2026-01-01"
+rechecked = "2026-07-01"   # re-read against its citations; nothing changed
+```
+
+Recording the null result is the point. A re-check that finds nothing is
+invisible unless someone writes it down, and the practice was taken directly
+from the system this one replaced — see
+[`dat:0022`](kb/data/0022-old-wiki-recheck-propagation.md), which found five such
+blocks on one page, four of them concluding that nothing had changed.
+
+## Falsifiers
+
+Any node at L3 or above may declare `falsifiers`: specific observations that
+would break it, each concrete enough for someone else to go and look for.
+
+`bin/wb-validate` warns when an L4 `pattern` or L5 `synthesis` declares none. At
+that altitude a claim explains a great deal by construction, which is exactly
+when "what would show this is wrong" stops being obvious and starts being the
+only thing keeping the claim honest. A reading that cannot say what would refute
+it is not a reading; it is a preference.
+
+They are deliberately **not** required at L3. An interpretation may legitimately
+be a first pass at what something might mean, and forcing a falsifier onto it
+manufactures rigour rather than adding it.
+
 ## Typed edges
 
 Links carry meaning, so `A → B` is not enough. But a vocabulary alone is not

@@ -136,6 +136,13 @@ date = "2026-09-08"
 Prose for humans. The frontmatter is for machines.
 ```
 
+Two checks close loops the invariant leaves open. **Staleness**: a node dated
+earlier than something it cites is flagged for re-check, and `rechecked` clears
+it even when nothing changed — because a re-check that finds nothing is
+otherwise indistinguishable from nobody looking. **Falsifiers**: patterns and
+syntheses must say what observation would break them, or `wb-validate` says so.
+Both were taken from the system this one replaced, which did them better.
+
 ## What the system refuses to do
 
 - **Resolve contradictions automatically.** Both claims are preserved, dated and

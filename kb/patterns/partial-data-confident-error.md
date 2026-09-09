@@ -6,6 +6,11 @@ title           = "Partial data produces confident error, not visible uncertaint
 cites           = ["int:fragments-silently-partial", "con:gitignore-is-not-protection"]
 evidence_count  = 3
 counterexamples = ["dat:0003-attribution-gap"]
+falsifiers      = [
+  "A case where incomplete evidence produced visibly hedged output rather than confident error — the gap showing up in the conclusion's stated confidence without anyone having to go and find it.",
+  "A case where the error WAS caught internally, by cross-reference or validation, rather than by someone outside the system supplying the missing piece. Every instance so far was closed by the operator.",
+  "The pattern failing to appear in the 488 unextracted pages of the prior wiki, which are a large independent sample of the same failure mode's opportunity to occur.",
+]
 confidence      = "moderate"
 importance      = 5
 created         = "2026-09-08"

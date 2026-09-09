@@ -9,6 +9,12 @@ importance = 5
 created    = "2026-09-08"
 tags       = ["meta", "architecture"]
 
+falsifiers = [
+  "The layer invariant proving insufficient in practice: a chain of well-formed citations, every link legal, that still lands a conclusion on a source nobody checked. That is already flagged as an open question below and would be a real failure of the design rather than of its use.",
+  "The discipline costing more than it returns — extraction slowing to the point that the corpus stays unread, which would make a less rigorous system that actually processed 497 pages the better instrument.",
+  "A conclusion this architecture forbids turning out to be both true and unreachable any other way, showing the rule excludes real knowledge rather than only unfounded claims.",
+]
+
 open_questions = [
   "Does the pattern hold outside this project's own history, against the biographical material the corpus contains?",
   "Is the layer invariant sufficient, or does provenance also need to be enforced transitively — can a well-formed citation chain still rest on a source nobody checked?",

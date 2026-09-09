@@ -13,6 +13,11 @@ cites           = ["dat:0018-old-wiki-intake-ledger-discipline",
                    "int:inference-from-refusal-is-unsound"]
 evidence_count  = 7
 counterexamples = ["dat:0020-old-wiki-suboxone-hedonic-tension"]
+falsifiers      = [
+  "mind/ (78 pages) and self/ (59) show REVISED/CORRECTED/CONTRADICTION blocks at a rate comparable to legal/ and health/. Those areas are mostly conclusions with nothing external to check them against, so under this pattern they should carry markedly fewer. A per-page tally settles it and costs nothing to collect.",
+  "A page in an externally-checkable domain endorses an inference as confidently as hyperreflexivity did the refusal reading, with no number or document behind it. One clean case shows the axis is not what this pattern says it is.",
+  "The prior wiki is found to have run a self-audit pass over the whole corpus on a schedule, rather than page by page as material arrived. That would make correction density a function of when a page was last touched rather than of what could check it.",
+]
 confidence      = "low"
 importance      = 4
 created         = "2026-09-09"
@@ -75,7 +80,9 @@ and worse finding than not having it.
 
 ## What would falsify this
 
-The extraction order is the test, and it was set before this pattern existed.
+Three specific observations are in the `falsifiers` field above, and the first
+is the load-bearing one. The extraction order is the test, and it was set before
+this pattern existed.
 
 `mind/` (78 pages) and `self/` (59) are last precisely because they are mostly
 conclusions with nothing external to check them against. This pattern predicts

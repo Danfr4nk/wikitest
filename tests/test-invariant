@@ -79,6 +79,20 @@ testimony = true
 +++
 """
 
+# A source dated later than the nodes citing it, for the staleness check.
+STALE_SOURCE = """+++
+id = "src:moved"
+layer = 0
+type = "source"
+title = "A source revised after the claims resting on it"
+source_type = "document"
+provenance = "synthetic test fixture"
+reliability = "primary"
+created = "2026-01-01"
+updated = "2026-06-01"
++++
+"""
+
 BASE = {"a": SOURCE, "b": DATUM, "c": EVENT, "d": INTERPRETATION}
 
 # name -> (extra files, expect_ok, substring the diagnostic must contain)
@@ -500,6 +514,59 @@ attributed_to = "src:fixture"
 date = "2019-01-01"
 +++
 """}, False, "L1 datum property"),
+
+    # ---- staleness and falsifiers ------------------------------------------
+    # A citation that resolves is not a citation still checked. `rechecked`
+    # clears the flag even when nothing changed, so "checked and survived" stays
+    # distinguishable from "nobody looked".
+
+    ("a claim older than the evidence it cites is flagged stale", {"s": STALE_SOURCE,
+     "x": """+++
+id = "dat:0200"
+layer = 1
+type = "datum"
+title = "Older than its source"
+claim = "Something."
+cites = ["src:moved"]
+created = "2026-01-01"
++++
+"""}, True, "the evidence moved after the claim"),
+
+    ("`rechecked` clears a staleness flag even when nothing changed",
+     {"s": STALE_SOURCE, "x": """+++
+id = "dat:0201"
+layer = 1
+type = "datum"
+title = "Re-checked against its source"
+claim = "Something."
+cites = ["src:moved"]
+created = "2026-01-01"
+rechecked = "2026-07-01"
++++
+"""}, True, "clean"),
+
+    ("falsifiers may not sit below L3", {"x": """+++
+id = "dat:0202"
+layer = 1
+type = "datum"
+title = "Falsifiers too low"
+claim = "Something."
+cites = ["src:fixture"]
+falsifiers = ["some observation"]
++++
+"""}, False, "belongs on L3+"),
+
+    ("a pattern with falsifiers and counterexamples is clean", {"x": """+++
+id = "pat:wellformed"
+layer = 4
+type = "pattern"
+title = "A well-formed pattern"
+cites = ["int:reading"]
+evidence_count = 3
+counterexamples = ["dat:0001"]
+falsifiers = ["a case where the opposite occurs under the same conditions"]
++++
+"""}, True, "clean"),
 ]
 
 
@@ -527,7 +594,11 @@ def main() -> int:
     for name, files, expect_ok, needle in CASES:
         with tempfile.TemporaryDirectory() as raw:
             code, output = run_case(files, pathlib.Path(raw))
-        ok = (code == 0) if expect_ok else (code != 0 and needle in output)
+        # A needle is asserted either way. On a failing case it pins WHY the
+        # build failed; on a passing case it pins a warning that must still be
+        # emitted — otherwise "expected clean" would silently accept a check
+        # that had stopped firing altogether.
+        ok = (code == 0 and needle in output) if expect_ok else (code != 0 and needle in output)
         if ok:
             passed += 1
             print(f"  pass  {name}")
