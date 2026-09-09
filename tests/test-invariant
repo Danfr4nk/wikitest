@@ -556,6 +556,17 @@ falsifiers = ["some observation"]
 +++
 """}, False, "belongs on L3+"),
 
+    ("a measurement must state how it was obtained", {"t": TESTIMONY, "x": """+++
+id = "dat:0400"
+layer = 1
+type = "datum"
+title = "Unmethodical measurement"
+claim = "The prior system asserted a thing."
+cites = ["src:priorsystem"]
+measurement = true
++++
+"""}, False, "must say how it was obtained"),
+
     ("a pattern with falsifiers and counterexamples is clean", {"x": """+++
 id = "pat:wellformed"
 layer = 4

@@ -498,6 +498,14 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
             errors.append(f"{where}: `measurement` is an L1 datum property; "
                           f"{node.get('type')!r} nodes may not carry it")
 
+        # `measurement` is an unverifiable assertion by construction — no check can
+        # tell a count from a restated claim. What IS checkable is that a
+        # measurement states its method: a number with no account of how it was
+        # obtained is not a measurement, it is a number.
+        if node.get("measurement") and not str(node.get("extraction", "")).strip():
+            errors.append(f"{where}: `measurement = true` without `extraction` — a measurement "
+                          f"must say how it was obtained, or it is just a number")
+
         if node.get("measurement") and node.get("attributed_to"):
             errors.append(f"{where}: carries both `measurement` and `attributed_to` — a datum "
                           f"either measures its source or relays its assertions, not both")
