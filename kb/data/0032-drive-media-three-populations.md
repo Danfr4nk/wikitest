@@ -9,7 +9,7 @@ confidence  = "high"
 measurement = true
 extraction  = "Metadata only, from one page of connector results. The page-1 sample is not random — it is whatever the API returned first — so the population proportions are NOT measured and nothing here should be read as a share of the whole. Counts are floors."
 importance  = 3
-sensitive   = true
+sensitive   = false
 tags        = ["drive", "media", "inventory"]
 created     = "2026-09-09"
 
