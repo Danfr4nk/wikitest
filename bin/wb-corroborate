@@ -141,6 +141,12 @@ MONTHS = {m: i for i, m in enumerate(
     "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(), 1)}
 
 
+BLOCK = re.compile(
+    r"^([A-Z][A-Za-z.'\- ]{2,40})\n_{6,}\n+(.*?)\n+"
+    r"((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d{4})[^\n]*)",
+    re.M | re.S)
+
+
 def load_facebook():
     """Parse the export's block structure — NAME / rule / text / timestamp.
 
@@ -152,10 +158,7 @@ def load_facebook():
     """
     import collections
     root = pathlib.Path(ROOT / "raw" / "facebook-threads")
-    block = re.compile(
-        r"^([A-Z][A-Za-z.'\- ]{2,40})\n_{6,}\n+(.*?)\n+"
-        r"((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d{4})[^\n]*)",
-        re.M | re.S)
+    block = BLOCK
     rows, coverage = [], collections.Counter()
     for path in sorted(root.glob("*.txt")):
         text = path.read_text(encoding="utf-8", errors="replace").replace("\r", "")
