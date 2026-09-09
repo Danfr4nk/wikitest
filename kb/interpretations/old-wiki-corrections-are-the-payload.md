@@ -10,6 +10,8 @@ cites       = ["dat:0016-old-wiki-conflated-two-legal-matters",
 confidence  = "moderate"
 importance  = 4
 created     = "2026-09-09"
+updated     = "2026-09-09"
+rechecked   = "2026-09-09"
 tags        = ["old-wiki", "meta", "epistemics"]
 alternatives = [
   "The legal pages are unusually self-critical because that domain has checkable documents; areas with no external record may show none of this discipline, in which case the corrections are a property of the evidence rather than of the system.",
@@ -67,3 +69,22 @@ checks**, not the areas where the system was careful.
 Two pages out of 497 cannot distinguish those. The extraction order in
 `EXTRACT.md` — `mind/` and `self/` last, precisely because they are mostly
 conclusions — is the test.
+
+---
+
+## CHECKED [2026-09-09] — not a competitor, and no claim here changes
+
+[`pat:audit-strong-on-numbers-weak-on-meaning`](../patterns/audit-strong-on-numbers-weak-on-meaning.md)
+was written treating this node as the rival reading, on the grounds that the two
+"make opposite predictions" about correction density across the 491 unread pages.
+The census run to settle that ([`dat:0042`](../data/0042-marker-census-does-not-support-the-pattern.md))
+makes it plain they never did: *corrections mark where external checks existed*
+and *the system was rigorous where something external could check it* predict the
+same density, in the same places, for reasons stated differently. A count falls on
+both equally, and it did — `mind/` came in level with `health/`.
+
+Nothing in the argument above is revised. It was never tested by that census, and
+it is not supported by it either. What is retired is the claim, made on the
+pattern rather than here, that these two readings could be told apart by counting.
+Told apart they would have to be by reading what the marked passages actually
+correct — whether a number or a meaning — which nobody has done.

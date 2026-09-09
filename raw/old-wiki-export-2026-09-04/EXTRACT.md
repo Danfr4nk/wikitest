@@ -46,6 +46,24 @@ reading in
 predicts the opposite. Count the error-marker blocks per page as you go — that
 single tally discriminates them, and it costs nothing to collect.
 
+**SETTLED [2026-09-09], and both halves of that paragraph were wrong.** The tally
+is now mechanical — `bin/wb-census`, covered by `tests/test-census` — and its
+result is [`dat:0042`](../../kb/data/0042-marker-census-does-not-support-the-pattern.md).
+Normalised for page length, `mind/` corrects at 0.39 marks per 10 kB against
+`health/` at 0.37: level, not markedly fewer. The pattern's load-bearing
+falsifier is spent and it landed against the pattern, which now carries a dated
+`FALSIFIER SPENT` block. And the two readings never made opposite predictions in
+the first place — "corrections mark where external checks existed" is the same
+prediction about density, differently worded, so the tally could not have
+discriminated them however it came out. **Do not re-collect this by hand while
+reading.** Run the tool. What is still open is the third falsifier: whether the
+prior wiki self-audited on a schedule rather than page by page, which would
+explain the result without either reading being right. `wiki/meta/recent-activity.md`
+is a 101-entry changelog of its own corrections and is where that gets settled —
+read it early, and note that its entries are *references* to corrections on other
+pages, not corrections of its own. Counting them as its own is exactly the error
+the first pass of the census made.
+
 **Two claims from `health/` are promotable out of testimony and should be.**
 [`dat:0024`](../../kb/data/0024-old-wiki-happiness-counter-measure.md) (happiness
 rates per 1,000 messages, 2015–2020) and

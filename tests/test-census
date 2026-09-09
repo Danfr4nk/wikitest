@@ -1,0 +1,99 @@
+#!/usr/bin/env python3
+"""Regression tests for bin/wb-census.
+
+The census exists to settle a published falsifier, so its two failure modes
+are not cosmetic — each one, uncaught, produces a different answer to the
+question `pat:audit-strong-on-numbers-weak-on-meaning` turns on. Both were
+committed for real before these tests existed (dat:0042):
+
+  1. Summing RE-CHECKED into the error count. It is 49% of all dated blocks
+     and fires on citation churn, not on error.
+  2. Counting bare tokens rather than dated blocks, which lets
+     wiki/meta/recent-activity.md — a changelog that NAMES 101 corrections
+     belonging to other pages — dominate the census as the most
+     self-correcting area in the corpus.
+
+These run against the real export rather than a fixture. The export is
+tracked and sha256-pinned, so the numbers are stable; if it is ever replaced
+these tests should fail rather than quietly re-baseline.
+
+Usage:  tests/test-census
+"""
+
+from __future__ import annotations
+
+import pathlib
+import re
+import subprocess
+import sys
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+CENSUS = ROOT / "bin" / "wb-census"
+
+passed = failed = 0
+
+
+def check(name: str, condition: bool, detail: str = "") -> None:
+    global passed, failed
+    if condition:
+        passed += 1
+        print(f"  pass  {name}")
+    else:
+        failed += 1
+        print(f"  FAIL  {name}")
+        if detail:
+            print(f"        {detail}")
+
+
+def main() -> int:
+    proc = subprocess.run([sys.executable, str(CENSUS)],
+                          capture_output=True, text=True, cwd=ROOT)
+    out = proc.stdout
+    check("census runs clean", proc.returncode == 0, proc.stderr.strip())
+
+    rows = {}
+    for line in out.splitlines():
+        m = re.match(r"^([a-z()]+)\s+(\d+)\s+(\d+)\s+([\d.]+)\s+([\d.]+)", line)
+        if m:
+            rows[m.group(1)] = {"pages": int(m.group(2)),
+                                "errors": int(m.group(3)),
+                                "per_page": float(m.group(4)),
+                                "per_10kb": float(m.group(5))}
+
+    check("all ten areas reported", len(rows) == 10, sorted(rows))
+    check("the marker definition is printed, not implied",
+          "marker definition:" in out)
+
+    # RE-CHECKED is reported and never summed. 274 error marks, 265 re-checks:
+    # if the two were added the total would be 539 and every rate would roughly
+    # double.
+    total = sum(r["errors"] for r in rows.values())
+    check("RE-CHECKED is excluded from the error count",
+          total == 274, f"expected 274 error marks, got {total}")
+    check("RE-CHECKED is still reported", "rechk/pg" in out)
+
+    # meta/ is the changelog trap. Under the dated-block definition it is the
+    # LOWEST area in the corpus; under bare-token matching it was the highest.
+    meta = rows.get("meta", {})
+    check("meta/ does not lead the census",
+          meta.get("errors", 999) <= 2,
+          f"meta/ returned {meta.get('errors')} error marks — the bare-token "
+          f"definition has come back and recent-activity.md is being counted")
+
+    # The length normalisation is what the finding rests on: per page mind/
+    # leads health/ by 45%, per 10 kB they are level. Both columns must exist
+    # and must disagree, or the tool has stopped normalising.
+    mind, health = rows.get("mind", {}), rows.get("health", {})
+    check("per-page and per-10kB rates are both reported and differ for mind/",
+          mind.get("per_page", 0) > mind.get("per_10kb", 0) * 1.5,
+          f"mind/ {mind}")
+    check("mind/ and health/ are level once normalised for page length",
+          abs(mind.get("per_10kb", 0) - health.get("per_10kb", 9)) < 0.05,
+          f"mind/ {mind.get('per_10kb')} vs health/ {health.get('per_10kb')}")
+
+    print(f"\n{passed} passed, {failed} failed")
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

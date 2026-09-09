@@ -34,6 +34,11 @@ jobs:
       - name: Invariant regression tests
         run: python3 tests/test-invariant
 
+      # The census settles a published falsifier (dat:0042), so a silent
+      # change in how it counts is a silent change to a conclusion.
+      - name: Census regression tests
+        run: python3 tests/test-census
+
       - name: Build the site
         run: python3 bin/wb-build
 
