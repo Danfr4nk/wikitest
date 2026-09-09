@@ -14,8 +14,10 @@ tags        = ["meta", "project"]
 start = "2025"
 
 [[edges]]
-rel    = "about"
-target = "ent:dan"
+rel         = "about"
+target      = "ent:dan"
+strength    = "strong"
+asserted_by = "self"
 +++
 
 ## Summary

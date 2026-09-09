@@ -16,8 +16,10 @@ alternatives = [
 ]
 
 [[edges]]
-rel    = "challenges"
-target = "dat:0004-fragment-exports"
+rel         = "challenges"
+target      = "dat:0004-fragment-exports"
+strength    = "strong"
+asserted_by = "external"
 +++
 
 ## The reading

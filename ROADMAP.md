@@ -1,11 +1,13 @@
 # ROADMAP.md
 
-Planned changes to the foundational mechanics. Nothing here is built yet — this
-is the design record, written before the code so the constitutional law gets
-considered *first* rather than patched around afterwards.
+Planned changes to the foundational mechanics. This is the design record,
+written before the code so the constitutional law gets considered *first* rather
+than patched around afterwards. Section 2 has since been built; 1, 3 and 4 are
+still design only.
 
 Order of work is deliberate: **1 → 2 → 4 → 3.** The edge rework (2) changes the
-node format, so it lands before anything writes a lot of new nodes. Takeout (4)
+node format, so it lands before anything writes a lot of new nodes. It is now
+**built**; 1, 3 and 4 are still design only. Takeout (4)
 is the cheapest large win. Images (3) is last because it depends on both the
 edge vocabulary and the source-intake path being settled.
 
@@ -60,7 +62,12 @@ alongside and labelled — the disagreement is the signal.
 
 ---
 
-## 2. Edge system rework
+## 2. Edge system rework — **built**
+
+> Landed. The design below is kept as written; **Deviations from this plan** at
+> the end of the section records the four places the implementation departed
+> from it and why. Reference documentation lives in
+> [`ARCHITECTURE.md`](ARCHITECTURE.md#typed-edges).
 
 **The ask:** rework edges to be sensible for idiosyncratic, bombastic, public
 content.
@@ -124,9 +131,43 @@ end   = "2019-07"
   causal-family edges must carry `basis`; narrative-family edges must carry
   `asserted_by`; an edge's `[when]` must fall inside its endpoints' spans.
 
-**Migration:** existing edges have no `strength`/`asserted_by`. They default to
-`moderate` / `other` and are flagged as unaudited in `wb-validate` output, so
-they are visibly provisional rather than silently upgraded.
+**Migration:** existing edges have no `strength`/`asserted_by`. They are flagged
+as unaudited in `wb-validate` output, so they are visibly provisional rather than
+silently upgraded.
+
+### Deviations from this plan
+
+Four things changed between design and implementation. Each was a case where
+writing the code exposed something the plan had not seen.
+
+**No default of `moderate` / `other`.** Defaulting would have manufactured
+metadata that nobody checked and made it indistinguishable from metadata
+somebody did. Missing fields stay missing and `wb-validate` counts them
+(`6 edges … (6/6 audited)`). The six edges that existed were then audited by
+hand rather than defaulted.
+
+**`evidences` was removed, not kept.** `A evidences B` is `B cites A` written
+backwards, and only one of the two spellings was enforced by the layer
+invariant. Keeping both would have left a legal way to make an evidence claim
+outside the rule that governs evidence claims.
+
+**`supersedes` split in two.** The plan listed it as an ordinary relation. It
+was in fact doing two jobs: a top-level *field* meaning "this node replaces that
+one," and an *edge* meaning "the thing here overtook the thing there." The
+second is now `displaced`, in a sixth **editorial** family the plan did not
+have.
+
+**The temporal rule is narrower than "must fall inside its endpoints' spans."**
+That reading forbids a legitimate and common shape — a relation active
+2015–2019 pointing at a single-day 2010 event. What is genuinely impossible is
+an edge whose window *closes before an endpoint begins*, so that is the error;
+an edge opening early is a warning, because imprecise dates are normal.
+
+One relation was also added: **`influenced_by`**. The rework surfaced an edge in
+`evt:2026-09-08-rebuild-begins` pointing the opposite way from what its own note
+described, and the reason was that saying "this was influenced by X" from the
+node it happened to was impossible without a trip to the other file. Friction
+like that produces exactly that error, so `influenced` gained an inverse.
 
 ---
 

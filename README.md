@@ -92,6 +92,15 @@ Standard library only — no dependencies, no build step, no database. Nodes are
 Markdown with TOML frontmatter: machine-readable head, human-readable body,
 neither destroying the other.
 
+Relations between nodes are **typed edges**, grouped into six families in
+[`schema/edges.json`](schema/edges.json). Edges may point in any direction —
+only `cites` is layer-constrained, because only `cites` claims to be evidence —
+but every edge must declare how hard it is, what it rests on and who asserts it,
+so a stated claim and a model's guess can never look alike. One of the families
+is **narrative** (`mythologized`, `performed_as`, `disavowed`, `reframed`,
+`retold_as`), which lets the record hold *how a thing was told* separately from
+what it was. See [Typed edges](ARCHITECTURE.md#typed-edges).
+
 ```markdown
 +++
 id         = "evt:2026-09-08-rebuild-begins"
