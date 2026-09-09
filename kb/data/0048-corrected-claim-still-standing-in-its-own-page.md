@@ -77,10 +77,23 @@ Three tests pin it, and both checks were mutation-checked rather than assumed:
 stripping `SPENT` from the pattern's `falsifiers` field raises the error;
 back-dating its front matter raises the warning.
 
-**What is still not covered**, and is the harder half: nothing detects a claim
-retracted on one node that another node cites and repeats. The prior wiki's
-failure crossed pages — the correction was on `calibrated-confidence`, the dead
-prediction on `failure-to-launch`, the republication in `open-questions`. Here
-`check_staleness` catches the shape only when the retraction bumps a date, which
-it now warns about but does not require. A citing node whose source was retracted
-after it was written still validates.
+**The cross-page half is covered too, and only as far as it honestly can be.**
+The prior wiki's failure travelled: the correction on `calibrated-confidence`,
+the dead claim on `failure-to-launch`, the republication in `open-questions`. A
+bare staleness warning would not have caught that either — "the evidence moved"
+reads identically whether a typo was fixed or the claim was withdrawn. So
+`check_staleness` now names it: when a cited node's body announces a retraction
+dated after the citing node was last checked, the warning appends *"that node
+announced 'FALSIFIER SPENT' on 2026-06-01 — check whether this claim rests on
+what was withdrawn."*
+
+It stays a **warning**, deliberately. A citing node may well survive its source's
+retraction, and deciding that is reading work rather than validation work. What
+it must not do is arrive looking like ordinary date drift, which is exactly how
+the prior wiki's index came to republish a dead prediction.
+
+What remains genuinely uncovered: nothing knows *which claim* was withdrawn, only
+that something was. A node citing a retracted source for a part the retraction
+did not touch gets the same warning as one whose whole argument just died. That
+distinction needs a human or a model reading both, and no field would carry it
+honestly.

@@ -534,6 +534,11 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
 
 
 
+DATED_BLOCK = re.compile(r"^(?:#{1,6}\s+|\*\*|>\s*\*\*)([A-Z][A-Z \-]{2,30}?)[ ,]+\[?(\d{4}-\d{2}-\d{2})\]?",
+                         re.M)
+RETRACTIONS = ("SPENT", "RETRACTED", "WITHDRAWN", "SUPERSEDED")
+
+
 def as_of(node: dict) -> str:
     """The latest date this node was known to be current. '' when it says nothing."""
     return max((str(node.get(f) or "") for f in ("rechecked", "updated", "created")), default="")
@@ -563,13 +568,31 @@ def check_staleness(nodes: dict[str, dict]) -> list[str]:
                 warnings.append(
                     f"{node['_path']}: cites {target} (as of {theirs}) but is itself only "
                     f"as of {mine} — the evidence moved after the claim. Re-check and set "
-                    f"`rechecked`, even if nothing changed.")
+                    f"`rechecked`, even if nothing changed."
+                    + retraction_note(other, mine))
     return warnings
 
 
-DATED_BLOCK = re.compile(r"^(?:#{1,6}\s+|\*\*|>\s*\*\*)([A-Z][A-Z \-]{2,30}?)[ ,]+\[?(\d{4}-\d{2}-\d{2})\]?",
-                         re.M)
-RETRACTIONS = ("SPENT", "RETRACTED", "WITHDRAWN", "SUPERSEDED")
+def retraction_note(cited: dict, since: str) -> str:
+    """Say WHAT moved when what moved was a retraction.
+
+    dat:0048, second half. The prior wiki's failure crossed three pages: the
+    correction on one, the dead claim on another, the republication on a third.
+    A bare staleness warning would not have caught that either — "the evidence
+    moved" reads the same whether a typo was fixed or the claim was withdrawn.
+
+    So when the cited node's own body announces a retraction after this node was
+    last checked, the warning says so by name. It stays a warning: a citing node
+    may well survive its source's retraction, and deciding that is reading work,
+    not validation work. What it must not do is look like an ordinary date drift.
+    """
+    hits = [(kind.strip(), date) for kind, date in DATED_BLOCK.findall(cited.get("_body", ""))
+            if any(word in kind for word in RETRACTIONS) and date > since]
+    if not hits:
+        return ""
+    kind, date = max(hits, key=lambda h: h[1])
+    return (f" NOTE: that node announced {kind!r} on {date} — check whether this "
+            f"claim rests on what was withdrawn.")
 
 
 def check_retractions(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
