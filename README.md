@@ -31,9 +31,11 @@ The short version:
 - **The engine survived.** `app.py` and all 40 original `bin/` tools are
   byte-exact on the Drive staging copy. Only `.md` files were damaged by that
   copy's Google Docs conversion — a narrower loss than first believed.
-- **The wiki body is waiting on a push from the Mac.** That copy is real
-  Markdown with real git history, and it is worth more than any
-  reconstruction. See [`MIGRATION.md`](MIGRATION.md).
+- **The wiki body is back.** All 497 pages of the prior wiki — 7,536,214 bytes,
+  ~1.86M tokens — recovered byte-exact on 2026-09-09 from a Drive folder that
+  had not been listed, as four `text/plain` parts the Google Docs conversion
+  never touched. Ingested as `testimony`: its assertions are evidence, the
+  things it asserts are not yet. See [`dat:0012`](kb/data/0012-old-wiki-recovered-byte-exact.md).
 
 The architecture, tooling and knowledge base described below are already in
 place and working.
