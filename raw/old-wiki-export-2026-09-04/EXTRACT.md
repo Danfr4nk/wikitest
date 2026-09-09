@@ -87,8 +87,8 @@ on it.
 [`dat:0049`](../../kb/data/0049-old-wiki-live-contradictions-inventory.md)
 inventories the 49: mind 20, people 12, self 6, timeline 5, interests 3, legal 3.
 Two thirds sit in `mind/` and `people/`, which this extraction has barely opened
-— one page of 78 and none of 175. **One is already closed** by `dat:0031`, and
-the way it closed is the template: it was settled by reading the source, not by
+— one page of 78 and none of 175. **Two are already closed** — `dat:0031` and `dat:0051` — and
+the way they closed is the template: it was settled by reading the source, not by
 reasoning about it. Prefer entries where a source can be READ over entries where
 two people give incompatible first-hand accounts — the latter are held open for
 the right reason and should stay open.

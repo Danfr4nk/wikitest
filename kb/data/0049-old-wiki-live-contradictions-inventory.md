@@ -12,6 +12,7 @@ extraction    = "Counted 2026-09-09 from the Live contradictions section of wiki
 importance    = 4
 tags          = ["old-wiki", "meta", "backlog"]
 created       = "2026-09-09"
+updated       = "2026-09-09"
 
 [when]
 start = "2026-09-04"
@@ -68,3 +69,25 @@ record actually contains. The ones worth attacking are the entries where a
 graduation date is another, and the count of estate advances on `people/rod-banks`
 (a spine listing one $10,000 advance against a thread holding five totalling
 $32,500) is a third.
+
+---
+
+## UPDATED [2026-09-09] — a second one closed, the same way
+
+The `people/rod-banks` entry — a page thread holding five estate advances
+totalling $32,500 against a spine line recording one $10,000 advance on
+2020-06-23 — is retired by
+[`dat:0051`](0051-estate-advances-both-pages-were-right.md). There were six
+advances. Both pages were right about the part each could see; the wiki's own
+first-named hypothesis, *"either there were two $10,000 advances four months
+apart"*, was the correct one, and the message confirming it sits in a thread
+neither page was reading.
+
+Two of 49 closed, and the pattern in how they closed is worth more than the
+count. Neither was adjudicated. Both were settled by **reading a source end to
+end** — a Facebook thread for the DUI, two estate threads here — and in both
+cases the prior wiki's reasoning was sound and its evidence was partial. That is
+[`pat:reasoning-sound-provenance-unreliable`](../patterns/reasoning-sound-provenance-unreliable.md)
+holding on two more cases, and it sharpens the reading order in the section
+above: the entries to attack are the ones where a thread exists that nobody has
+read to the end.
