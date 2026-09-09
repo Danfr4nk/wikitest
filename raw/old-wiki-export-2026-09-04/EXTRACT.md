@@ -1,12 +1,12 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: 7 of 497 pages extracted** (`legal/` complete, `health/` mostly, 2026-09-09). Delete this file
+**Status: 9 of 497 pages extracted** (`legal/` and `health/` complete bar two index stubs, 2026-09-09). Delete this file
 only when the work below is done for all of them.
 
 | Area | Pages | Extracted |
 | :--- | ---: | :--- |
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
-| health | 6 | **3** — `dat:0018`–`0024`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `chemical-architecture`, `the-configured-body`, `index` |
+| health | 6 | **5** — `dat:0018`–`0027`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `index` (stub) |
 | places | 10 | 0 |
 | meta | 12 | 0 |
 | work | 15 | 0 |
@@ -45,6 +45,17 @@ reading in
 [`int:old-wiki-corrections-are-the-payload`](../../kb/interpretations/old-wiki-corrections-are-the-payload.md)
 predicts the opposite. Count the error-marker blocks per page as you go — that
 single tally discriminates them, and it costs nothing to collect.
+
+**Two claims from `health/` are promotable out of testimony and should be.**
+[`dat:0024`](../../kb/data/0024-old-wiki-happiness-counter-measure.md) (happiness
+rates per 1,000 messages, 2015–2020) and
+[`dat:0025`](../../kb/data/0025-old-wiki-prescriber-exists-routing-only.md) (four
+dated messages establishing a prescriber) both terminate in computations over
+the message corpus, which this system holds byte-exact and can re-pull. Every
+other extracted claim terminates in "the prior wiki said so". Re-running those
+two sweeps would convert them from testimony to first-party data — the cheapest
+available upgrade in the whole backlog, and the template for how the other 488
+pages get promoted.
 
 One retrieval would upgrade a whole cluster at once: a **Fayette County MDJS
 docket search**. It would convert `evt:2015-02-possession-arrest` from

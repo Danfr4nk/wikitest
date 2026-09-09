@@ -5,14 +5,16 @@ type         = "interpretation"
 title        = "Reading a refusal as its incriminating answer is not supported"
 perspective  = "llm"
 cites        = ["dat:0021-old-wiki-endorsed-inference-from-refusal",
-                "dat:0019-old-wiki-absence-of-instrument"]
-confidence   = "moderate"
+                "dat:0019-old-wiki-absence-of-instrument",
+                "dat:0025-old-wiki-prescriber-exists-routing-only"]
+confidence   = "high"
 importance   = 4
 created      = "2026-09-09"
+updated      = "2026-09-09"
 tags         = ["epistemics", "negative-data", "old-wiki"]
 alternatives = [
   "The model may have had contextual grounds not preserved in the excerpt the prior wiki quoted — tone, prior turns, or something elsewhere in the ~4,200 lines. The full chat export is not in the recovered material, so the inference cannot be examined on its own evidence.",
-  "'Unmanaged' may be independently established elsewhere in the corpus. If so the conclusion stands on other grounds and only this route to it is faulty — which would change what needs fixing, not whether something does."
+  "In the narrower sense of clinical oversight rather than supply, 'unmanaged' survives: dat:0025 establishes a prescriber but records every exchange with him as pharmacy routing, never a dose or a review. The word was carrying two claims and only one of them fell."
 ]
 
 [when]
@@ -61,9 +63,41 @@ same system, weeks apart. The discipline was available and was not uniformly
 applied — which is a more useful finding than either page alone, and a reason to
 expect the same unevenness across the other 491 pages.
 
+## REVISED 2026-09-09 — the inference was not only unsound, it was wrong
+
+Written above before `health/the-configured-body.md` was read. That page settles
+it, and the finding is better than the argument.
+
+A term census over the message dump surfaced four dated messages establishing a
+prescriber — *"I had my doctor move my prescription here"* (2025-03-06), *"my
+doctor said the pharmacy won't fill an out of state prescription"* (2025-06-08),
+and two more across 2019–2025 ([`dat:0025`](../data/0025-old-wiki-prescriber-exists-routing-only.md)).
+
+So the reading that the supply is **unprescribed or self-sourced does not
+survive contact with the corpus.** The refusal was not selective for the
+incriminating answer, because the answer was not incriminating.
+
+**One half survives, and it is the narrower half.** Every recorded exchange with
+that doctor is about moving a script between pharmacies — none about a dose, a
+taper, a review or a body. So *unmanaged* is false in the supply sense and
+defensible in the oversight sense. A single word carried both claims, and the
+evidence separates them.
+
+That separation is the whole result. Not "the model was wrong" but *which of two
+bundled claims was wrong*, established by going and counting rather than by
+reasoning harder about the silence.
+
+The original argument stands on its own terms and is left above unedited: the
+inference was unsound **when made**, independent of how it turned out. A guess
+that happens to land is still a guess. What has changed is that this one did not
+land.
+
 ## What this does and does not claim
 
-It does not claim the supply is managed. Nothing here bears on that.
+It does not claim the regimen is clinically managed — `dat:0025` indicates it is
+not, in any substantive sense. It claims the specific route from *refusal* to
+*unmanaged supply* was unsound, and that the corpus subsequently contradicted
+its conclusion.
 
 It claims the **route** taken to the conclusion does not carry weight, and that
 a downstream mechanism was built on it — the "second, parallel layer of the same
