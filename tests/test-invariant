@@ -135,7 +135,7 @@ cites = ["evt:thing"]
 +++
 """}, False, "perspective"),
 
-    ("a caused edge must state its causal basis", {"x": """+++
+    ("a caused edge must state what it rests on", {"x": """+++
 id = "evt:second"
 layer = 2
 type = "event"
@@ -146,7 +146,7 @@ date = "2019-01-01"
 rel = "caused"
 target = "evt:thing"
 +++
-"""}, False, "causal_basis"),
+"""}, False, "basis"),
 
     ("a preceded edge needs no causal basis", {"x": """+++
 id = "evt:third"
@@ -223,6 +223,208 @@ title = "Malformed date"
 date = "March 2018"
 +++
 """}, False, "does not match"),
+
+    # ---- edges ------------------------------------------------------------
+    # `cites` was always constrained and `edges` was not. These cover the checks
+    # that closed that gap.
+
+    ("every causal-family edge needs a basis, not just `caused`", {"x": """+++
+id = "evt:softcausal"
+layer = 2
+type = "event"
+title = "Influenced without saying why"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "influenced"
+target = "evt:thing"
++++
+"""}, False, "basis"),
+
+    ("a narrative edge must say who asserts it", {"x": """+++
+id = "evt:told"
+layer = 2
+type = "event"
+title = "A story about a story"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "mythologized"
+target = "evt:thing"
++++
+"""}, False, "asserted_by"),
+
+    ("a narrative edge with asserted_by is fine", {"x": """+++
+id = "evt:told2"
+layer = 2
+type = "event"
+title = "A story about a story"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "mythologized"
+target = "evt:thing"
+asserted_by = "self"
+strength = "moderate"
++++
+"""}, True, ""),
+
+    ("`evidences` is gone — evidence goes in cites", {"x": """+++
+id = "evt:backwards"
+layer = 2
+type = "event"
+title = "Evidence pointed the wrong way"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "evidences"
+target = "int:reading"
++++
+"""}, False, "not one of"),
+
+    ("`supersedes` is a field, not an edge", {"x": """+++
+id = "evt:replacer"
+layer = 2
+type = "event"
+title = "Used the retired edge name"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "supersedes"
+target = "evt:thing"
++++
+"""}, False, "not one of"),
+
+    ("a speculative edge may not be held strongly", {"x": """+++
+id = "evt:overconfident"
+layer = 2
+type = "event"
+title = "A guess held with certainty"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "caused"
+target = "evt:thing"
+basis = "speculative"
+strength = "strong"
+asserted_by = "llm"
++++
+"""}, False, "convincing the guess feels"),
+
+    ("basis and the deprecated causal_basis may not disagree", {"x": """+++
+id = "evt:twofaced"
+layer = 2
+type = "event"
+title = "Says two things at once"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "caused"
+target = "evt:thing"
+basis = "stated"
+causal_basis = "speculative"
++++
+"""}, False, "they disagree"),
+
+    ("a deprecated causal_basis still validates, with a warning", {"x": """+++
+id = "evt:oldstyle"
+layer = 2
+type = "event"
+title = "Written before the rename"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "caused"
+target = "evt:thing"
+causal_basis = "stated"
+strength = "moderate"
+asserted_by = "self"
++++
+"""}, True, ""),
+
+    ("an edge cannot be over before one of its terms exists", {"x": """+++
+id = "evt:impossible"
+layer = 2
+type = "event"
+title = "Relation closed before the other end began"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "influenced"
+target = "evt:thing"
+basis = "inferred"
+strength = "weak"
+asserted_by = "llm"
+[edges.when]
+start = "2015-01"
+end = "2016-01"
++++
+"""}, False, "before evt:thing begins"),
+
+    ("an asymmetric relation may not be asserted both ways", {"x": """+++
+id = "evt:aaa"
+layer = 2
+type = "event"
+title = "First"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "preceded"
+target = "evt:zzz"
++++
+""", "y": """+++
+id = "evt:zzz"
+layer = 2
+type = "event"
+title = "Second"
+[when]
+date = "2020-01-01"
+[[edges]]
+rel = "preceded"
+target = "evt:aaa"
++++
+"""}, False, "asymmetric"),
+
+    ("one node may not claim a relation and its inverse toward the same node", {"x": """+++
+id = "evt:bothways"
+layer = 2
+type = "event"
+title = "Before and after at once"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "preceded"
+target = "evt:thing"
+[[edges]]
+rel = "followed"
+target = "evt:thing"
++++
+"""}, False, "they are inverses"),
+
+    ("writing both directions of an inverse pair is a warning, not an error",
+     {"x": """+++
+id = "evt:aaa"
+layer = 2
+type = "event"
+title = "First"
+[when]
+date = "2019-01-01"
+[[edges]]
+rel = "preceded"
+target = "evt:zzz"
++++
+""", "y": """+++
+id = "evt:zzz"
+layer = 2
+type = "event"
+title = "Second"
+[when]
+date = "2020-01-01"
+[[edges]]
+rel = "followed"
+target = "evt:aaa"
++++
+"""}, True, ""),
 ]
 
 

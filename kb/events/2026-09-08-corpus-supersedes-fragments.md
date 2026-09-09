@@ -13,12 +13,17 @@ tags       = ["corpus", "shelf", "decision"]
 date = "2026-09-08"
 
 [[edges]]
-rel    = "supersedes"
-target = "dat:0004-fragment-exports"
+rel         = "displaced"
+target      = "dat:0004-fragment-exports"
+strength    = "strong"
+asserted_by = "external"
+note        = "Not the `supersedes` field: this node does not replace dat:0004. The complete export overtook the fragment extracts as evidence, and the fragments stay on the record as what was believed and why it was wrong."
 
 [[edges]]
-rel    = "about"
-target = "ent:wiki-brain"
+rel         = "about"
+target      = "ent:wiki-brain"
+strength    = "strong"
+asserted_by = "self"
 +++
 
 ## What happened

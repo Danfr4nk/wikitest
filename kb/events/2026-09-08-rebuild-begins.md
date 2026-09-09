@@ -13,13 +13,18 @@ tags       = ["meta", "architecture"]
 date = "2026-09-08"
 
 [[edges]]
-rel    = "about"
-target = "ent:wiki-brain"
+rel         = "about"
+target      = "ent:wiki-brain"
+strength    = "strong"
+asserted_by = "self"
 
 [[edges]]
-rel          = "influenced"
-target       = "evt:2026-09-08-corpus-supersedes-fragments"
-note         = "The corpus work established the epistemic argument the architecture then generalised into a checked invariant."
+rel         = "influenced_by"
+target      = "evt:2026-09-08-corpus-supersedes-fragments"
+strength    = "moderate"
+basis       = "inferred"
+asserted_by = "llm"
+note        = "The corpus work established the epistemic argument the architecture then generalised into a checked invariant. Written as `influenced` until the edge rework, which pointed it the opposite way from what this note says."
 +++
 
 ## What happened

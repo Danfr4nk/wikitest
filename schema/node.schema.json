@@ -12,7 +12,7 @@
     "id": {
       "type": "string",
       "pattern": "^(src|dat|ent|evt|rel|int|con|pat|syn):[a-z0-9][a-z0-9-]*$",
-      "description": "type-prefix:slug. Stable forever — a rename is a new node plus a `supersedes` edge, never an edit."
+      "description": "type-prefix:slug. Stable forever — a rename is a new node plus a `supersedes` field, never an edit."
     },
     "layer": { "type": "integer", "minimum": 0, "maximum": 5 },
     "type": {
@@ -38,44 +38,11 @@
     "edges": {
       "type": "array",
       "default": [],
-      "items": {
-        "type": "object",
-        "required": ["rel", "target"],
-        "additionalProperties": false,
-        "properties": {
-          "rel": {
-            "enum": ["caused", "influenced", "contradicted", "preceded", "followed",
-                     "depended_on", "resembled", "symbolized", "belonged_to",
-                     "occurred_during", "resulted_from", "evidences", "challenges",
-                     "supersedes", "participated_in", "located_at", "about"]
-          },
-          "target": { "$ref": "#/$defs/nodeRef" },
-          "note": { "type": "string" },
-          "causal_basis": {
-            "enum": ["stated", "inferred", "speculative"],
-            "description": "Required on `caused`. Sequence is not causation, and the schema refuses to let the two be written identically."
-          }
-        },
-        "allOf": [{
-          "if": { "properties": { "rel": { "const": "caused" } }, "required": ["rel"] },
-          "then": { "required": ["causal_basis"] }
-        }]
-      }
+      "items": { "$ref": "#/$defs/edge" },
+      "description": "Typed semantic relations, grouped into families by schema/edges.json. Unlike `cites` these make no evidence claim and are not layer-constrained — which is exactly why each must declare its strength, its basis and who asserts it."
     },
 
-    "when": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "date":       { "$ref": "#/$defs/date" },
-        "approx":     { "type": "string" },
-        "start":      { "$ref": "#/$defs/date" },
-        "end":        { "$ref": "#/$defs/date" },
-        "period":     { "type": "string" },
-        "recurrence": { "enum": ["once", "daily", "weekly", "monthly", "yearly", "irregular", "ongoing"] },
-        "age":        { "type": "integer", "minimum": 0, "maximum": 130 }
-      }
-    },
+    "when": { "$ref": "#/$defs/when" },
 
     "importance": {
       "type": "integer", "minimum": 1, "maximum": 5,
@@ -139,12 +106,79 @@
       "description": "Absence is informative, but these three are not equivalent."
     },
 
-    "supersedes":  { "$ref": "#/$defs/nodeRef" },
+    "supersedes":  {
+      "$ref": "#/$defs/nodeRef",
+      "description": "Node identity: this node replaces that one. Not the `displaced` edge, which says the thing described here overtook the thing described there."
+    },
     "deprecated":  { "type": "boolean", "default": false },
     "open_questions": { "type": "array", "items": { "type": "string" } }
   },
 
   "$defs": {
+    "when": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "date":       { "$ref": "#/$defs/date" },
+        "approx":     { "type": "string" },
+        "start":      { "$ref": "#/$defs/date" },
+        "end":        { "$ref": "#/$defs/date" },
+        "period":     { "type": "string" },
+        "recurrence": { "enum": ["once", "daily", "weekly", "monthly", "yearly", "irregular", "ongoing"] },
+        "age":        { "type": "integer", "minimum": 0, "maximum": 130 }
+      }
+    },
+
+    "edge": {
+      "type": "object",
+      "required": ["rel", "target"],
+      "additionalProperties": false,
+      "description": "Vocabulary and families are defined in schema/edges.json. bin/wb-validate errors if this enum and that file drift apart.",
+      "properties": {
+        "rel": {
+          "enum": ["about", "belonged_to", "caused", "challenges", "contradicted",
+                   "depended_on", "disavowed", "displaced", "displaced_by", "followed",
+                   "influenced", "influenced_by", "located_at", "mythologized",
+                   "occurred_during",
+                   "participated_in", "performed_as", "preceded", "reframed",
+                   "resembled", "resulted_from", "retold_as", "symbolized"]
+        },
+        "target": { "$ref": "#/$defs/nodeRef" },
+        "note":   { "type": "string" },
+        "strength": {
+          "enum": ["strong", "moderate", "weak", "tentative"],
+          "description": "How hard the claim is. Absent means unaudited, and wb-validate says so out loud rather than letting it pass as settled."
+        },
+        "basis": {
+          "enum": ["stated", "inferred", "speculative"],
+          "description": "What the edge rests on. Required on the causal family: sequence is not causation, and the schema refuses to let the two be written identically."
+        },
+        "asserted_by": {
+          "enum": ["self", "external", "llm", "other"],
+          "description": "Who makes this claim. Mirrors `perspective` on interpretations for the same reason — an LLM's inferred edge and a stated one must never be indistinguishable. Required on the narrative family."
+        },
+        "causal_basis": {
+          "enum": ["stated", "inferred", "speculative"],
+          "deprecated": true,
+          "description": "DEPRECATED alias for `basis`, accepted one release so nothing breaks. wb-validate warns on every use."
+        },
+        "when": {
+          "$ref": "#/$defs/when",
+          "description": "Edges are temporal too. A relation true in 2015 can be false by 2020, and a system that calls personality a trajectory cannot hold its edges frozen."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "rel": { "enum": ["caused", "influenced", "influenced_by", "resulted_from", "depended_on"] } }, "required": ["rel"] },
+          "then": { "anyOf": [{ "required": ["basis"] }, { "required": ["causal_basis"] }] }
+        },
+        {
+          "if": { "properties": { "rel": { "enum": ["mythologized", "performed_as", "disavowed", "reframed", "retold_as"] } }, "required": ["rel"] },
+          "then": { "required": ["asserted_by"] }
+        }
+      ]
+    },
+
     "nodeRef": {
       "type": "string",
       "pattern": "^(src|dat|ent|evt|rel|int|con|pat|syn):[a-z0-9][a-z0-9-]*$"

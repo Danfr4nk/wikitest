@@ -75,7 +75,10 @@ The invariant makes the whole graph a DAG with layers as topological levels, so
 citation cycle is impossible by construction rather than by discipline.
 
 Relations that are *not* evidence — `caused`, `resembled`, `contradicted`,
-`preceded` — live in `edges`, which is unconstrained. Only `cites` is directional.
+`preceded` — live in `edges`, and they may point in any direction. Only `cites`
+is layer-constrained, because only `cites` claims to be evidence. Edges pay for
+that freedom differently: each one must declare how hard it is, what it rests on,
+and who says so. See [Typed edges](#typed-edges).
 
 ## Node anatomy
 
@@ -96,8 +99,9 @@ date   = "2010-02-17"
 period = "early-recovery"
 
 [[edges]]
-rel    = "preceded"
-target = "evt:2011-first-clean-year"
+rel      = "preceded"
+target   = "evt:2011-first-clean-year"
+strength = "strong"
 +++
 
 ## Summary
@@ -110,13 +114,13 @@ node and neither is authoritative over the other.
 
 | Field | Meaning |
 | :---- | :---- |
-| `id` | `type:slug`. Stable forever. Renaming is a `supersedes` edge, never an edit. |
+| `id` | `type:slug`. Stable forever. Renaming is a new node plus a `supersedes` field, never an edit. |
 | `layer` | 0-5. Must match the type. |
 | `type` | One of the types in the layer table. |
 | `title` | Human label. |
 | `confidence` | `high` `moderate` `low` `speculative` `unknown` |
 | `cites` | Evidence. Strictly-lower layers only. |
-| `edges` | Typed semantic relations. Any direction. |
+| `edges` | Typed semantic relations. Any direction, but each declares its own weight. |
 | `when` | Temporal block — see below. |
 
 ### Layer-specific required fields
@@ -167,23 +171,93 @@ beings are historical processes rather than internally consistent databases.
 
 ## Typed edges
 
-Links carry meaning. `A → B` is not enough.
+Links carry meaning, so `A → B` is not enough. But a vocabulary alone is not
+enough either: the old flat list of seventeen relations could say *that* two
+things were connected and almost nothing about the standing of the claim.
 
-`caused` · `influenced` · `contradicted` · `preceded` · `followed` ·
-`depended_on` · `resembled` · `symbolized` · `belonged_to` · `occurred_during` ·
-`resulted_from` · `evidences` · `challenges` · `supersedes` · `participated_in` ·
-`located_at` · `about`
+The vocabulary lives in [`schema/edges.json`](schema/edges.json) — as data, so
+it can be reasoned about as classes rather than scattered through the code as
+literals. `bin/wb-validate` fails if that file and the enum in
+`schema/node.schema.json` ever drift apart.
 
-Causal vocabulary is deliberately graded, because the distinction between
-sequence and causation is exactly where personal narrative goes wrong:
+### Six families
 
-- `preceded` — temporal sequence only. Makes no causal claim.
-- `influenced` — plausible contribution.
-- `caused` — an explicit causal claim, and it requires
-  `causal_basis = "stated" | "inferred" | "speculative"`.
+| Family | Relations | The claim being made |
+| :----- | :-------- | :------------------- |
+| **temporal** | `preceded` `followed` `occurred_during` | Sequence and containment. **No causal claim whatsoever.** |
+| **causal** | `caused` `influenced` `influenced_by` `resulted_from` `depended_on` | Graded contribution. Must declare `basis`. |
+| **structural** | `belonged_to` `located_at` `participated_in` `about` | Membership, location, reference. |
+| **semantic** | `resembled` `symbolized` `challenges` `contradicted` | Meaning and tension. |
+| **narrative** | `mythologized` `performed_as` `disavowed` `reframed` `retold_as` | How a thing was **presented**. Must declare `asserted_by`. |
+| **editorial** | `displaced` `displaced_by` | One body of material overtaking another. |
 
-"Event A preceded behavior B" and "Event A caused behavior B" are different
-sentences, and the schema refuses to let them be written the same way.
+The **narrative family** is the one worth dwelling on. This corpus is loud,
+self-narrating and performative, and a dry causal vocabulary has no way to record
+that something was dramatised in the telling. `evt:X --mythologized--> ent:Y` is
+a claim about the *telling*, not about the event — which lets the record hold the
+dramatisation without either endorsing it or flattening it into "he lied." That
+is the same separation the layer law already applies to evidence, pointed at
+self-presentation.
+
+### What every edge declares
+
+```toml
+[[edges]]
+rel         = "influenced"
+target      = "evt:2010-02-17-suboxone-start"
+strength    = "strong"        # strong | moderate | weak | tentative
+basis       = "stated"        # stated | inferred | speculative
+asserted_by = "self"          # self | external | llm | other
+
+[edges.when]                  # edges are temporal, like nodes
+start = "2015-11"
+end   = "2019-07"
+```
+
+- **`strength`** — `influenced` was previously all-or-nothing.
+- **`basis`** — generalises the old `causal_basis` to every family. The old name
+  is still accepted for one release and warns on use.
+- **`asserted_by`** — mirrors `perspective` on interpretations, for exactly the
+  same reason: an LLM's inferred edge and a stated one must never be
+  indistinguishable.
+- **`[when]`** — a relation true in 2015 can be false by 2020. A system that
+  calls personality a trajectory cannot hold its edges frozen.
+
+### Checked mechanically
+
+- Causal-family edges must carry `basis`; narrative-family edges must carry
+  `asserted_by`.
+- `basis = "speculative"` with `strength = "strong"` is an **error** — a guess
+  held with certainty. Strength tracks what the edge rests on, not how
+  convincing the guess feels.
+- An edge whose window closes before one of its endpoints begins is an error;
+  one that opens early is a warning, since imprecise dates are legitimate.
+- Edges missing `strength` or `asserted_by` are reported as **provisional rather
+  than audited**, so a bulk import is visibly unfinished instead of silently
+  passing as settled.
+
+### Inverses are derived, never written twice
+
+`preceded`/`followed`, `caused`/`resulted_from`, `influenced`/`influenced_by`
+and `displaced`/`displaced_by` are declared inverse pairs. Write one direction;
+`bin/wb-build` derives the other and marks it `derived: true`. Writing both is a
+warning — two records of one fact drift, and the site would then show a single
+relation as though it were two independent assertions.
+
+Asserting an asymmetric relation in both directions (`A preceded B` *and*
+`B preceded A`) is an error.
+
+### Two relations were removed
+
+- **`evidences`** — `A evidences B` is `B cites A` written backwards, and only
+  one of those spellings was checked by the layer invariant. Two ways to say one
+  thing with one of them unenforced is the precise asymmetry this rework exists
+  to end. **Evidence goes in `cites`.**
+- **`supersedes`** — still a top-level *field*, meaning "this node replaces that
+  one." It was being used as an edge for something quite different: "the thing
+  described here overtook the thing described there." That is a content claim,
+  and it is now `displaced`. Conflating identity bookkeeping with a claim about
+  the world is how a graph starts lying quietly.
 
 ## What the system refuses to do
 
@@ -202,7 +276,8 @@ sentences, and the schema refuses to let them be written the same way.
 ## Repository layout
 
 ```
-schema/          JSON Schema per node type — the enforceable contract
+schema/          node.schema.json — the enforceable contract
+                 edges.json      — the edge vocabulary, as data
 kb/              the knowledge base
   sources/       L0   raw material index
   data/          L1   atomic datapoints
@@ -214,6 +289,7 @@ kb/              the knowledge base
   syntheses/     L5   cross-domain models
 corpus/          the authoritative message record (gitignored; see CORPUS_POLICY.md)
 bin/             wb-validate, wb-build, wb-query, corpus-*
+legacy/          the original pre-rebuild engine, byte-exact, unwired
 site/            generated static site (gitignored, published to Pages)
 ```
 
