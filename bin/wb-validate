@@ -474,7 +474,12 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
         if node.get("type") == "datum":
             attributed = node.get("attributed_to")
             cited = node.get("cites", [])
+            # A datum that MEASURES a source — counts its pages, hashes its bytes,
+            # searches its strings — is not relaying an assertion, so there is
+            # nothing to attribute. The source is the object, not the witness.
             for target in cited:
+                if node.get("measurement"):
+                    break
                 if nodes.get(target, {}).get("testimony") and not attributed:
                     errors.append(
                         f"{where}: cites {target!r}, which is marked `testimony`, but has no "
@@ -488,6 +493,14 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
         if node.get("testimony") and node.get("type") != "source":
             errors.append(f"{where}: `testimony` is an L0 source property; "
                           f"{node.get('type')!r} nodes may not carry it")
+
+        if node.get("measurement") and node.get("type") != "datum":
+            errors.append(f"{where}: `measurement` is an L1 datum property; "
+                          f"{node.get('type')!r} nodes may not carry it")
+
+        if node.get("measurement") and node.get("attributed_to"):
+            errors.append(f"{where}: carries both `measurement` and `attributed_to` — a datum "
+                          f"either measures its source or relays its assertions, not both")
 
         if node.get("attributed_to") and node.get("type") != "datum":
             errors.append(f"{where}: `attributed_to` is an L1 datum property; "

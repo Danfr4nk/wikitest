@@ -84,6 +84,7 @@ Full design: **[`ARCHITECTURE.md`](ARCHITECTURE.md)**.
 
 ```sh
 bin/wb-ingest FILE --testimony     # front door: original preserved, L0 node minted
+bin/wb-corroborate "phrase"        # cross-reference a claim against the raw corpus
 bin/wb-validate                    # schema + the layer invariant
 bin/wb-build                       # compile to site/ + graph.json + llms.txt
 bin/wb-check-publish               # refuse to publish sensitive material

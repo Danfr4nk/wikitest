@@ -75,6 +75,10 @@
       "type": "boolean", "default": false,
       "description": "L0 only. This source's ASSERTIONS are the evidence, not the things it asserts. Set on material whose reliability is unestablished — a prior system's conclusions, a retrospective account, a third party's summary. Every datum extracted from such a source must carry `attributed_to`, which wb-validate enforces."
     },
+    "measurement": {
+      "type": "boolean", "default": false,
+      "description": "L1 only. This datum MEASURES its cited sources as artifacts — counts, sizes, hashes, string searches — rather than relaying anything they assert. Exempts it from the `attributed_to` requirement on testimony sources, because there is no assertion to attribute: the source is the object being measured, not a witness being quoted."
+    },
     "attributed_to": {
       "$ref": "#/$defs/nodeRef",
       "description": "L1 only. Whose assertion this claim is. `claim = \"P\"` with attributed_to = src:X reads as 'X asserted P' and makes no claim that P is so. Required on any datum citing a source marked `testimony`, and must appear in that datum's `cites`."
