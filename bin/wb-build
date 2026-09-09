@@ -491,6 +491,13 @@ what stops a conclusion from becoming a premise, and it is checked on every buil
 <code>bin/wb-validate</code> rather than left to discipline.</p>
 <table>{rows}</table>
 {note}
+<h2>The archive</h2>
+<p>The prior wiki as it stood on 2026-09-04 — <strong>497 pages</strong>, browsable,
+with its internal links intact and nothing edited. It is what the nodes above cite,
+and it still contains every error they were written to catch.</p>
+<ul class="nodes">
+<li><a href="archive/index.html">Browse the 497-page archive</a><div class="t">snapshot, unedited, searchable by title</div></li>
+</ul>
 <h2>For agents</h2>
 <ul class="nodes">
 <li><a href="llms.txt">llms.txt</a><div class="t">discovery document</div></li>
