@@ -73,7 +73,22 @@ def ensure_corpus(pull: bool) -> dict:
 
 
 def normalise(text: str) -> str:
-    return text.replace("’", "'").replace("“", '"').replace("”", '"').lower()
+    return text.replace("\u2019", "'").replace("\u201c", '"').replace("\u201d", '"').lower()
+
+
+def matcher(term: str, whole_word: bool):
+    """Substring matching silently manufactures corroboration.
+
+    Searching for `ard` found `heard`, `hardstyle` and `card` — 25 hits, none of
+    them about a diversion programme. A tool whose job is to test claims must not
+    be the thing that invents support for them, so single words match on word
+    boundaries by default and only multi-word phrases fall back to substring.
+    """
+    term = normalise(term)
+    if whole_word and re.fullmatch(r"[a-z0-9'-]+", term):
+        pattern = re.compile(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])")
+        return lambda text: bool(pattern.search(text))
+    return lambda text: term in text
 
 
 def load(rows_wanted: tuple[str, str] | None):
@@ -170,6 +185,9 @@ def main() -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("terms", nargs="*", help="phrase to find, or several terms with --any")
     ap.add_argument("--any", action="store_true", help="match any term rather than the phrase")
+    ap.add_argument("--substring", action="store_true",
+                    help="match inside words. OFF by default: substring matching on short "
+                         "terms manufactures corroboration ('ard' matches 'heard').")
     ap.add_argument("--from", dest="lo", default="", help="earliest date, YYYY or YYYY-MM")
     ap.add_argument("--to", dest="hi", default="", help="latest date, YYYY or YYYY-MM")
     ap.add_argument("--mine", action="store_true", help="outbound messages only")
@@ -201,7 +219,10 @@ def main() -> int:
     if not args.terms:
         ap.error("give a phrase to search for, or --coverage")
 
-    needles = [normalise(t) for t in args.terms]
+    # A phrase given as one quoted argument keeps substring semantics; bare words
+    # match whole-word unless --substring is asked for.
+    whole = not args.substring
+    tests = [matcher(t, whole) for t in args.terms]
     hits = []
     for i, (date, mine, sender, text) in enumerate(rows):
         if args.mine and not mine:
@@ -211,7 +232,7 @@ def main() -> int:
         if args.hi and date[:len(args.hi)] > args.hi:
             continue
         low = normalise(text)
-        found = any(n in low for n in needles) if args.any else all(n in low for n in needles)
+        found = any(t(low) for t in tests) if args.any else all(t(low) for t in tests)
         if found:
             hits.append((i, date, mine, sender, text))
 
