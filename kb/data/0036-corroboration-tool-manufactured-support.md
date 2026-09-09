@@ -50,3 +50,28 @@ a usable answer rather than an honest one.
 That is the direction to audit in. A tool that errs toward "insufficient
 evidence" wastes time; a tool that errs toward "corroborated" corrupts the
 record, and does it in a form that looks like diligence.
+
+## The audit found a third instance immediately
+
+`bin/wb-query` scored a bidirectional prefix match: `w.startswith(term) or
+term.startswith(w)`. The second clause lets a **short word in a node claim a
+match on a long search term** — a node whose only relevant content is `car`
+scored 4.38 against a search for `cardiac`, which is **37% of a genuine title
+match and three times a genuine body-only match at 1.25**. It would outrank a
+node that actually mentions the term.
+
+Its comment said the clause existed to catch `corpus`/`corpora` and
+`fragment`/`fragments`. It does not even do that: neither of `corpus`/`corpora`
+is a prefix of the other, and plurals are caught by the first clause alone. The
+second clause contributed nothing but noise, and had been there since the tool
+was written.
+
+Fixed the same way — one-directional, minimum term length 4, and the matched word
+no more than three characters longer, so `fragment`→`fragments` survives (1.60)
+while `fragment`→`fragmentation` does not (0.00), and the spurious `car` node
+drops to 0.00.
+
+**Three instances in three tools, all failing the same direction.** This is now a
+property of how the tooling was written rather than three coincidences, and the
+remaining unaudited surface — `wb-build`'s exclusion logic, `wb-validate`'s
+warning thresholds — should be read with that prior.

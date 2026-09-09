@@ -73,10 +73,16 @@ def score(node: dict, terms: list[str]) -> float:
         for term in terms:
             if term in counts:
                 total += weight * (1 + min(counts[term], 4) * 0.25)
-            else:
-                # prefix match catches corpus/corpora, fragment/fragments
-                total += weight * 0.4 * any(w.startswith(term) or term.startswith(w)
-                                            for w in counts)
+            elif len(term) >= 4:
+                # Inflection only — `fragment` matching `fragments`. Deliberately
+                # one-directional: the earlier `term.startswith(w)` let a node
+                # containing `car` claim a 37% match on a search for `cardiac`,
+                # which is enough to outrank a node that mentions `cardiac` once
+                # in its body. That is the same defect as bin/wb-corroborate's
+                # substring matching (kb/data/0036) — a default failing toward
+                # finding something.
+                total += weight * 0.4 * any(
+                    w.startswith(term) and len(w) - len(term) <= 3 for w in counts)
     total *= 1 + 0.12 * (node.get("importance", 2) - 2)
     total *= {"high": 1.15, "moderate": 1.0, "low": 0.9,
               "speculative": 0.8, "unknown": 0.95}.get(node.get("confidence", "unknown"), 1.0)
