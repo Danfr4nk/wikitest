@@ -11,11 +11,11 @@ __pycache__/
 # THIS REPOSITORY IS PUBLIC. github.com/Danfr4nk/wikitest
 # ---------------------------------------------------------------------------
 #
-# This file is the UNION of two rule sets, merged per the procedure in the
-# old repo's MIGRATION.md: the original wiki-brain-main-1 rules (above) and
-# the corpus rules (below). Neither side was dropped. Merging them is the
-# whole point — the top half is Dan's decision about Dan, the bottom half is
-# a decision about ~498 other people, and they are not the same decision.
+# This file is the UNION of two rule sets, merged per the procedure in
+# MIGRATION.md: the original wiki-brain-main-1 rules (above) and the corpus
+# rules (below). Neither side was dropped. Merging them is the whole point —
+# the top half is Dan's decision about Dan, the bottom half is a decision
+# about ~498 other people, and they are not the same decision.
 
 # THE INTAKE LEDGER'S DATA IS TRACKED, and this repository is public.
 #
@@ -51,12 +51,14 @@ corpus/messages.csv
 corpus/private/
 
 # Shelved fragment exports — superseded, retained locally as error evidence.
+# See CORPUS_POLICY.md. Same personal data as the corpus, same reasoning.
 #
 # Note what these lines do NOT do: the source Google Sheet is deliberately
-# shared "anyone with the link", so the corpus is already reachable by URL.
-# Ignoring it here keeps it out of git history, which is permanent and
-# searchable. That is worth doing on its own terms — but it is not what is
-# protecting this data, and it should not be mistaken for that.
+# shared "anyone with the link" (see corpus/README.md), so the corpus is
+# already reachable by URL. Ignoring it here keeps it out of git history,
+# which is permanent and searchable. That is worth doing on its own terms —
+# but it is not what is protecting this data, and it should not be mistaken
+# for that.
 shelf/**
 !shelf/README.md
 !shelf/MANIFEST.md
