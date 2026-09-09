@@ -1265,5 +1265,10 @@
       "counterparties": [],
       "years": []
     }
-  ]
+  ],
+  "provenance": {
+    "generation": "Google-Docs-converted copies created 2026-09-08, message files titled exactly `message_1`",
+    "verified": "See kb/data/0034. Drive holds >=5 copies of this export in two generations. The exact-title match excluded the older `message_1.html` vintage (2026-06-25 and 2025-03-22/modified 2022-09-05). All 99 files hash distinctly, so no conversation was fetched twice.",
+    "caveat": "The fetch query had NO parent constraint. It came out clean because `=` excluded the older vintage, not because it was scoped. Constrain by parent next time."
+  }
 }
