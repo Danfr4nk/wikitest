@@ -28,7 +28,7 @@ The verdict is right and the file behind it is not closed.
 | 2026 | his own testimony | graduated **August 2009** |
 | 2009-08-31 | tweet, via the ledger | "start my last month of college tomorrow" — so, **September** |
 | 2009-09-26 | Facebook, outbound, twice | "I acually just graduated today" — **September 26** |
-| 2009-11-30 to 12-19 | tweets, via the ledger | "pro tools lab", "aced my practical", "taking aws final" — **still enrolled in December** |
+| 2009-11-30 to 12-19 | tweets, via the ledger | "pro tools lab", "aced my practical", "taking aws final" — read here as **still enrolled in December**, and that reading is wrong: see the block at the foot of this page |
 
 August is wrong on every other line, so the ledger's `refuted` stands and this
 datum does not disturb it. What it disturbs is the account underneath the
@@ -127,3 +127,42 @@ The extraction note above carried the old window sizes as fixed numbers. They
 were denominators for a coverage claim, and denominators that move need a date
 attached or they need removing; these are removed, because the tool reports the
 window size on every run and a copy of it in prose can only go stale.
+
+---
+
+## RESOLVED [2026-09-09] — by the subject, who read this page and corrected it
+
+The open question at the end of the section above — *what were the November and
+December classes, if he had already finished in September?* — is answered, and
+the answer dissolves the tension rather than picking a side.
+
+He graduated in **September 2009**. He then **audited one class, kept doing labs,
+and was still working toward his Pro Tools operator certification**
+([`dat:0058`](0058-graduation-september-2009-then-audit-and-certification.md)).
+
+Every artefact on this page is true under that account, including the ones this
+page called contradictory. *"pro tools lab. noice"*, *"aced my practical"*,
+*"in class...."* and *"taking aws final with it"* are the audit, the labs and the
+certification — not a degree still in progress. A graduate sitting in a lab has
+no reason to phrase a tweet differently.
+
+**What this page got wrong.** Not the finding — the September date it argued for
+is correct, and the Facebook messages are exactly what it said they were. The
+error is the frame: it treated November–December coursework as evidence of
+*enrolment*, and therefore as being in tension with a September graduation. That
+inference was never examined. Coursework does not imply enrolment, and the
+sentence *"still enrolled in December"* in the table above was doing the work of
+an assumption dressed as an observation.
+
+**And the reservation this page raised against itself is retired.** It flagged
+that the 2009-09-26 message was *shaped* — a reconnection, a graduation announced
+alongside a Los Angeles plan that never happened — and asked whether a claim made
+to impress could be trusted. It could. The claim was accurate. The Los Angeles
+plan falling through says nothing about the graduation beside it, and treating
+proximity to an unfulfilled plan as grounds for doubt was the weaker half of this
+node's reasoning.
+
+**How it was found is the part worth keeping.** Not by a re-run, a better regex
+or a second channel. The wiki was published, its subject read it, and he supplied
+the one fact nobody holds a document for. Every other correction in this
+repository was a machine catching itself.
