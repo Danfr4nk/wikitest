@@ -10,6 +10,33 @@ This is the empirical companion to the design documents:
 [`MIGRATION.md`](MIGRATION.md) tracks what is still to come across. This file
 says only what is *reachable*, and how intact.
 
+## RESOLVED 2026-09-09 — the wiki body was recovered whole
+
+**Everything below about the wiki content being unreachable is superseded.** It
+is kept because how a confident negative result turned out to be wrong is worth
+more than quietly editing it away.
+
+The prior wiki's own full-corpus export — **497 pages, 7,536,214 bytes, ~1.86M
+tokens**, generated 2026-09-04, four days before the wipe — was sitting in a
+Drive folder as four `text/plain` parts. `text/plain` is never converted to a
+Google Doc, so none of the damage documented below applies to it: all 497 pages
+came back with frontmatter intact, and no page was split across a part boundary.
+Four connector calls, not a thousand.
+
+Three findings below are each individually correct and together produced a false
+floor: the Drive copy converts `.md` to Docs (`dat:0006`), that conversion
+destroys frontmatter line breaks (`dat:0010`), and the connector moves one file
+per call against a 1,000-file tree. All true. None of them covers a folder
+nobody had listed. The reasoning failure — reading three narrow negatives as one
+general one — is recorded in
+[`dat:0012`](kb/data/0012-old-wiki-recovered-byte-exact.md), along with the
+detail that what actually broke the deadlock was the operator supplying a folder
+id, not a better search.
+
+The export is preserved at `raw/old-wiki-export-2026-09-04/whole.txt` and
+ingested as `src:old-wiki-export-2026-09-04`, marked **`testimony`** — its
+assertions are evidence, the things it asserts are not yet.
+
 ## The constraint that shapes everything
 
 This session runs in an **ephemeral cloud container**, not on the Mac. The
@@ -151,7 +178,7 @@ here.
 | `.gitignore` | **Restored** — byte-exact, unioned with the corpus rules |
 | Six-layer architecture, `kb/`, `bin/wb-*` | **On `main`** — rebuilt in PR #1 |
 | Original `bin/` (40 tools) + `app.py` | **Pulled** — byte-exact in [`legacy/`](legacy/README.md) |
-| Wiki body (`wiki/`, `raw/`, governing docs) | **Waiting on a push from the Mac** |
+| Wiki body — 497 pages | **RECOVERED 2026-09-09**, byte-exact — see below |
 | `/Volumes/MUSIC/TAKEOUT` | Not reachable; ingestion design in [`ROADMAP.md`](ROADMAP.md) §4 |
 
 ## Note on two toolchains

@@ -128,7 +128,9 @@ node and neither is authoritative over the other.
 - **`source`** — `source_type`, `acquired`, `provenance`, `reliability`.
   Optionally `sensitive = true`, which withholds it from the published site.
 - **`datum`** — `cites` naming at least one source. A datum without a source is
-  not a datum; it is a belief, and belongs at L3.
+  not a datum; it is a belief, and belongs at L3. If any cited source is marked
+  `testimony`, the datum must also carry `attributed_to` naming it — see
+  [Testimony](#testimony).
 - **`interpretation`** — `perspective`, one of:
   - `self` — what the subject believes about themselves
   - `external` — what the accumulated evidence suggests
@@ -168,6 +170,84 @@ personality language flattens into one.
 Temporal contradiction is legal and expected. Someone can be X at 18, not-X at
 25, and X again at 37. The system does not force consistency, because human
 beings are historical processes rather than internally consistent databases.
+
+## Testimony
+
+Not every source is reliable, and the useful response is neither to trust it nor
+to exclude it.
+
+A source marked `testimony = true` is one whose reliability is unestablished: a
+prior system's conclusions, a retrospective account, a third party's summary.
+Such a source still belongs in the archive — excluding it would create exactly
+the blind spot the layer law exists to prevent — but what it supplies is
+evidence of **what it asserted**, not evidence that the assertion holds.
+
+Mechanically: every `datum` citing a testimony source must carry
+`attributed_to` naming that source, and `bin/wb-validate` fails the build
+otherwise. So the datum reads
+
+```toml
+claim         = "The prior wiki asserted that Dan met Vaughn in 2013."
+cites         = ["src:old-wiki-vaughn"]
+attributed_to = "src:old-wiki-vaughn"
+confidence    = "high"
+```
+
+rather than `claim = "Dan met Vaughn in 2013."` The first is **true and
+checkable** — the page does say that — at high confidence. The second is not
+established at all, and would have entered the evidence layer wearing the same
+badge as a measurement.
+
+What happens next is the point. An independent source in the corpus supporting
+the same claim is a *second* datum, and an interpretation resting on both is
+stronger than either. A corpus source contradicting it produces a
+`contradiction` node. Neither outcome required anyone to decide in advance
+whether the old material was trustworthy: the structure sorts it, and the places
+where a prior system was wrong become visible objects rather than inherited
+assumptions.
+
+This is what makes bulk-ingesting an unaudited archive safe. Its errors are
+quarantined at L1 as *things that were said*, and no amount of them can
+masquerade as *things that are so*.
+
+## Staleness
+
+The invariant guarantees a conclusion can be **traced** to its evidence. It says
+nothing about what happens when that evidence later moves.
+
+A node whose source was rewritten last week still validates, still builds, and
+still reads as current. Nothing distinguishes *checked and survived* from
+*nobody looked* — and over a corpus that grows by re-reading its own material,
+the second silently becomes the majority.
+
+So `bin/wb-validate` flags a node dated earlier than something it cites, and
+`rechecked` clears the flag:
+
+```toml
+created   = "2026-01-01"
+rechecked = "2026-07-01"   # re-read against its citations; nothing changed
+```
+
+Recording the null result is the point. A re-check that finds nothing is
+invisible unless someone writes it down, and the practice was taken directly
+from the system this one replaced — see
+[`dat:0022`](kb/data/0022-old-wiki-recheck-propagation.md), which found five such
+blocks on one page, four of them concluding that nothing had changed.
+
+## Falsifiers
+
+Any node at L3 or above may declare `falsifiers`: specific observations that
+would break it, each concrete enough for someone else to go and look for.
+
+`bin/wb-validate` warns when an L4 `pattern` or L5 `synthesis` declares none. At
+that altitude a claim explains a great deal by construction, which is exactly
+when "what would show this is wrong" stops being obvious and starts being the
+only thing keeping the claim honest. A reading that cannot say what would refute
+it is not a reading; it is a preference.
+
+They are deliberately **not** required at L3. An interpretation may legitimately
+be a first pass at what something might mean, and forcing a falsifier onto it
+manufactures rigour rather than adding it.
 
 ## Typed edges
 
@@ -287,8 +367,9 @@ kb/              the knowledge base
   interpretations/ L3 readings, contradictions
   patterns/      L4   recurrence
   syntheses/     L5   cross-domain models
+raw/             originals, byte-exact, append-only — see raw/README.md
 corpus/          the authoritative message record (gitignored; see CORPUS_POLICY.md)
-bin/             wb-validate, wb-build, wb-query, corpus-*
+bin/             wb-ingest, wb-validate, wb-build, wb-query, corpus-*
 legacy/          the original pre-rebuild engine, byte-exact, unwired
 site/            generated static site (gitignored, published to Pages)
 ```

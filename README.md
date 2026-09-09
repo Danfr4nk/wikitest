@@ -31,9 +31,11 @@ The short version:
 - **The engine survived.** `app.py` and all 40 original `bin/` tools are
   byte-exact on the Drive staging copy. Only `.md` files were damaged by that
   copy's Google Docs conversion — a narrower loss than first believed.
-- **The wiki body is waiting on a push from the Mac.** That copy is real
-  Markdown with real git history, and it is worth more than any
-  reconstruction. See [`MIGRATION.md`](MIGRATION.md).
+- **The wiki body is back.** All 497 pages of the prior wiki — 7,536,214 bytes,
+  ~1.86M tokens — recovered byte-exact on 2026-09-09 from a Drive folder that
+  had not been listed, as four `text/plain` parts the Google Docs conversion
+  never touched. Ingested as `testimony`: its assertions are evidence, the
+  things it asserts are not yet. See [`dat:0012`](kb/data/0012-old-wiki-recovered-byte-exact.md).
 
 The architecture, tooling and knowledge base described below are already in
 place and working.
@@ -81,6 +83,8 @@ Full design: **[`ARCHITECTURE.md`](ARCHITECTURE.md)**.
 ## Tools
 
 ```sh
+bin/wb-ingest FILE --testimony     # front door: original preserved, L0 node minted
+bin/wb-corroborate "phrase"        # cross-reference a claim against the raw corpus
 bin/wb-validate                    # schema + the layer invariant
 bin/wb-build                       # compile to site/ + graph.json + llms.txt
 bin/wb-check-publish               # refuse to publish sensitive material
@@ -91,6 +95,22 @@ tests/test-invariant               # 15 regression tests on the invariant
 Standard library only — no dependencies, no build step, no database. Nodes are
 Markdown with TOML frontmatter: machine-readable head, human-readable body,
 neither destroying the other.
+
+Material enters through **`bin/wb-ingest`**, which preserves the original
+byte-exact under [`raw/`](raw/README.md), records its sha256, mints the L0
+`source` node and writes an extraction brief. It deliberately does not extract
+meaning: turning a document into atomic datapoints means reading it, and a regex
+pretending to read is how a corpus fills with confident nonsense.
+
+Sources whose reliability is unestablished — a prior system's conclusions, a
+retrospective account, a third party's summary — are ingested with
+`--testimony`. What such a source supplies is evidence of **what it asserted**,
+never evidence that the assertion holds, and `wb-validate` refuses any datum
+drawn from it that does not name whose assertion it is. So a claim reads *"the
+prior wiki asserted P"* — true and checkable — rather than *"P"*. Corroboration
+from an independent source promotes it; contradiction produces a
+`contradiction` node, which is how a prior system's mistakes become visible
+instead of inherited.
 
 Relations between nodes are **typed edges**, grouped into six families in
 [`schema/edges.json`](schema/edges.json). Edges may point in any direction —
@@ -116,6 +136,13 @@ date = "2026-09-08"
 
 Prose for humans. The frontmatter is for machines.
 ```
+
+Two checks close loops the invariant leaves open. **Staleness**: a node dated
+earlier than something it cites is flagged for re-check, and `rechecked` clears
+it even when nothing changed — because a re-check that finds nothing is
+otherwise indistinguishable from nobody looking. **Falsifiers**: patterns and
+syntheses must say what observation would break them, or `wb-validate` says so.
+Both were taken from the system this one replaced, which did them better.
 
 ## What the system refuses to do
 
@@ -146,6 +173,10 @@ So the split is deliberate and enforced in three places:
 - `bin/wb-build` excludes any node marked `sensitive = true`, and the citations
   pointing at it — but *declares* the exclusion rather than hiding it, so a
   partial evidence trail never looks complete.
+- `bin/wb-query` does **not** filter. Privacy gates output, never reasoning: a
+  model reasoning over a quietly sanitised record draws confident wrong
+  conclusions and has no way to know it. `--publish-safe` opts into filtering
+  for output headed for publication, and announces what it withheld.
 - `bin/wb-check-publish` runs before deploy and asserts the exclusion actually
   happened, against the built output rather than the source.
 

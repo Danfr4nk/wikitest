@@ -7,6 +7,12 @@ Two classes of check run here, and the second is the one that matters.
 cites a source, an interpretation declares whose reading it is, a causal edge
 states what it rests on.
 
+**Staleness checks** close the loop the invariant leaves open: a citation that
+resolves is not a citation still checked. When a cited node is dated later than
+the node citing it, the claim is flagged for re-check — and `rechecked` clears
+it even when nothing changed, so "checked and survived" stays distinguishable
+from "nobody looked."
+
 **Edge checks** apply to `edges` the discipline `cites` always had. Edges stay
 free to point in any direction, because "A caused B" is not an evidence claim —
 but each one must say how hard it is, what it rests on, and who asserts it, and
@@ -67,7 +73,7 @@ PREFIX = {
     "syn": ("synthesis", 5),
 }
 
-REF_FIELDS = ("subject", "supersedes")
+REF_FIELDS = ("subject", "supersedes", "attributed_to")
 
 # Edge vocabulary lives in schema/edges.json so the families are data rather than
 # scattered literals. check_vocabulary() below asserts node.schema.json agrees.
@@ -460,6 +466,61 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
                     warnings.append(f"{where}: publishes but cites sensitive {target!r} — "
                                     f"confirm the body reveals nothing identifying")
 
+        # Testimony: a source whose reliability is unestablished contributes
+        # evidence about WHAT IT ASSERTED, never evidence that the assertion is
+        # true. Without this the prior system's 2M tokens of conclusions would
+        # enter as facts about a person rather than as facts about a document,
+        # and nothing downstream could tell the difference.
+        if node.get("type") == "datum":
+            attributed = node.get("attributed_to")
+            cited = node.get("cites", [])
+            # A datum that MEASURES a source — counts its pages, hashes its bytes,
+            # searches its strings — is not relaying an assertion, so there is
+            # nothing to attribute. The source is the object, not the witness.
+            for target in cited:
+                if node.get("measurement"):
+                    break
+                if nodes.get(target, {}).get("testimony") and not attributed:
+                    errors.append(
+                        f"{where}: cites {target!r}, which is marked `testimony`, but has no "
+                        f"`attributed_to`. Its assertions are the evidence — the claim must "
+                        f"record who asserted it, not restate it as fact.")
+                    break
+            if attributed and attributed not in cited:
+                errors.append(f"{where}: attributed_to {attributed!r} is not in `cites` — "
+                              f"a claim cannot be attributed to a source it does not cite")
+
+        if node.get("testimony") and node.get("type") != "source":
+            errors.append(f"{where}: `testimony` is an L0 source property; "
+                          f"{node.get('type')!r} nodes may not carry it")
+
+        if node.get("measurement") and node.get("type") != "datum":
+            errors.append(f"{where}: `measurement` is an L1 datum property; "
+                          f"{node.get('type')!r} nodes may not carry it")
+
+        # `measurement` is an unverifiable assertion by construction — no check can
+        # tell a count from a restated claim. What IS checkable is that a
+        # measurement states its method: a number with no account of how it was
+        # obtained is not a measurement, it is a number.
+        if node.get("measurement") and not str(node.get("extraction", "")).strip():
+            errors.append(f"{where}: `measurement = true` without `extraction` — a measurement "
+                          f"must say how it was obtained, or it is just a number")
+
+        if node.get("measurement") and node.get("attributed_to"):
+            errors.append(f"{where}: carries both `measurement` and `attributed_to` — a datum "
+                          f"either measures its source or relays its assertions, not both")
+
+        if node.get("attributed_to") and node.get("type") != "datum":
+            errors.append(f"{where}: `attributed_to` is an L1 datum property; "
+                          f"{node.get('type')!r} nodes may not carry it")
+
+        if node.get("type") in ("pattern", "synthesis") and not node.get("falsifiers"):
+            warnings.append(f"{where}: {node['type']} declares no `falsifiers` — a claim at "
+                            f"this altitude should say what observation would break it")
+
+        if node.get("falsifiers") and node.get("layer", 0) < 3:
+            errors.append(f"{where}: `falsifiers` belongs on L3+ readings; this is L{node.get('layer')}")
+
         if node.get("type") == "pattern" and not node.get("counterexamples"):
             warnings.append(f"{where}: pattern has no counterexamples recorded — "
                             f"a pattern that never looked for its own counterexamples "
@@ -470,6 +531,40 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
                             f"genuine resolution and not a forced one")
 
     return errors, warnings
+
+
+
+def as_of(node: dict) -> str:
+    """The latest date this node was known to be current. '' when it says nothing."""
+    return max((str(node.get(f) or "") for f in ("rechecked", "updated", "created")), default="")
+
+
+def check_staleness(nodes: dict[str, dict]) -> list[str]:
+    """A citation that resolves is not the same as a citation still checked.
+
+    The layer invariant guarantees a conclusion can be TRACED to its evidence. It
+    says nothing about what happens when that evidence later moves — a node whose
+    source was rewritten last week still validates, still builds, still reads as
+    current. The prior system closed this loop by hand and logged the result even
+    when nothing had changed, which is what makes 'checked and survived'
+    distinguishable from 'nobody looked'. `rechecked` is where that lands here.
+    """
+    warnings: list[str] = []
+    for node_id, node in sorted(nodes.items()):
+        mine = as_of(node)
+        if not mine:
+            continue
+        for target in node.get("cites", []):
+            other = nodes.get(target)
+            if not other:
+                continue
+            theirs = as_of(other)
+            if theirs and theirs > mine:
+                warnings.append(
+                    f"{node['_path']}: cites {target} (as of {theirs}) but is itself only "
+                    f"as of {mine} — the evidence moved after the claim. Re-check and set "
+                    f"`rechecked`, even if nothing changed.")
+    return warnings
 
 
 def check_cycles(nodes: dict[str, dict]) -> list[str]:
@@ -531,6 +626,7 @@ def main() -> int:
     edge_errors, edge_warnings, edge_stats = check_edges(nodes)
     errors += edge_errors
     warnings += edge_warnings
+    warnings += check_staleness(nodes)
 
     by_layer: dict[int, int] = {}
     for node in nodes.values():

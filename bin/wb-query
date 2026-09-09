@@ -73,10 +73,16 @@ def score(node: dict, terms: list[str]) -> float:
         for term in terms:
             if term in counts:
                 total += weight * (1 + min(counts[term], 4) * 0.25)
-            else:
-                # prefix match catches corpus/corpora, fragment/fragments
-                total += weight * 0.4 * any(w.startswith(term) or term.startswith(w)
-                                            for w in counts)
+            elif len(term) >= 4:
+                # Inflection only — `fragment` matching `fragments`. Deliberately
+                # one-directional: the earlier `term.startswith(w)` let a node
+                # containing `car` claim a 37% match on a search for `cardiac`,
+                # which is enough to outrank a node that mentions `cardiac` once
+                # in its body. That is the same defect as bin/wb-corroborate's
+                # substring matching (kb/data/0036) — a default failing toward
+                # finding something.
+                total += weight * 0.4 * any(
+                    w.startswith(term) and len(w) - len(term) <= 3 for w in counts)
     total *= 1 + 0.12 * (node.get("importance", 2) - 2)
     total *= {"high": 1.15, "moderate": 1.0, "low": 0.9,
               "speculative": 0.8, "unknown": 0.95}.get(node.get("confidence", "unknown"), 1.0)
@@ -99,8 +105,11 @@ def main() -> int:
     ap.add_argument("--depth", type=int, default=1, help="graph hops from the seed set")
     ap.add_argument("--max", type=int, default=20, help="cap on nodes returned")
     ap.add_argument("--format", choices=["md", "json"], default="md")
-    ap.add_argument("--include-sensitive", action="store_true",
-                    help="include nodes withheld from publication (local use only)")
+    ap.add_argument("--publish-safe", action="store_true",
+                    help="drop nodes marked sensitive, for output destined for publication. "
+                         "OFF by default: retrieval reasons over everything, because a model "
+                         "reasoning on a quietly sanitised corpus draws confident wrong "
+                         "conclusions and cannot tell that it is doing so.")
     ap.add_argument("--kb", type=pathlib.Path, default=ROOT / "kb")
     args = ap.parse_args()
 
@@ -109,8 +118,16 @@ def main() -> int:
         for error in errors:
             print(f"  {error}", file=sys.stderr)
         return 1
-    if not args.include_sensitive:
+    # Publication is a filter on OUTPUT, never on reasoning. bin/wb-build is the
+    # gate that keeps sensitive material off the public site; this tool feeds a
+    # reasoner, and withholding evidence from a reasoner does not protect anyone
+    # — it just produces a confident model of a person who does not exist.
+    if args.publish_safe:
+        withheld = sum(1 for n in nodes.values() if n.get("sensitive"))
         nodes = {i: n for i, n in nodes.items() if not n.get("sensitive")}
+        if withheld:
+            print(f"  --publish-safe: {withheld} sensitive node(s) withheld. "
+                  f"Absence below is not evidence of absence.", file=sys.stderr)
 
     question = " ".join(args.question)
     terms = tokens(question)

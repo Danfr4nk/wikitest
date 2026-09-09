@@ -70,6 +70,19 @@
     "extraction":  { "type": "string" },
 
     "claim":     { "type": "string" },
+
+    "testimony": {
+      "type": "boolean", "default": false,
+      "description": "L0 only. This source's ASSERTIONS are the evidence, not the things it asserts. Set on material whose reliability is unestablished — a prior system's conclusions, a retrospective account, a third party's summary. Every datum extracted from such a source must carry `attributed_to`, which wb-validate enforces."
+    },
+    "measurement": {
+      "type": "boolean", "default": false,
+      "description": "L1 only. This datum MEASURES its cited sources as artifacts — counts, sizes, hashes, string searches — rather than relaying anything they assert. Exempts it from the `attributed_to` requirement on testimony sources, because there is no assertion to attribute: the source is the object being measured, not a witness being quoted."
+    },
+    "attributed_to": {
+      "$ref": "#/$defs/nodeRef",
+      "description": "L1 only. Whose assertion this claim is. `claim = \"P\"` with attributed_to = src:X reads as 'X asserted P' and makes no claim that P is so. Required on any datum citing a source marked `testimony`, and must appear in that datum's `cites`."
+    },
     "subject":   { "$ref": "#/$defs/nodeRef" },
 
     "entity_kind": {
@@ -111,7 +124,17 @@
       "description": "Node identity: this node replaces that one. Not the `displaced` edge, which says the thing described here overtook the thing described there."
     },
     "deprecated":  { "type": "boolean", "default": false },
-    "open_questions": { "type": "array", "items": { "type": "string" } }
+    "open_questions": { "type": "array", "items": { "type": "string" } },
+
+    "falsifiers": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "L3+ only. Specific observations that would break this claim, each concrete enough for someone else to go and look for. A reading that cannot say what would refute it is not a reading, it is a preference."
+    },
+    "rechecked": {
+      "$ref": "#/$defs/date",
+      "description": "When this node was last re-checked against the nodes it cites. Clears a staleness warning even when nothing changed — a re-check that finds nothing is otherwise indistinguishable from nobody looking."
+    }
   },
 
   "$defs": {
