@@ -1,12 +1,12 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: 4 of 497 pages extracted** (`legal/`, 2026-09-09). Delete this file
+**Status: 6 of 497 pages extracted** (`legal/` complete, `health/` partial, 2026-09-09). Delete this file
 only when the work below is done for all of them.
 
 | Area | Pages | Extracted |
 | :--- | ---: | :--- |
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
-| health | 6 | 0 |
+| health | 6 | **2** — `dat:0018`–`0021`, `int:inference-from-refusal-is-unsound`. Remaining: `cocaine`, `chemical-architecture`, `the-configured-body`, `index` |
 | places | 10 | 0 |
 | meta | 12 | 0 |
 | work | 15 | 0 |
@@ -23,6 +23,17 @@ errors — see [`int:old-wiki-corrections-are-the-payload`](../../kb/interpretat
 which also states the reading that would falsify that. Watch for `REVISED [`,
 `CORRECTED [`, `CONTRADICTION [` and `GAP CLOSED [` blocks: they are the prior
 wiki's own error markers and each one is a datum.
+
+**The second pass sharpened the first pass's finding.** `health/` shows the
+prior system's discipline was **real but uneven**, which is more useful than
+either "careful" or "loose". Its intake ledger states the absence-of-instrument
+rule better than most methodology sections (`dat:0019`) and withholds a
+misleading rate figure rather than footnoting it (`dat:0018`). Its
+hyperreflexivity page, same domain and weeks apart, reads a "no comment" as its
+most incriminating available content and calls that reading *correct*
+(`dat:0021`). Expect that unevenness across the remaining 491 pages: the
+question to carry into each is not whether the page is careful but whether *this
+claim on it* was checked.
 
 One retrieval would upgrade a whole cluster at once: a **Fayette County MDJS
 docket search**. It would convert `evt:2015-02-possession-arrest` from
