@@ -93,18 +93,29 @@ reasoning about it. Prefer entries where a source can be READ over entries where
 two people give incompatible first-hand accounts — the latter are held open for
 the right reason and should stay open.
 
-**Next target, and the method it needs.**
-`timeline/events/august-2026-morgantown-call` records the subject stating three
-times that he sent an audio recording to a third party's parents and twice that
-he did not, within fourteen hours, and notes a proven false claim of the same
-kind the day before. The corpus holds that day — 763 messages — and a keyword
-pass over it is not good enough: the three messages such a pass surfaces are
-*conditional* ("im going to send this if you bail"), which is a threat to send
-rather than a claim of having sent. Read the day in order, whole. And note
-[`dat:0056`](../../kb/data/0056-corpus-timestamps-are-not-zero-padded.md) before
-slicing by time — 44% of timestamps write the hour unpadded, so a text
-comparison silently selects nothing and a text sort silently scrambles the
-sequence.
+**DONE [2026-09-09], and the page was right.**
+`timeline/events/august-2026-morgantown-call` is confirmed by
+[`dat:0057`](../../kb/data/0057-morgantown-audio-contradiction-reproduces.md): the
+conflicting statements are in the corpus, four of them asserting the recording was
+sent and one — *"I could have torn your life apart. I still could and I don't"* —
+that it was not. Which is true is still undetermined and the entry stays open.
+
+**Two traps came out of it and both apply to everything still unread.**
+[`dat:0056`](../../kb/data/0056-corpus-timestamps-are-not-zero-padded.md): 44% of
+corpus timestamps write the hour unpadded, so a text comparison silently selects
+nothing and a text sort silently scrambles a day.
+[`dat:0057`](../../kb/data/0057-morgantown-audio-contradiction-reproduces.md): the
+prior wiki writes times in **UTC** and this corpus is local, so every timestamp
+quoted from a wiki page is four hours ahead of the same message here, five in
+winter. Locating a wiki-cited message by its stated time lands on the wrong
+message or on nothing, and looks fine either way.
+
+**And the method rule earned its place.** Three passes over that day — a time
+window, a keyword search on `send|sent|audio`, and a regex built to catch denials —
+each returned a clean, confident, wrong answer, all in the direction of *the
+evidence is absent*. What worked was mapping the page's own timestamps onto the
+corpus and reading what was there. When a contradiction cites specific times,
+convert them first and read the window; do not search it.
 
 **A retrieval worth naming before the next pass: `testimony/events.jsonl`.**
 `wiki/meta/testimony-veracity.md` is generated from it and is the prior wiki's

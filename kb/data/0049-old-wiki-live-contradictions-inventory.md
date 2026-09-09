@@ -90,6 +90,14 @@ rather than succeeding one another, so neither page need be wrong — but the
 Facebook record ends 2022-09 and the May 2026 no-show that page reasons from is
 outside it entirely.
 
+The `timeline/events/august-2026-morgantown-call` entry is **confirmed rather than
+closed** by [`dat:0057`](0057-morgantown-audio-contradiction-reproduces.md): the
+conflicting statements are real and in the corpus, the page's timestamps are four
+hours ahead of it, and which statement is true remains undetermined. A
+contradiction the wiki held open, checked and found genuine, is worth as much as
+one closed — it is the difference between a page being cautious and a page being
+right.
+
 Two of 49 closed, and the pattern in how they closed is worth more than the
 count. Neither was adjudicated. Both were settled by **reading a source end to
 end** — a Facebook thread for the DUI, two estate threads here — and in both

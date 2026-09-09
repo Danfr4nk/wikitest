@@ -132,3 +132,22 @@ bin/corpus-stats           # re-derive corpus/derived/ after any change
 Run `bin/corpus-verify` before any session that reasons from the corpus. A
 conclusion drawn from a corpus that has silently drifted is the same class of
 error this policy exists to end.
+
+
+## Timestamps
+
+Two traps, both silent, both recorded with the evidence that found them.
+
+**The hour is unpadded in 44% of rows** — `2026-08-19 1:09:33`, not `01:09:33`
+([`kb/data/0056`](kb/data/0056-corpus-timestamps-are-not-zero-padded.md)). The
+first ten characters are fixed-width and safe to slice; the whole string is not
+comparable as text, because `9:00:00` sorts after `10:00:00`. Parse it, or use
+the date only. `tests/test-corpus` asserts the file is nonetheless in true
+chronological order, which is what `bin/wb-corroborate --context` depends on.
+
+**The prior wiki's times are UTC; this corpus is local** — four hours apart in
+summer, five in winter
+([`kb/data/0057`](kb/data/0057-morgantown-audio-contradiction-reproduces.md)).
+A message the wiki cites at 11:25 is at 07:25 here. Any attempt to locate a
+wiki-quoted message by its stated time will land on the wrong message or on
+nothing, and nothing about the result will look wrong.
