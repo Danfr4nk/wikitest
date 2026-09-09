@@ -9,7 +9,7 @@ provenance  = "Enumerated 2026-09-09 through the authenticated Drive connector a
 reliability = "primary"
 confidence  = "high"
 importance  = 3
-sensitive   = true
+sensitive   = false
 created     = "2026-09-09"
 tags        = ["drive", "media", "inventory"]
 
