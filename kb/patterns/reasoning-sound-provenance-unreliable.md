@@ -11,11 +11,13 @@ cites           = ["dat:0028-prescriber-quotes-partly-unverifiable",
                    "dat:0040-quoted-bankruptcy-message-absent",
                    "dat:0016-old-wiki-conflated-two-legal-matters",
                    "dat:0045-facebook-graduation-claim-september-2009",
-                   "dat:0046-facebook-corroborates-two-ledger-adjudications"]
+                   "dat:0046-facebook-corroborates-two-ledger-adjudications",
+                   "dat:0050-corpus-traces-of-the-type-are-downstream-of-it"]
 evidence_count  = 6
 counterexamples = ["dat:0030-combos-corroborated-first-person",
                    "dat:0040-quoted-bankruptcy-message-absent",
-                   "dat:0046-facebook-corroborates-two-ledger-adjudications"]
+                   "dat:0046-facebook-corroborates-two-ledger-adjudications",
+                   "dat:0050-corpus-traces-of-the-type-are-downstream-of-it"]
 confidence      = "moderate"
 importance      = 5
 created         = "2026-09-09"

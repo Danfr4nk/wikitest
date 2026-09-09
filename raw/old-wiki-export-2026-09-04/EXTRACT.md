@@ -1,6 +1,6 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: 17 of 497 pages extracted** (`legal/` and `health/` complete bar index stubs; `places/` begun, 2026-09-09). Delete this file
+**Status: 19 of 497 pages extracted** (`legal/` and `health/` complete bar index stubs; `places/` begun, 2026-09-09). Delete this file
 only when the work below is done for all of them.
 
 | Area | Pages | Extracted |
@@ -8,11 +8,11 @@ only when the work below is done for all of them.
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
 | health | 6 | **5** — `dat:0018`–`0027`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `index` (stub) |
 | places | 10 | **3** — `dat:0039`, `dat:0040`, `dat:0041`. Remaining: `117-belmont-circle`, `307-e-76th-st`, `424-bedford-ave`, `90th-st-manhattan`, `seven-springs`, `derrick-avenue`, `index` |
-| meta | 12 | **3** — `dat:0043` (`recent-activity`), `dat:0044`–`0046` + `int:contemporaneous-is-not-the-same-as-true` (`testimony-veracity`), `dat:0048` (`open-questions`). Remaining: `digest`, `index`, `instruments/index`, `journeys/` ×3, `readers-digest`, `skills` |
+| meta | 12 | **4** — `dat:0043` (`recent-activity`), `dat:0044`–`0046` + `int:contemporaneous-is-not-the-same-as-true` (`testimony-veracity`), `dat:0048`, `dat:0049` (`open-questions`). Remaining: `digest`, `index`, `instruments/index`, `journeys/` ×3, `readers-digest`, `skills` |
 | work | 15 | 0 |
 | timeline | 42 | 0 |
 | self | 59 | 0 |
-| mind | 78 | **1** — `dat:0047` (`concepts/calibrated-confidence`). `synthesis/failure-to-launch` read for `dat:0048`, not extracted |
+| mind | 78 | **2** — `dat:0047` (`concepts/calibrated-confidence`), `dat:0050` (`profile/enneagram-5w4`). `synthesis/failure-to-launch` read for `dat:0048`, not extracted |
 | interests | 96 | 0 |
 | people | 175 | 0 |
 
