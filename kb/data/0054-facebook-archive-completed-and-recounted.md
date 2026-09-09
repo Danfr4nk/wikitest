@@ -133,6 +133,15 @@ coverage number would be repeating it with better manners. `tests/test-census`
 now asserts that line is still attributed to Christo Coan, that the unnamed
 counterparty's side parses, and that the four buckets balance.
 
+**Two of those three cannot run in CI**, and the first version of them turned CI
+red for exactly that reason. The thread bodies are gitignored and always will be
+— they are ~500 other people's private words — so the runner never has them. The
+body-dependent checks now print `skip` with the reason rather than passing
+quietly, because a check that stops firing and still reports green is the failure
+this test file exists to prevent. The accounting check runs either way: with
+bodies it recomputes from the parser, without them it verifies that the tracked
+manifest's own four numbers still sum to its stated total.
+
 ## What this changes about the archive
 
 The searchable total rises from 15,558 to **15,923** — 365 messages, more than

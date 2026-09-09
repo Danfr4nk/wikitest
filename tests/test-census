@@ -22,6 +22,7 @@ Usage:  tests/test-census
 
 from __future__ import annotations
 
+import json
 import pathlib
 import re
 import subprocess
@@ -135,36 +136,60 @@ def main() -> int:
                   rec.stdout, "dat:0043")
 
     # dat:0054. The Facebook parser dropped one side of any thread whose
-    # counterparty the export left unnamed — silently, as a monologue. These
-    # pin the fix and the accounting that makes the drop visible if it returns.
-    import importlib.machinery
-    import importlib.util
-    spec = importlib.util.spec_from_loader(
-        "wb_corroborate",
-        importlib.machinery.SourceFileLoader("wb_corroborate",
-                                             str(ROOT / "bin" / "wb-corroborate")))
-    wb = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(wb)
-    rows, _ = wb.load_facebook()
-    load = wb.load_facebook
+    # counterparty the export left unnamed — silently, as a monologue.
+    #
+    # The thread bodies are gitignored and always will be: they are ~500 other
+    # people's private words. So CI never has them, and two of these three
+    # checks cannot run there. They are SKIPPED OUT LOUD rather than quietly
+    # passing, because a check that stops firing and still reports green is the
+    # failure this file exists to prevent. The accounting check runs either way:
+    # with bodies it recomputes, without them it verifies the tracked manifest's
+    # own four numbers still sum to its stated total.
+    manifest = json.loads((ROOT / "raw" / "facebook-threads" / "MANIFEST.json").read_text())
+    bodies = list((ROOT / "raw" / "facebook-threads").glob("*.txt"))
 
-    check("every timestamp in the archive is accounted for",
-          len(rows) + load.no_text + load.unattributed + load.empty == 16238,
-          f"searchable {len(rows)}, no_text {load.no_text}, "
-          f"unattributed {load.unattributed}, empty {load.empty}")
+    if bodies:
+        import importlib.machinery
+        import importlib.util
+        spec = importlib.util.spec_from_loader(
+            "wb_corroborate",
+            importlib.machinery.SourceFileLoader("wb_corroborate",
+                                                 str(ROOT / "bin" / "wb-corroborate")))
+        wb = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(wb)
+        rows, _ = wb.load_facebook()
+        load = wb.load_facebook
+        buckets = (len(rows), load.no_text, load.unattributed, load.empty)
 
-    # The 2010-2021 thread whose counterparty is an unnamed "Facebook user":
-    # 803 messages, and the name-anchored pattern saw only Dan's 422.
-    both = [r for r in rows if r[0].startswith("2020-06-04")]
-    check("the unnamed counterparty's side is parsed",
-          any(not r[1] for r in both),
-          "no inbound message on 2020-06-04 — the monologue bug is back")
+        check("the manifest matches what the parser currently finds",
+              manifest["total_messages"] == len(rows),
+              f"manifest says {manifest['total_messages']}, parser finds {len(rows)} "
+              f"— rerun bin/wb-facebook-manifest")
 
-    # dat:0031. A guessed speaker is what this whole parser exists to prevent.
-    dui = [r for r in rows if "already got a DUI" in r[3]]
-    check("the DUI line is still attributed to the other speaker",
-          len(dui) == 1 and dui[0][2] == "Christo Coan" and not dui[0][1],
-          f"got {[(r[2], r[1]) for r in dui]}")
+        # The 2010-2021 thread whose counterparty is an unnamed "Facebook user":
+        # 803 messages, and the name-anchored pattern saw only Dan's 422.
+        check("the unnamed counterparty's side is parsed",
+              any(not r[1] for r in rows if r[0].startswith("2020-06-04")),
+              "no inbound message on 2020-06-04 — the monologue bug is back")
+
+        # dat:0031. A guessed speaker is what this whole parser exists to prevent.
+        dui = [r for r in rows if "already got a DUI" in r[3]]
+        check("the DUI line is still attributed to the other speaker",
+              len(dui) == 1 and dui[0][2] == "Christo Coan" and not dui[0][1],
+              f"got {[(r[2], r[1]) for r in dui]}")
+    else:
+        n = manifest["not_searchable"]
+        buckets = (manifest["total_messages"], n["no_text"],
+                   n["unattributed_in_group_thread"], n["empty_segment"])
+        print("  skip  the unnamed counterparty's side is parsed "
+              "(thread bodies are gitignored — not available here)")
+        print("  skip  the DUI line is still attributed to the other speaker "
+              "(thread bodies are gitignored — not available here)")
+
+    check("every message in the archive is accounted for",
+          sum(buckets) == manifest["archive_messages"],
+          f"searchable+no_text+unattributed+empty = {sum(buckets)}, "
+          f"archive_messages = {manifest['archive_messages']}")
 
     print(f"\n{passed} passed, {failed} failed")
     return 1 if failed else 0
