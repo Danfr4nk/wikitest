@@ -16,6 +16,7 @@ counterexamples = ["dat:0030-combos-corroborated-first-person",
 confidence      = "moderate"
 importance      = 5
 created         = "2026-09-09"
+updated         = "2026-09-09"
 tags            = ["old-wiki", "epistemics", "extraction"]
 falsifiers      = [
   "A page whose argument is unsound while its quotations all verify — the inverse pairing. That would show the two properties are independent rather than the split this pattern claims.",
@@ -79,7 +80,35 @@ Six checks, chosen by me, on pages I selected for being tractable. **The base
 rate is unknown**: any archive checked this closely yields corrections, and
 nothing here establishes that this rate is unusual.
 
-The third falsifier is the one I would bet on testing first — several of the
-missing quotes may simply live in channels the corpus does not hold. If so the
-pattern is about *coverage*, not provenance, and the correct response is to
-acquire more channels rather than to distrust the pages.
+## The third falsifier: attempted, blocked, and partly answered anyway
+
+It is the one I would bet on, so I went to test it. The prior wiki's census
+names its source — `raw/self/dox-scan/all_imessages_complete_dump.txt`, 28.9 MB,
+still on Drive. If the missing quotes are in that dump and not in the
+authoritative export, this pattern is about **coverage** and the right response
+is acquiring channels rather than distrusting pages.
+
+**Both routes are blocked.** Anonymous HTTPS returns a sign-in page — that folder
+is not public, unlike the Facebook tree. The connector refuses at 28.9 MB against
+a 10 MB limit. So the test needs one sharing change on one folder, exactly as
+bulk Facebook did.
+
+Recorded as **untested**, not as unlikely.
+
+Two things narrow it in the meantime.
+
+**Facebook cannot serve as the substitute test.** Its coverage ends 2022-09; the
+unverified quotes are dated November 2024 and mid-2025. The channel that could
+falsify this does not reach the years in question.
+
+**One instance is immune to the falsifier entirely.**
+[`dat:0031`](../data/0031-dui-belongs-to-the-other-speaker.md) is not a missing
+quote. The line is present, in the source the page cited, in the export the page
+was built from — and it is **attributed to the wrong speaker**. No coverage
+story explains that: the text was there and the name beside it was there, and
+the page carried one without the other.
+
+So the coverage explanation, if it holds, accounts for at most three of the four
+provenance failures. It cannot account for the one whose consequence was largest
+— an entire contradiction the prior wiki carried for weeks about an event that
+never involved the subject.

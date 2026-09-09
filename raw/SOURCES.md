@@ -25,7 +25,7 @@ The richest is `raw/self/` (`16gzTW1PxZvwQMleiZ8iXKxh5rLeSDNM-`):
 | Folder | What it is | Why it matters |
 | :--- | :--- | :--- |
 | `facebook/` | **NOW PUBLIC** — the unzipped tree was shared 2026-09-09 | Anonymous HTTPS works per file: `docs.google.com/document/d/<id>/export?format=txt`. Ingested as `src:facebook-export-2026-06-23`. First retrieval closed an open contradiction (`dat:0031`) |
-| `dox-scan/`, `dox-md/` | The document scans and markdown the prior wiki reasoned from | Includes `all_imessages_complete_dump.txt` — the **superseded** dump whose census produced `dat:0025`. Worth pulling precisely to measure how it differs |
+| `dox-scan/`, `dox-md/` | **BLOCKED — needs sharing.** `all_imessages_complete_dump.txt` is 28.9 MB: past the connector's 10 MB limit, and anonymous HTTPS returns a sign-in page | This is the **decisive test** for `pat:reasoning-sound-provenance-unreliable`'s main falsifier. If the four unverifiable quotes are in this dump and not in the authoritative export, the finding is about coverage rather than provenance — a much less alarming conclusion that changes what to do next. One sharing change on this folder settles it |
 | `twitter/` | Archive | Already load-bearing: the prior wiki's nicotine chronology and the Suboxone day-zero correction both rest on it |
 | `location/` | Location history | The independent-corroboration channel `ROADMAP.md` §4 wants for the 2021–2022 corpus gap |
 | `message-csv/`, `message-exports/`, `imessage/` | Earlier message extracts | Shelved by `CORPUS_POLICY.md`; useful only as evidence of what was believed |
