@@ -1,12 +1,12 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: 6 of 497 pages extracted** (`legal/` complete, `health/` partial, 2026-09-09). Delete this file
+**Status: 7 of 497 pages extracted** (`legal/` complete, `health/` mostly, 2026-09-09). Delete this file
 only when the work below is done for all of them.
 
 | Area | Pages | Extracted |
 | :--- | ---: | :--- |
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
-| health | 6 | **2** — `dat:0018`–`0021`, `int:inference-from-refusal-is-unsound`. Remaining: `cocaine`, `chemical-architecture`, `the-configured-body`, `index` |
+| health | 6 | **3** — `dat:0018`–`0024`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `chemical-architecture`, `the-configured-body`, `index` |
 | places | 10 | 0 |
 | meta | 12 | 0 |
 | work | 15 | 0 |
@@ -34,6 +34,17 @@ most incriminating available content and calls that reading *correct*
 (`dat:0021`). Expect that unevenness across the remaining 491 pages: the
 question to carry into each is not whether the page is careful but whether *this
 claim on it* was checked.
+
+**A prediction is now on the record, made before the pages were read.**
+[`pat:audit-strong-on-numbers-weak-on-meaning`](../../kb/patterns/audit-strong-on-numbers-weak-on-meaning.md)
+holds that the prior system was rigorous wherever a number or a document could
+check it and loose wherever the claim was about meaning. It predicts `mind/`
+(78) and `self/` (59) will show **markedly fewer** `REVISED`/`CORRECTED` blocks
+and **more endorsed inference** than `legal/` and `health/` did. The competing
+reading in
+[`int:old-wiki-corrections-are-the-payload`](../../kb/interpretations/old-wiki-corrections-are-the-payload.md)
+predicts the opposite. Count the error-marker blocks per page as you go — that
+single tally discriminates them, and it costs nothing to collect.
 
 One retrieval would upgrade a whole cluster at once: a **Fayette County MDJS
 docket search**. It would convert `evt:2015-02-possession-arrest` from
