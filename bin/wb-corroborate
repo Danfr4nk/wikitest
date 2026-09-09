@@ -97,10 +97,15 @@ def load(rows_wanted: tuple[str, str] | None):
     rows = []
     with CORPUS.open(newline="", encoding="utf-8", errors="replace") as fh:
         for row in csv.DictReader(fh):
+            # ONLY the date part, deliberately. 44% of this corpus's timestamps
+            # write the hour unpadded — "2026-08-19 1:09:33", not "01:09:33" —
+            # so the first ten characters are fixed-width and safe while the
+            # whole string is not: sorted or compared as text, 9am lands after
+            # 10am (dat:0056). Nothing here reads time of day; message order
+            # comes from the file, which is verified chronological by
+            # tests/test-corpus.
             date = (row.get("date_sent") or "")[:10]
             coverage[date[:7]] += 1
-            if rows_wanted and not (rows_wanted[0] <= date[:len(rows_wanted[0])] or True):
-                pass
             rows.append((date,
                          str(row.get("is_from_me", "")).strip() in ("1", "True", "true"),
                          (row.get("sender") or "").strip(),
@@ -141,30 +146,89 @@ MONTHS = {m: i for i, m in enumerate(
     "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(), 1)}
 
 
+BLOCK = re.compile(
+    r"^([A-Z][A-Za-z.'\- ]{2,40})\n_{6,}\n+(.*?)\n+"
+    r"((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d{4})[^\n]*)",
+    re.M | re.S)
+
+
+STAMP = re.compile(
+    r"^((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d{4})[^\n]*)$", re.M)
+NAMED = re.compile(r"([A-Z][A-Za-z.'\- ]{2,40})\n_{6,}\n+(.*)\Z", re.S)
+PARTICIPANTS = re.compile(r"^Participants: (.+?) and ([^\n]+)$", re.M)
+
+
 def load_facebook():
-    """Parse the export's block structure — NAME / rule / text / timestamp.
+    """Parse the export into (date, is_dan, speaker, text), both sides.
 
     Parsing the BLOCK rather than the line is not a style preference. Nothing in
     a message's text carries its speaker, so a first-person sentence lifted out
     of its block reads identically whoever typed it. That is exactly how the
     prior wiki recorded another person's DUI as an unexplained fact about the
     subject (kb/data/0031). Every hit this returns carries its speaker.
+
+    THE COUNTERPARTY IS NOT ALWAYS NAMED. In some threads the export writes a
+    name line and a rule of underscores above Dan's messages and NOTHING above
+    the other person's — just the text and the timestamp. A pattern anchored on
+    the name therefore returns a conversation in which only Dan ever speaks, and
+    says nothing about the half it dropped: 394 messages across five threads,
+    381 of them one side of a single 2010-2021 exchange (dat:0054). It reads as
+    a monologue and it was a dialogue.
+
+    So the unit here is the TIMESTAMP, which every message has. The text above
+    one either carries a name header or does not, and where it does not the
+    speaker is the other participant — inferred, and only ever in a thread whose
+    header names exactly two. In a group thread an unheaded message could be
+    anybody, so it is counted as unattributed and dropped rather than guessed.
     """
     import collections
     root = pathlib.Path(ROOT / "raw" / "facebook-threads")
-    block = re.compile(
-        r"^([A-Z][A-Za-z.'\- ]{2,40})\n_{6,}\n+(.*?)\n+"
-        r"((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d{4})[^\n]*)",
-        re.M | re.S)
     rows, coverage = [], collections.Counter()
+    unattributed = no_text = empty = 0
     for path in sorted(root.glob("*.txt")):
         text = path.read_text(encoding="utf-8", errors="replace").replace("\r", "")
-        for who, msg, stamp, day, year in block.findall(text):
-            month = MONTHS.get(stamp[:3], 0)
+        pair = PARTICIPANTS.search(text[:400])
+        other = None
+        if pair:
+            names = [n.strip() for n in pair.groups()]
+            others = [n for n in names if n != "Dan Frank"]
+            if len(others) == 1:
+                other = others[0]
+
+        cursor = 0
+        for stamp in STAMP.finditer(text):
+            segment = text[cursor:stamp.start()]
+            cursor = stamp.end()
+            named = NAMED.search(segment)
+            if named:
+                who, body = named.group(1).strip(), named.group(2).strip()
+            elif other and segment.strip():
+                who, body = other, segment.strip()
+            else:
+                # An unheaded message in a thread with more than two named
+                # participants could be anybody. Counted, never guessed —
+                # dat:0031 is what a guessed speaker costs.
+                if segment.strip():
+                    unattributed += 1
+                else:
+                    empty += 1
+                continue
+            if not body:
+                # A timestamp with no text: an attachment, a sticker, a call
+                # notice. Present in the thread and invisible to a text search,
+                # so it is counted rather than dropped — a search's denominator
+                # is the messages that HAVE text, not the messages that exist.
+                no_text += 1
+                continue
+            month = MONTHS.get(stamp.group(1)[:3], 0)
+            day, year = stamp.group(2), stamp.group(3)
             date = f"{year}-{month:02d}-{int(day):02d}" if month else year
             coverage[date[:7]] += 1
-            rows.append((date, who.strip() == "Dan Frank", who.strip(), msg.strip()))
+            rows.append((date, who == "Dan Frank", who, body))
     rows.sort(key=lambda r: r[0])
+    load_facebook.unattributed = unattributed
+    load_facebook.no_text = no_text
+    load_facebook.empty = empty
     return rows, coverage
 
 

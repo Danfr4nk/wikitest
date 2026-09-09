@@ -34,6 +34,16 @@ jobs:
       - name: Invariant regression tests
         run: python3 tests/test-invariant
 
+      # The census settles a published falsifier (dat:0042), so a silent
+      # change in how it counts is a silent change to a conclusion.
+      - name: Census regression tests
+        run: python3 tests/test-census
+
+      # Skips out loud here — the corpus is gitignored and the runner has none
+      # of it. Present so the checks run for anyone who does.
+      - name: Corpus regression tests
+        run: python3 tests/test-corpus
+
       - name: Build the site
         run: python3 bin/wb-build
 

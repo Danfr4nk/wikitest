@@ -578,6 +578,90 @@ counterexamples = ["dat:0001"]
 falsifiers = ["a case where the opposite occurs under the same conditions"]
 +++
 """}, True, "clean"),
+
+    # dat:0048. Append-only keeps the history and leaves the retracted text
+    # looking live in place. These two pin the price of that.
+    ("a retraction narrated in the body must reach the falsifiers field",
+     {"x": """+++
+id = "pat:narrated-only"
+layer = 4
+type = "pattern"
+title = "A pattern whose retraction never left the prose"
+cites = ["int:reading"]
+evidence_count = 3
+counterexamples = ["dat:0001"]
+falsifiers = ["a case where the opposite occurs under the same conditions"]
+created = "2026-09-09"
+updated = "2026-09-09"
++++
+
+## FALSIFIER SPENT [2026-09-09]
+
+It was tested and it landed against this pattern.
+"""}, False, "no entry in `falsifiers` says so"),
+
+    ("marking the spent entry in the field clears it", {"x": """+++
+id = "pat:retraction-in-field"
+layer = 4
+type = "pattern"
+title = "A pattern that retracted in the field as well as the prose"
+cites = ["int:reading"]
+evidence_count = 3
+counterexamples = ["dat:0001"]
+falsifiers = ["SPENT, 2026-09-09, and it landed against the pattern: a case where the opposite occurs under the same conditions"]
+created = "2026-09-09"
+updated = "2026-09-09"
++++
+
+## FALSIFIER SPENT [2026-09-09]
+
+It was tested and it landed against this pattern.
+"""}, True, "clean"),
+
+    # dat:0048, second half. The prior wiki's failure crossed three pages, so a
+    # bare "the evidence moved" would not have caught it either — that reads the
+    # same whether a typo was fixed or the claim was withdrawn.
+    ("a citing node is told WHAT moved when a source retracts", {"x": """+++
+id = "pat:retracts-under-a-citer"
+layer = 4
+type = "pattern"
+title = "A pattern that withdrew a claim"
+cites = ["int:reading"]
+evidence_count = 3
+counterexamples = ["dat:0001"]
+falsifiers = ["SPENT, 2026-06-01: a case where the opposite occurs"]
+created = "2026-01-01"
+updated = "2026-06-01"
++++
+
+## FALSIFIER SPENT [2026-06-01]
+
+Tested and withdrawn.
+""", "y": """+++
+id = "syn:rests-on-the-retracted"
+layer = 5
+type = "synthesis"
+title = "A synthesis resting on a withdrawn pattern"
+cites = ["pat:retracts-under-a-citer"]
+falsifiers = ["the underlying pattern survives its own test"]
+created = "2026-02-01"
++++
+"""}, True, "announced 'FALSIFIER SPENT' on 2026-06-01"),
+
+    ("a dated block newer than the front matter is flagged", {"x": """+++
+id = "int:body-ahead-of-fields"
+layer = 3
+type = "interpretation"
+title = "A reading corrected in the body and nowhere else"
+perspective = "llm"
+cites = ["dat:0001"]
+created = "2026-01-01"
++++
+
+## REVISED [2026-06-01]
+
+Something changed and nobody touched `updated`.
+"""}, True, "carries a dated block from 2026-06-01"),
 ]
 
 

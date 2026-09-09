@@ -534,6 +534,11 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
 
 
 
+DATED_BLOCK = re.compile(r"^(?:#{1,6}\s+|\*\*|>\s*\*\*)([A-Z][A-Z \-]{2,30}?)[ ,]+\[?(\d{4}-\d{2}-\d{2})\]?",
+                         re.M)
+RETRACTIONS = ("SPENT", "RETRACTED", "WITHDRAWN", "SUPERSEDED")
+
+
 def as_of(node: dict) -> str:
     """The latest date this node was known to be current. '' when it says nothing."""
     return max((str(node.get(f) or "") for f in ("rechecked", "updated", "created")), default="")
@@ -563,8 +568,81 @@ def check_staleness(nodes: dict[str, dict]) -> list[str]:
                 warnings.append(
                     f"{node['_path']}: cites {target} (as of {theirs}) but is itself only "
                     f"as of {mine} — the evidence moved after the claim. Re-check and set "
-                    f"`rechecked`, even if nothing changed.")
+                    f"`rechecked`, even if nothing changed."
+                    + retraction_note(other, mine))
     return warnings
+
+
+def retraction_note(cited: dict, since: str) -> str:
+    """Say WHAT moved when what moved was a retraction.
+
+    dat:0048, second half. The prior wiki's failure crossed three pages: the
+    correction on one, the dead claim on another, the republication on a third.
+    A bare staleness warning would not have caught that either — "the evidence
+    moved" reads the same whether a typo was fixed or the claim was withdrawn.
+
+    So when the cited node's own body announces a retraction after this node was
+    last checked, the warning says so by name. It stays a warning: a citing node
+    may well survive its source's retraction, and deciding that is reading work,
+    not validation work. What it must not do is look like an ordinary date drift.
+    """
+    hits = [(kind.strip(), date) for kind, date in DATED_BLOCK.findall(cited.get("_body", ""))
+            if any(word in kind for word in RETRACTIONS) and date > since]
+    if not hits:
+        return ""
+    kind, date = max(hits, key=lambda h: h[1])
+    return (f" NOTE: that node announced {kind!r} on {date} — check whether this "
+            f"claim rests on what was withdrawn.")
+
+
+def check_retractions(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
+    """A correction narrated in prose that no tool can see is half a correction.
+
+    dat:0048. The prior wiki retracted a prediction in a dated block and left the
+    prediction itself unedited in a numbered list on the same page; its own
+    generated index republished the dead prediction the following day, because
+    the index read the list and the retraction was eight hundred words away.
+
+    Append-only is the right default and this system copies it — the fact a
+    correction was needed has to survive. The cost is that the retracted text
+    stays valid-looking in place. Two checks price that cost:
+
+      A dated block newer than the node's own `updated`/`rechecked` means
+      somebody appended a correction and did not touch the fields. Warning.
+
+      A retraction announced in a heading (SPENT, RETRACTED, WITHDRAWN,
+      SUPERSEDED) on a node carrying `falsifiers` must also appear IN the
+      `falsifiers` field. Error — that field is the one a tool reads, and a
+      spent falsifier still listed as live is exactly the failure above.
+    """
+    errors: list[str] = []
+    warnings: list[str] = []
+    for node_id, node in sorted(nodes.items()):
+        body = node.get("_body", "")
+        where = node["_path"]
+        blocks = DATED_BLOCK.findall(body)
+        if not blocks:
+            continue
+
+        latest = max(date for _, date in blocks)
+        mine = as_of(node)
+        if mine and latest > mine:
+            warnings.append(
+                f"{where}: carries a dated block from {latest} but is only as of {mine} — "
+                f"a correction was appended and the front matter was not touched. "
+                f"Set `updated` (or `rechecked`), or the node reads as older than its own body.")
+
+        announced = {kind.strip() for kind, _ in blocks
+                     for word in RETRACTIONS if word in kind}
+        if announced and node.get("falsifiers"):
+            listed = " ".join(str(f) for f in node["falsifiers"]).upper()
+            if not any(word in listed for word in RETRACTIONS):
+                errors.append(
+                    f"{where}: body announces {sorted(announced)!r} but no entry in "
+                    f"`falsifiers` says so. Narrating a retraction beside a field that "
+                    f"still reads as live is the dat:0048 defect — mark the spent entry "
+                    f"in the field, which is what a tool reads.")
+    return errors, warnings
 
 
 def check_cycles(nodes: dict[str, dict]) -> list[str]:
@@ -627,6 +705,10 @@ def main() -> int:
     errors += edge_errors
     warnings += edge_warnings
     warnings += check_staleness(nodes)
+
+    retraction_errors, retraction_warnings = check_retractions(nodes)
+    errors += retraction_errors
+    warnings += retraction_warnings
 
     by_layer: dict[int, int] = {}
     for node in nodes.values():
