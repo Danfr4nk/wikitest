@@ -134,6 +134,38 @@ def main() -> int:
     table_matches("kb/data/0043-correction-density-tracks-work-recency.md",
                   rec.stdout, "dat:0043")
 
+    # dat:0054. The Facebook parser dropped one side of any thread whose
+    # counterparty the export left unnamed — silently, as a monologue. These
+    # pin the fix and the accounting that makes the drop visible if it returns.
+    import importlib.machinery
+    import importlib.util
+    spec = importlib.util.spec_from_loader(
+        "wb_corroborate",
+        importlib.machinery.SourceFileLoader("wb_corroborate",
+                                             str(ROOT / "bin" / "wb-corroborate")))
+    wb = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(wb)
+    rows, _ = wb.load_facebook()
+    load = wb.load_facebook
+
+    check("every timestamp in the archive is accounted for",
+          len(rows) + load.no_text + load.unattributed + load.empty == 16238,
+          f"searchable {len(rows)}, no_text {load.no_text}, "
+          f"unattributed {load.unattributed}, empty {load.empty}")
+
+    # The 2010-2021 thread whose counterparty is an unnamed "Facebook user":
+    # 803 messages, and the name-anchored pattern saw only Dan's 422.
+    both = [r for r in rows if r[0].startswith("2020-06-04")]
+    check("the unnamed counterparty's side is parsed",
+          any(not r[1] for r in both),
+          "no inbound message on 2020-06-04 — the monologue bug is back")
+
+    # dat:0031. A guessed speaker is what this whole parser exists to prevent.
+    dui = [r for r in rows if "already got a DUI" in r[3]]
+    check("the DUI line is still attributed to the other speaker",
+          len(dui) == 1 and dui[0][2] == "Christo Coan" and not dui[0][1],
+          f"got {[(r[2], r[1]) for r in dui]}")
+
     print(f"\n{passed} passed, {failed} failed")
     return 1 if failed else 0
 

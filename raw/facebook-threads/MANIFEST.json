@@ -3,7 +3,7 @@
  "source": "src:facebook-export-2026-06-23",
  "fetched": "2026-09-09",
  "threads": 396,
- "total_messages": 15558,
+ "total_messages": 15923,
  "provenance": {
   "generation": "Docs-converted copies created 2026-09-08, message files titled exactly `message_1`",
   "method": "Search pagination does not advance \u2014 it returns the newest 100 every time. Enumerated instead by walking `createdTime <` backwards in slices of 100. Every fetched file is deduplicated by sha256, so the second copy of the export contributes nothing.",
@@ -5530,5 +5530,11 @@
  ],
  "total_message_blocks": 15823,
  "unsearchable": 265,
- "denominator": "15558 of 15823 messages parse into speaker + text + date and are therefore searchable by bin/wb-corroborate. The remaining 265 are present in the archive under a separator rule but do not fit the block pattern \u2014 attachment-only posts and messages whose body breaks the match. A null result from a search is a null over the searchable 15558, not over the archive."
+ "denominator": "16238 messages carry a timestamp, which is the archive's true count. 15923 of them carry attributable text and are searchable by bin/wb-corroborate. Of the rest, 297 have a timestamp and no text (attachments, stickers, call notices), 13 sit unheaded in threads naming more than two participants and are counted rather than guessed, and 5 are empty segments. A null result from a search is a null over the searchable 15923, not over the archive. The per-thread `messages` figures below are name-headed blocks only and undercount any thread whose counterparty the export left unnamed \u2014 see dat:0054.",
+ "archive_messages": 16238,
+ "not_searchable": {
+  "no_text": 297,
+  "unattributed_in_group_thread": 13,
+  "empty_segment": 5
+ }
 }

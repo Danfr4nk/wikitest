@@ -83,6 +83,13 @@ first-named hypothesis, *"either there were two $10,000 advances four months
 apart"*, was the correct one, and the message confirming it sits in a thread
 neither page was reading.
 
+The `mind/synthesis/supply-network` entry is **advanced but not closed** by
+[`dat:0055`](0055-facebook-corroborates-the-2010-maintenance-start.md): the
+informal channel and the prescribed one overlap across at least eight years
+rather than succeeding one another, so neither page need be wrong — but the
+Facebook record ends 2022-09 and the May 2026 no-show that page reasons from is
+outside it entirely.
+
 Two of 49 closed, and the pattern in how they closed is worth more than the
 count. Neither was adjudicated. Both were settled by **reading a source end to
 end** — a Facebook thread for the DUI, two estate threads here — and in both

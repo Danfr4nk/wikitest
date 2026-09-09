@@ -12,6 +12,7 @@ extraction    = "Enumerated and fetched 2026-09-09. Counts produced by bin/wb-fa
 importance    = 4
 tags          = ["facebook", "tooling", "coverage", "provenance"]
 created       = "2026-09-09"
+updated       = "2026-09-09"
 
 [when]
 start = "2026-09-08"
@@ -82,3 +83,68 @@ search ran another. Whatever the search can find is now what the manifest
 reports, by construction. If the parser is wrong they are wrong together, which
 is recoverable; if they disagree, the manifest describes an archive nobody is
 searching, which is not.
+
+---
+
+## CORRECTED [2026-09-09] — the denominator published above was itself wrong
+
+This node said 15,823 message blocks were "every message in the archive" and
+that 15,558 of them were searchable. Both halves of that were wrong, and the
+error is the fourth confident wrong answer in this sequence rather than the end
+of the run.
+
+**Some messages have no separator rule at all.** Where the export leaves the
+counterparty unnamed, it writes a name line and a rule above Dan's messages and
+**nothing above theirs** — only text and a timestamp. So a pattern anchored on
+the name matched only his side, and the separator count that was supposed to
+catch what the pattern missed did not count those messages either. They were
+invisible to both numbers.
+
+The archive's true unit is the **timestamp**, which every message carries.
+
+| | |
+| ---: | :--- |
+| **16,238** | messages in the archive |
+| 15,923 | carry attributable text — searchable |
+| 297 | timestamp, no text: attachments, stickers, call notices |
+| 13 | unheaded in a thread naming more than two participants |
+| 5 | empty segments |
+
+Those four numbers sum to 16,238 exactly, and a test asserts it.
+
+**It read as a monologue and it was a dialogue.** 394 messages across five
+threads, 381 of them one side of a single 2010–2021 exchange that the manifest
+reported as 421 messages, all Dan's, no counterparty. The other person's half
+was in the file the whole time.
+
+## The fix, and the line it does not cross
+
+`bin/wb-corroborate` now walks timestamps rather than name headers. Where the
+text above a timestamp carries a name header, that is the speaker. Where it does
+not, the speaker is the other participant — **inferred, and only ever in a thread
+whose header names exactly two.** In a group thread an unheaded message could be
+anybody, so it is counted as unattributed and dropped rather than guessed. That
+is 13 messages, and they stay dropped.
+
+[`dat:0031`](0031-dui-belongs-to-the-other-speaker.md) is why that line is drawn
+there. A guessed speaker is how the prior wiki came to carry another man's DUI as
+a fact about its subject, and a parser that fills in speakers to raise its own
+coverage number would be repeating it with better manners. `tests/test-census`
+now asserts that line is still attributed to Christo Coan, that the unnamed
+counterparty's side parses, and that the four buckets balance.
+
+## What this changes about the archive
+
+The searchable total rises from 15,558 to **15,923** — 365 messages, more than
+thirty times the eleven threads the whole enumeration added. The fetch was the
+smaller half of this work by a wide margin.
+
+Every Facebook search run in this repository before now was run against a corpus
+missing one side of five conversations. None of the findings drawn from it
+([`dat:0031`](0031-dui-belongs-to-the-other-speaker.md),
+[`dat:0033`](0033-2011-suboxone-appointment-with-screening.md),
+[`dat:0035`](0035-facebook-fills-the-corpus-gap.md),
+[`dat:0045`](0045-facebook-graduation-claim-september-2009.md),
+[`dat:0046`](0046-facebook-corroborates-two-ledger-adjudications.md)) turned on
+a null in those threads, so none is disturbed — but that is luck, and it was
+checked rather than assumed.
