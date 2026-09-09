@@ -16,6 +16,28 @@ Published to GitHub Pages: **<https://danfr4nk.github.io/wikitest>**
 > is more work than clicking the setting once. Until it is set, `validate`
 > passes and `deploy` fails.
 
+## State: rebuilding
+
+The original working tree was wiped. This repository is being reconstituted
+from the surviving copies, and **[`RECOVERY.md`](RECOVERY.md)** is the tested
+map of what survived, where, and how faithfully — every claim in it was
+checked, not assumed.
+
+The short version:
+
+- **The message corpus is fully recoverable.** It was re-pulled from the
+  backing sheet and verified byte-exact against `corpus/manifest.json`. No
+  time fidelity is at risk on the message record.
+- **The engine survived.** `app.py` and all 40 original `bin/` tools are
+  byte-exact on the Drive staging copy. Only `.md` files were damaged by that
+  copy's Google Docs conversion — a narrower loss than first believed.
+- **The wiki body is waiting on a push from the Mac.** That copy is real
+  Markdown with real git history, and it is worth more than any
+  reconstruction. See [`MIGRATION.md`](MIGRATION.md).
+
+The architecture, tooling and knowledge base described below are already in
+place and working.
+
 ---
 
 ## The constitutional law

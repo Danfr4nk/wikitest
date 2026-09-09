@@ -9,11 +9,15 @@ the last row of the status table is done.
 | :---- | :---- |
 | Six-layer architecture, schema, validator, builder, query tools | **Done** — ported from `Danfr4nk/wiki-brain` |
 | Pages build-and-deploy pipeline | **Done** — `.github/workflows/pages.yml` |
-| Knowledge-base seed (17 nodes, L0→L5) | **Done** — `kb/` |
+| Knowledge-base seed (20 nodes, L0→L5) | **Done** — `kb/` |
 | Corpus policy, manifest and derived aggregates | **Done** — `corpus/`, [`CORPUS_POLICY.md`](CORPUS_POLICY.md) |
-| Authoritative `corpus/messages.csv` | **Local only, by design** — gitignored, never committed |
-| Wiki body — `wiki/`, `raw/`, `app.py`, governing docs | **Blocked** — on the Mac and the external drive |
+| `_config.yml` | **Restored** — byte-exact from Drive |
+| Authoritative `corpus/messages.csv` | **Verified recoverable** — re-pullable from the sheet, byte-exact against the manifest. Gitignored, never committed |
+| Original engine — `app.py`, the 40 original `bin/` tools | **Reachable byte-exact on Drive**, not yet pulled |
+| Wiki body — `wiki/`, `raw/`, governing docs | **Blocked** — on the Mac and the external drive |
 | Google Takeout | **Not started** — needs an ingestion decision first |
+
+Full tested detail in [`RECOVERY.md`](RECOVERY.md).
 
 ## Why the rebuild session could not finish this itself
 
@@ -70,7 +74,7 @@ Read the output against this:
 | :---- | :---- | :---- |
 | `wiki-brain-backup-20260907` | Snapshot taken the day before the wipe. Newest content, and the date lines up with the corpus cutover. | **Most likely authoritative** |
 | `wiki-brain2` | Unknown — a working copy or a second clone. Compare its last commit against the backup. | Tie-break |
-| `wiki-brain-main-1` | Matches the name of the **Google Drive staging copy**, which is lossy — see below. If it came down from Drive, its Markdown is already damaged. | **Suspect — verify before trusting** |
+| `wiki-brain-main-1` | Matches the name of the **Google Drive staging copy**. If it came down from Drive, its `.md` files are damaged — but its `bin/`, `app.py` and config files are byte-exact. See below. | **Suspect for `.md` only** |
 
 The decision rule: **whichever copy has real git history and the newest commit
 wins.** A copy with git history beats a copy without it even if the copy without
@@ -78,30 +82,58 @@ it looks newer, because history is the thing that cannot be reconstructed later.
 
 ### Checking whether `wiki-brain-main-1` is Drive-damaged
 
+Two tests. The first looks for the injected escapes, the second for the damage
+that actually matters — flattened frontmatter:
+
 ```sh
-grep -rn '\\[-+#]\|](http://[A-Z_]*\.md)' /Volumes/MUSIC/alias/XXX/wiki-brain-main-1 --include='*.md' | head
+# 1. injected backslash escapes, and escaped wikilinks
+grep -rln '\\_\|\\\[\\\[' /Volumes/MUSIC/alias/XXX/wiki-brain-main-1 --include='*.md' | head
+
+# 2. frontmatter on one run-on line instead of one key per line
+head -3 /Volumes/MUSIC/alias/XXX/wiki-brain-main-1/wiki/people/*.md | head -20
 ```
 
-Any hits mean it round-tripped through Google Docs. Do not use it as the
-migration source; keep it only as a backup and as evidence of what the tree
-contained.
+Hits on the first, or a frontmatter block that runs several keys onto a single
+line on the second, mean it round-tripped through Google Docs. In that case do
+not use it as the source **for `.md`** — but its `bin/`, `app.py` and config
+files are still byte-exact and worth taking.
 
-## Why the Drive copy is not the source
+## Why the Drive copy is not the source *for `.md`* — and is fine for everything else
 
-`My Drive/wiki-brain-main-1` is a staging copy, not a faithful one. Every `.md`
-file was converted to a Google Doc on upload, and the round-trip back is lossy.
-Exporting `README.md` out of Drive returns, among other damage:
+This was originally stated too broadly, and [`RECOVERY.md`](RECOVERY.md)
+narrowed it by testing rather than assuming. The correction matters, because
+the broad version tells you to throw away a working recovery route.
 
-- backslash escapes through the prose — `\+`, `\-`, `\#`
-- fenced code blocks flattened into paragraphs, fences gone
-- relative links rewritten into invalid absolute ones —
-  `[AGENT_ACCESS.md](AGENT_ACCESS.md)` came back as
-  `[AGENT\_ACCESS.md](http://AGENT_ACCESS.md)`
+**The damage is real, and it is confined to `.md` files.** Those were converted
+to Google Docs on upload, and the round-trip back returns:
 
-Across 1,000+ files that corrupts every governing document, and it does it
-*silently*: the output is plausible-looking Markdown, not an obvious break.
+- backslash escapes injected throughout — `\_`, `\[`, `\]`, `\.`, `\~`
+- wikilinks escaped into `\[\[wiki/people/jack-rusko|Jack Rusko\]\]` — target
+  and label intact, so unescaping restores them
+- **YAML frontmatter line breaks gone**, flattening key/value pairs into one
+  run-on paragraph
 
-This is recorded as evidence in [`kb/data/0006-drive-copy-lossy.md`](kb/data/0006-drive-copy-lossy.md).
+Bodies survive well: prose, headings, emphasis, blockquotes, **tables** and
+wikilink targets all come back. Frontmatter does not. Re-splitting a flattened
+block is *inference* over a finite key vocabulary, not restoration, and it
+mis-splits any value containing a colon. For a system whose constitutional rule
+is that inference must never masquerade as evidence, reconstructing a thousand
+frontmatter blocks is the wrong foundation to pour.
+
+**Everything that is not `.md` was stored as raw bytes and is byte-exact:**
+
+| Item | Size | Fidelity |
+| :--- | :--- | :------- |
+| `app.py` | 116,273 B | byte-exact |
+| `bin/` — 40 original tools | ~1 MB | byte-exact |
+| `_config.yml`, `.gitignore` | small | byte-exact — already restored here |
+| `Wiki.command`, `Capture.command`, `*.prompt` | small | byte-exact |
+
+So **the machine that builds the wiki is not lost**, and it can be recovered
+from Drive independently of the Mac. Only the wiki's *contents* are at risk.
+
+The `.md` damage is recorded as evidence in
+[`kb/data/0006-drive-copy-lossy.md`](kb/data/0006-drive-copy-lossy.md).
 
 ## Route A — the wiki body, from a copy that has git history
 
@@ -158,9 +190,38 @@ git log --oneline | head        # both histories present
 a repository. Take the zip route instead: zip it, upload it, and it gets
 committed here as a first import on top of `main`, with no merge needed.
 
+## If the Mac push stalls — the engine from Drive
+
+Route A is worth more than anything else here, but it is not the only way to get
+the *engine* back. `app.py` and all 40 original `bin/` tools sit on the Drive
+staging copy as raw bytes, unaffected by the Google Docs conversion that damaged
+the `.md` files. That is roughly 41 files — viable one at a time through the
+Drive connector, unlike the 1,000+ file wiki body, which is not.
+
+Doing this restores the machine independently of the content, so the wiki body
+can arrive later and have something to run on:
+
+```
+build-site   intake        wiki-crosslink   wiki-testimony   wiki-lint
+wiki-timeline wiki-traits  mine-messages    psychometrics    export-corpus
+verify-master aesgcm.py    …and 28 others
+```
+
+Note these are the *original* tools and are distinct from the `bin/wb-*` and
+`bin/corpus-*` tools already in this repository. Both sets are wanted; they do
+different jobs. Reconcile them once both are present rather than assuming either
+supersedes the other.
+
 ## Route B — the corpus CSV stays local
 
-`/Users/daniel/Desktop/messages.csv` is the authoritative 192,140-message export.
+**This one is not blocked at all**, and it is the best news in the rebuild.
+The corpus was re-pulled from the backing sheet and verified byte-exact against
+the manifest — so it does not depend on the Mac, the external drive, or any
+single machine. It can be re-pulled and re-verified on demand, forever.
+
+`/Users/daniel/Desktop/messages.csv` is one copy of the authoritative
+192,140-message export; the sheet is another. Either works.
+
 **It is gitignored and must stay that way.** It holds the phone numbers,
 addresses and private words of 498 people who did not choose to be published,
 and git history cannot be un-published.
@@ -168,9 +229,9 @@ and git history cannot be un-published.
 Put it in place and verify it against the manifest rather than committing it:
 
 ```sh
-cp ~/Desktop/messages.csv corpus/messages.csv
+cp ~/Desktop/messages.csv corpus/messages.csv     # or re-pull from the sheet
 python3 bin/corpus-verify       # must match manifest.json: 48,004,305 bytes,
-                                # sha256 2c53c540…d9f8cbb, 192,140 rows
+                                # sha256 2c53c540…9d98cbb, 192,140 rows
 ```
 
 If `corpus-verify` disagrees, the file on the Desktop is a *different* export
