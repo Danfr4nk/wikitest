@@ -525,9 +525,22 @@ what stops a conclusion from becoming a premise, and it is checked on every buil
             for node_id, node in sorted(public.items())
         ],
     }
+    # Node-reference fields other than `cites` also point at nodes, and a
+    # withheld node's id is itself informative — ids are readable slugs. Found by
+    # adversarial test: `attributed_to` reached graph.json intact. The publication
+    # gate caught it (wb-check-publish refused the build), which is the correct
+    # failure direction — but a build that cannot pass its own gate is broken, so
+    # the reference is filtered here too.
+    REFS = ("subject", "supersedes", "attributed_to")
     for entry in graph["nodes"]:
         entry["body"] = entry.pop("_body", "")
         entry["cites"] = [c for c in entry.get("cites", []) if c in public]
+        if "counterexamples" in entry:
+            entry["counterexamples"] = [c for c in entry["counterexamples"] if c in public]
+        for field in REFS:
+            if entry.get(field) and entry[field] not in public:
+                entry[f"{field}_withheld"] = True
+                entry.pop(field)
     (out / "graph.json").write_text(json.dumps(graph, indent=2) + "\n")
 
     (out / "agent" / "manifest.json").write_text(json.dumps({

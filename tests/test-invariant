@@ -570,6 +570,33 @@ falsifiers = ["a case where the opposite occurs under the same conditions"]
 ]
 
 
+def run_publish_gate(tmp: pathlib.Path) -> tuple[bool, bool]:
+    """Build a kb whose public node references a withheld one, then check output.
+
+    Returns (build_leaked, gate_refused). The gate refusing is the property that
+    matters; the build not leaking is the property that keeps the gate passable.
+    """
+    kb = tmp / "kb"
+    (kb / "sources").mkdir(parents=True)
+    (kb / "data").mkdir()
+    (kb / "sources" / "s.md").write_text(
+        '+++\nid = "src:withheld"\nlayer = 0\ntype = "source"\ntitle = "T"\n'
+        'source_type = "document"\nprovenance = "x"\nreliability = "primary"\n'
+        'testimony = true\nsensitive = true\n+++\nbody\n')
+    (kb / "data" / "d.md").write_text(
+        '+++\nid = "dat:0001"\nlayer = 1\ntype = "datum"\ntitle = "Public"\n'
+        'claim = "asserted"\ncites = ["src:withheld"]\nattributed_to = "src:withheld"\n'
+        '+++\npublic\n')
+    site = tmp / "site"
+    subprocess.run([sys.executable, str(ROOT / "bin" / "wb-build"),
+                    "--kb", str(kb), "--out", str(site)], capture_output=True)
+    leaked = any("src:withheld" in p.read_text(errors="replace")
+                 for p in site.rglob("*") if p.is_file())
+    gate = subprocess.run([sys.executable, str(ROOT / "bin" / "wb-check-publish"),
+                           "--kb", str(kb), "--site", str(site)], capture_output=True)
+    return leaked, gate.returncode != 0
+
+
 def run_case(files: dict[str, str], tmp: pathlib.Path) -> tuple[int, str]:
     kb = tmp / "kb"
     kb.mkdir()
@@ -591,6 +618,20 @@ def main() -> int:
         return 1
 
     passed = failed = 0
+
+    # The publication gate is the highest-stakes surface here: a defect that fails
+    # toward publishing is not recoverable. Tested by building a leak on purpose.
+    with tempfile.TemporaryDirectory() as raw:
+        leaked, refused = run_publish_gate(pathlib.Path(raw))
+    for name, ok in (("a withheld node's id does not reach the build output", not leaked),
+                     ("...and if it ever does, the publish gate refuses", refused or not leaked)):
+        if ok:
+            passed += 1
+            print(f"  pass  {name}")
+        else:
+            failed += 1
+            print(f"  FAIL  {name}")
+
     for name, files, expect_ok, needle in CASES:
         with tempfile.TemporaryDirectory() as raw:
             code, output = run_case(files, pathlib.Path(raw))
