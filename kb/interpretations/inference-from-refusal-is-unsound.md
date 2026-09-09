@@ -6,8 +6,9 @@ title        = "Reading a refusal as its incriminating answer is not supported"
 perspective  = "llm"
 cites        = ["dat:0021-old-wiki-endorsed-inference-from-refusal",
                 "dat:0019-old-wiki-absence-of-instrument",
-                "dat:0025-old-wiki-prescriber-exists-routing-only"]
-confidence   = "high"
+                "dat:0025-old-wiki-prescriber-exists-routing-only",
+                "dat:0028-prescriber-quotes-partly-unverifiable"]
+confidence   = "moderate"
 importance   = 4
 created      = "2026-09-09"
 updated      = "2026-09-09"
@@ -63,7 +64,37 @@ same system, weeks apart. The discipline was available and was not uniformly
 applied — which is a more useful finding than either page alone, and a reason to
 expect the same unevenness across the other 491 pages.
 
-## REVISED 2026-09-09 — the inference was not only unsound, it was wrong
+## RE-REVISED 2026-09-09 — the correction below overstated its own evidence
+
+Recorded above the revision it corrects, because the sequence is the point and
+burying it would destroy exactly what makes it useful.
+
+The revision below concluded the inference was "not only unsound, it was wrong",
+on the strength of [`dat:0025`](../data/0025-old-wiki-prescriber-exists-routing-only.md)
+— four quoted messages establishing a prescriber. Those quotes were then checked
+against the authoritative corpus
+([`dat:0028`](../data/0028-prescriber-quotes-partly-unverifiable.md)). One is
+present verbatim. Two fall on days the corpus holds no messages at all. One is
+absent from a day it covers thinly. The census the quotes came from ran over a
+**superseded** dump, which its own gap note says is missing 2022 and 2026.
+
+**So "wrong" is not established.** A prescriber existed in 2019 — that much is
+verified. Whether the 2025 arrangement was prescribed rests on two quotes
+sitting in corpus holes, and absence in a hole is `never_observed`.
+
+What survives, at moderate confidence rather than high: the inference was
+**unsound when made**, which was the original claim and never depended on how it
+turned out. The 2019 verified quote does establish that a prescriber existed at
+some point, which is enough to show the refusal was not obviously selective for
+an incriminating answer.
+
+Three passes, and the correct reading got weaker each time. That is the system
+working: the first pass argued from principle, the second over-corrected on
+testimony that looked like evidence, and the third checked the evidence and
+found it thinner than the second pass assumed. Each step is above, dated, and
+none was deleted.
+
+## Superseded revision, 2026-09-09 — the inference was not only unsound, it was wrong
 
 Written above before `health/the-configured-body.md` was read. That page settles
 it, and the finding is better than the argument.
@@ -94,10 +125,11 @@ land.
 
 ## What this does and does not claim
 
-It does not claim the regimen is clinically managed — `dat:0025` indicates it is
-not, in any substantive sense. It claims the specific route from *refusal* to
-*unmanaged supply* was unsound, and that the corpus subsequently contradicted
-its conclusion.
+It does not claim the regimen is clinically managed, and — after `dat:0028` — it
+no longer claims the corpus contradicted the model's conclusion either. It
+claims only that the specific route from *refusal* to *unmanaged supply* did not
+carry weight at the time it was taken. That claim has survived two revisions
+without depending on either of them.
 
 It claims the **route** taken to the conclusion does not carry weight, and that
 a downstream mechanism was built on it — the "second, parallel layer of the same
