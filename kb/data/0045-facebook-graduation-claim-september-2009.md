@@ -7,11 +7,12 @@ claim         = "The prior wiki's testimony ledger scores t013 — \"Dan graduat
 cites         = ["src:facebook-export-2026-06-23", "src:old-wiki-export-2026-09-04"]
 attributed_to = "src:old-wiki-export-2026-09-04"
 confidence    = "high"
-extraction    = "Run 2026-09-09 with bin/wb-corroborate --facebook over the 385 fetched threads, windows 2009-06 to 2010-12 (411 messages) and 2009-09 to 2010-03 outbound-only (244 messages). Both 2009-09-26 messages are outbound and attributed to Dan Frank in the export's own block structure. The ledger's tweet quotations are transcribed from the prior wiki; the tweet archive itself is NOT held here and has not been checked."
+extraction    = "Run 2026-09-09 with bin/wb-corroborate --facebook over the Facebook archive, windows 2009-06 to 2010-12 and 2009-09 to 2010-03 outbound-only. Both 2009-09-26 messages are outbound and attributed to Dan Frank in the export's own block structure. The ledger's tweet quotations are transcribed from the prior wiki; the tweet archive itself is NOT held here and has not been checked."
 importance    = 4
 tags          = ["old-wiki", "corroboration", "facebook", "testimony"]
 created       = "2026-09-09"
 updated       = "2026-09-09"
+rechecked     = "2026-09-09"
 
 [when]
 start = "2009-08-31"
@@ -113,3 +114,16 @@ December classes, if he had already finished in September?*
 The reservation in the section above stands and is not weakened by any of this:
 the 2009-09-26 message is shaped, sent alongside a Los Angeles plan that never
 happened, and a claim made to impress is not a class schedule.
+
+## RECHECKED [2026-09-09] — re-run over the completed archive, unchanged
+
+Re-run after [`dat:0054`](0054-facebook-archive-completed-and-recounted.md)
+completed the archive and fixed the parser. Both windows grew — 411 → 423
+messages for 2009-06 to 2010-12, and 244 → 249 outbound for 2009-09 to 2010-03 —
+and **the hit counts are identical**: five for `graduat`, two for `class`. The
+2009-09-26 messages are the same two, from the same speaker.
+
+The extraction note above carried the old window sizes as fixed numbers. They
+were denominators for a coverage claim, and denominators that move need a date
+attached or they need removing; these are removed, because the tool reports the
+window size on every run and a copy of it in prose can only go stale.
