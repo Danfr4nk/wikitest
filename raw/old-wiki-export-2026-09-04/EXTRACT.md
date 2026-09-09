@@ -1,6 +1,6 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: 14 of 497 pages extracted** (`legal/` and `health/` complete bar index stubs; `places/` begun, 2026-09-09). Delete this file
+**Status: 17 of 497 pages extracted** (`legal/` and `health/` complete bar index stubs; `places/` begun, 2026-09-09). Delete this file
 only when the work below is done for all of them.
 
 | Area | Pages | Extracted |
@@ -8,11 +8,11 @@ only when the work below is done for all of them.
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
 | health | 6 | **5** — `dat:0018`–`0027`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `index` (stub) |
 | places | 10 | **3** — `dat:0039`, `dat:0040`, `dat:0041`. Remaining: `117-belmont-circle`, `307-e-76th-st`, `424-bedford-ave`, `90th-st-manhattan`, `seven-springs`, `derrick-avenue`, `index` |
-| meta | 12 | **2** — `dat:0043` (`recent-activity`), `dat:0044`–`0046` + `int:contemporaneous-is-not-the-same-as-true` (`testimony-veracity`). Remaining: `digest`, `index`, `instruments/index`, `journeys/` ×3, `open-questions`, `readers-digest`, `skills` |
+| meta | 12 | **3** — `dat:0043` (`recent-activity`), `dat:0044`–`0046` + `int:contemporaneous-is-not-the-same-as-true` (`testimony-veracity`), `dat:0048` (`open-questions`). Remaining: `digest`, `index`, `instruments/index`, `journeys/` ×3, `readers-digest`, `skills` |
 | work | 15 | 0 |
 | timeline | 42 | 0 |
 | self | 59 | 0 |
-| mind | 78 | 0 |
+| mind | 78 | **1** — `dat:0047` (`concepts/calibrated-confidence`). `synthesis/failure-to-launch` read for `dat:0048`, not extracted |
 | interests | 96 | 0 |
 | people | 175 | 0 |
 
@@ -73,6 +73,16 @@ it as `never_observed`, never as `known_not_to_occur`.
 Note also that the changelog's entries are *references* to corrections on other
 pages, not corrections of its own; counting them as its own is exactly the error
 the first pass of the census made.
+
+**`wiki/meta/open-questions.md` is the wiki's own backlog and it is 182 kB:
+49 live contradictions, 605 open gaps, 65 standing predictions, all scraped
+from the pages themselves.** It is the single highest-yield page in the export
+for deciding what to read next — and per [`dat:0048`](../../kb/data/0048-corrected-claim-still-standing-in-its-own-page.md)
+it is not trustworthy as a status list. At least one prediction it lists as
+standing had been retracted on its own page the day before the digest ran, and
+is quoted with the figure the retraction retired. Read it as *what the pages
+say they do not know*, then check each item against its own page before acting
+on it.
 
 **A retrieval worth naming before the next pass: `testimony/events.jsonl`.**
 `wiki/meta/testimony-veracity.md` is generated from it and is the prior wiki's
