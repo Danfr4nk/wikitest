@@ -9,14 +9,18 @@ cites           = ["dat:0028-prescriber-quotes-partly-unverifiable",
                    "dat:0033-2011-suboxone-appointment-with-screening",
                    "dat:0039-old-wiki-eviction-notice-march-2018",
                    "dat:0040-quoted-bankruptcy-message-absent",
-                   "dat:0016-old-wiki-conflated-two-legal-matters"]
+                   "dat:0016-old-wiki-conflated-two-legal-matters",
+                   "dat:0045-facebook-graduation-claim-september-2009",
+                   "dat:0046-facebook-corroborates-two-ledger-adjudications"]
 evidence_count  = 6
 counterexamples = ["dat:0030-combos-corroborated-first-person",
-                   "dat:0040-quoted-bankruptcy-message-absent"]
+                   "dat:0040-quoted-bankruptcy-message-absent",
+                   "dat:0046-facebook-corroborates-two-ledger-adjudications"]
 confidence      = "moderate"
 importance      = 5
 created         = "2026-09-09"
 updated         = "2026-09-09"
+rechecked       = "2026-09-09"
 tags            = ["old-wiki", "epistemics", "extraction"]
 falsifiers      = [
   "A page whose argument is unsound while its quotations all verify — the inverse pairing. That would show the two properties are independent rather than the split this pattern claims.",
@@ -112,3 +116,39 @@ So the coverage explanation, if it holds, accounts for at most three of the four
 provenance failures. It cannot account for the one whose consequence was largest
 — an entire contradiction the prior wiki carried for weeks about an event that
 never involved the subject.
+
+## RE-CHECKED [2026-09-09] — the denominator arrives, and it holds
+
+Every instance behind this pattern was found by catching a quotation out. Six
+checks, four provenance failures, and no case where a check was run and came back
+clean — which meant the pattern had no denominator and could not distinguish "the
+prior wiki's quotes are unreliable" from "quotes go wrong when you look at them".
+
+[`dat:0046`](../data/0046-facebook-corroborates-two-ledger-adjudications.md) is
+the first clean one. Two adjudications from the prior wiki's testimony ledger,
+checked against the Facebook export — a channel it did not hold — and both stood.
+The stronger half is that its *reasoning* stood: it excluded the Brooklyn move as
+the referent of a 2010-02-17 tweet on the grounds that the move was settled and
+undramatic by late January, and a Facebook message of 31 January shows exactly
+that, in an archive fetched from a different company sixteen years later.
+
+Eight checks, seven changes, one clean. The pattern's two halves now have
+different standing:
+
+- **"the reasoning holds"** is strengthened. This is the first time an inference
+  was tested against evidence it was not built on, and it survived.
+- **"the provenance does not"** is where the caution belongs, and the rate is
+  four in eight rather than four in six.
+
+`confidence` stays `moderate`. One confirmation does not settle a base rate, and
+the sample is still chosen by me from pages picked for tractability.
+
+The third falsifier is also now partly answered and it went against itself.
+Facebook *is* one of the channels the corpus does not hold, and it did supply
+material the corpus could not see — but what it supplied
+([`dat:0045`](../data/0045-facebook-graduation-claim-september-2009.md)) is a
+contemporaneous first-person claim that contradicts a different contemporaneous
+record. So the extra channel did not resolve a provenance failure into a coverage
+gap; it produced a new disagreement. That widens rather than narrows what
+extraction has to be careful about, and the consequence is written up separately
+in [`int:contemporaneous-is-not-the-same-as-true`](../interpretations/contemporaneous-is-not-the-same-as-true.md).

@@ -1,6 +1,6 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: 12 of 497 pages extracted** (`legal/` and `health/` complete bar index stubs; `places/` begun, 2026-09-09). Delete this file
+**Status: 14 of 497 pages extracted** (`legal/` and `health/` complete bar index stubs; `places/` begun, 2026-09-09). Delete this file
 only when the work below is done for all of them.
 
 | Area | Pages | Extracted |
@@ -8,7 +8,7 @@ only when the work below is done for all of them.
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
 | health | 6 | **5** — `dat:0018`–`0027`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `index` (stub) |
 | places | 10 | **3** — `dat:0039`, `dat:0040`, `dat:0041`. Remaining: `117-belmont-circle`, `307-e-76th-st`, `424-bedford-ave`, `90th-st-manhattan`, `seven-springs`, `derrick-avenue`, `index` |
-| meta | 12 | **1** — `dat:0043` (`recent-activity`). Remaining: `digest`, `index`, `instruments/index`, `journeys/` ×3, `open-questions`, `readers-digest`, `skills`, `testimony-veracity` |
+| meta | 12 | **2** — `dat:0043` (`recent-activity`), `dat:0044`–`0046` + `int:contemporaneous-is-not-the-same-as-true` (`testimony-veracity`). Remaining: `digest`, `index`, `instruments/index`, `journeys/` ×3, `open-questions`, `readers-digest`, `skills` |
 | work | 15 | 0 |
 | timeline | 42 | 0 |
 | self | 59 | 0 |
@@ -73,6 +73,15 @@ it as `never_observed`, never as `known_not_to_occur`.
 Note also that the changelog's entries are *references* to corrections on other
 pages, not corrections of its own; counting them as its own is exactly the error
 the first pass of the census made.
+
+**A retrieval worth naming before the next pass: `testimony/events.jsonl`.**
+`wiki/meta/testimony-veracity.md` is generated from it and is the prior wiki's
+best instrument — sixteen adjudicated first-person claims with outcomes, weights
+and what settled each one ([`dat:0044`](../../kb/data/0044-old-wiki-testimony-ledger.md)).
+The generated page shows the arithmetic but not the adjudicator's reservations,
+and the jsonl is not in this export. It would also let the ledger be re-scored
+against the two channels this system holds and it did not. Second only to the
+28.9 MB message dump on the acquisition list.
 
 **Two claims from `health/` are promotable out of testimony and should be.**
 [`dat:0024`](../../kb/data/0024-old-wiki-happiness-counter-measure.md) (happiness
