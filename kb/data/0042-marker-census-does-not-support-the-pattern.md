@@ -12,6 +12,7 @@ extraction    = "Run 2026-09-09 with bin/wb-census over raw/old-wiki-export-2026
 importance    = 5
 tags          = ["old-wiki", "epistemics", "meta", "falsifier"]
 created       = "2026-09-09"
+updated       = "2026-09-09"
 
 [when]
 start = "2026-09-09"
@@ -81,3 +82,26 @@ definition `meta/` returns 0.08, the lowest. The error inflated the one area
 whose job is to describe the marker system, and it double-counted corrections
 already attributed elsewhere. A census over an unread corpus will happily count
 the index along with the entries.
+
+---
+
+## REVISED [2026-09-09] — the table is right, the question it answers is not
+
+Same day, one page later.
+[`dat:0043`](0043-correction-density-tracks-work-recency.md) reads
+`wiki/meta/recent-activity.md`, the wiki's own changelog, and splits this census
+on it. Half the corpus — 250 pages — was not touched in the final three weeks,
+and it carries 9% of the marks. `legal/`, `health/` and `meta/` are 100% covered
+by that window; `interests/` is 25%.
+
+Every number in the table above stands. What they measure is coverage of recent
+work at least as much as rate of self-correction, and the areas are not
+comparable on it. `interests/` at 0.11 is the clearest casualty: its touched
+quarter runs 0.46.
+
+The conclusion drawn here — that correction density does not track checkability —
+survives, and the touched-only figures strengthen it rather than weaken it.
+What was wrong was leaving the governing variable open as if it were unknowable
+from the corpus. It was one unread page away, and that page is the changelog whose
+mis-parsing produced this census's first-pass error. Read the index before
+counting the entries.

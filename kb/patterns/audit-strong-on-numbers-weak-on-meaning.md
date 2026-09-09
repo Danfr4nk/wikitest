@@ -11,14 +11,16 @@ cites           = ["dat:0018-old-wiki-intake-ledger-discipline",
                    "dat:0016-old-wiki-conflated-two-legal-matters",
                    "dat:0017-old-wiki-correction-instinct-overfired",
                    "int:inference-from-refusal-is-unsound",
-                   "dat:0042-marker-census-does-not-support-the-pattern"]
+                   "dat:0042-marker-census-does-not-support-the-pattern",
+                   "dat:0043-correction-density-tracks-work-recency"]
 evidence_count  = 7
 counterexamples = ["dat:0020-old-wiki-suboxone-hedonic-tension",
-                   "dat:0042-marker-census-does-not-support-the-pattern"]
+                   "dat:0042-marker-census-does-not-support-the-pattern",
+                   "dat:0043-correction-density-tracks-work-recency"]
 falsifiers      = [
   "SPENT, 2026-09-09, and it landed against the pattern: mind/ (78 pages) and self/ (59) show REVISED/CORRECTED/CONTRADICTION blocks at a rate comparable to legal/ and health/. Those areas are mostly conclusions with nothing external to check them against, so under this pattern they should carry markedly fewer. See dat:0042 and the FALSIFIER SPENT block below — mind/ is indistinguishable from health/, self/ is not.",
   "A page in an externally-checkable domain endorses an inference as confidently as hyperreflexivity did the refusal reading, with no number or document behind it. One clean case shows the axis is not what this pattern says it is.",
-  "The prior wiki is found to have run a self-audit pass over the whole corpus on a schedule, rather than page by page as material arrived. That would make correction density a function of when a page was last touched rather than of what could check it.",
+  "SPENT, 2026-09-09, and its consequence holds while its mechanism does not: the prior wiki is found to have run a self-audit pass over the whole corpus on a schedule, rather than page by page as material arrived. That would make correction density a function of when a page was last touched rather than of what could check it. See dat:0043 — 91% of the marks sit on the 50% of pages worked in the final three weeks, but the work is bursty session work, not a schedule.",
 ]
 confidence      = "low"
 importance      = 4
@@ -160,3 +162,37 @@ page, correction density is a function of when a page was last touched, which
 would explain `mind/` and `health/` landing together without either reading being
 right. `wiki/meta/recent-activity.md` is a 101-entry changelog of corrections and
 is the place to settle that. It is unread.
+
+## SECOND FALSIFIER SPENT [2026-09-09] — same day, and it goes further
+
+The third falsifier named the right consequence for the wrong reason, and
+spending it costs this node more than the first one did.
+[`dat:0043`](../data/0043-correction-density-tracks-work-recency.md) reads the
+prior wiki's own changelog. Half the corpus was not opened in its final three
+weeks and carries 9% of the marks. Correction density is largely a function of
+work recency — not of a schedule, as the falsifier supposed, but of which pages
+happened to be worked.
+
+Once the untouched half is removed, the areas this node was built on stop looking
+special at all:
+
+- `mind/` 0.97 marks per page against `health/` 0.67 — the inference-heavy area
+  now sits *above* one of the two the pattern was built on, not level with it
+- `people/` leads the corpus outright at 1.67
+- `legal/` at 1.25 is four pages and five marks
+
+The prediction was that the areas with nothing external to check them would
+correct markedly less. The two most-corrected areas by this measure are `people/`
+and `mind/`.
+
+Two of three falsifiers are now spent and both landed against this node. Only the
+second remains — a page in an externally-checkable domain endorsing an inference
+as confidently as hyperreflexivity did, with nothing behind it — and it is a
+much weaker test than either of the spent ones, since it asks for a single
+instance rather than a distribution.
+
+The instances still stand and the generalisation does not. This node stays on the
+record as what it now is: **a reading of six pages that failed both of the tests
+it set itself**, kept because the six pages are real, because the failure is
+informative about the corpus, and because deleting a pattern that lost is how a
+system ends up remembering only its wins.

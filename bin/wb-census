@@ -30,6 +30,7 @@ The definition: MARKER followed by ` [`, i.e. a dated block. That is the form
 the extraction brief tells readers to look for and the form that carries a
 date, which is what makes a mark auditable at all.
 """
+import argparse
 import json
 import re
 import sys
@@ -40,6 +41,9 @@ EXPORT = ROOT / "raw" / "old-wiki-export-2026-09-04"
 
 ERRORS = ("REVISED", "CORRECTED", "CONTRADICTION", "GAP CLOSED")
 RECHECK = "RE-CHECKED"
+
+CHANGELOG = "wiki/meta/recent-activity.md"
+ROW = re.compile(r"^\| \[\[(wiki/[^\]|]+?)\]\] \|", re.M)
 
 MARK = re.compile(r"\b(" + "|".join([*ERRORS, RECHECK]) + r") \[")
 WIKILINK = re.compile(r"\[\[")
@@ -54,9 +58,71 @@ def load_pages():
         yield page["path"], text
 
 
-def main():
+def touched_pages(pages):
+    """Pages the wiki's own changelog lists as modified in its final window.
+
+    Half the corpus was not opened in the last three weeks and carries 9% of
+    the marks (dat:0043), so a whole-corpus area rate reads coverage of recent
+    work as if it were rate of self-correction. This is how the two get told
+    apart.
+    """
+    body = pages.get(CHANGELOG)
+    if body is None:
+        raise SystemExit(f"{CHANGELOG} not in the export — cannot split on recency")
+    return {m + ".md" for m in ROW.findall(body)}
+
+
+def recency_table(pages):
+    touched = touched_pages(pages)
     areas = {}
-    for path, text in load_pages():
+    for path, text in pages.items():
+        area = path.split("/")[1] if path.count("/") > 1 else "(root)"
+        row = areas.setdefault(area, {"tp": 0, "tm": 0, "tb": 0, "up": 0, "um": 0})
+        marks = sum(1 for m in MARK.findall(text) if m != RECHECK)
+        if path in touched:
+            row["tp"] += 1
+            row["tm"] += marks
+            row["tb"] += len(text.encode("utf-8"))
+        else:
+            row["up"] += 1
+            row["um"] += marks
+
+    print(f"split on {CHANGELOG}: {len(touched)} of {len(pages)} pages listed")
+    print()
+    print(f"{'area':<12}{'touched':>8}{'marks':>7}{'m/pg':>7}{'m/10kB':>8}"
+          f"{'untouched':>11}{'marks':>7}{'m/pg':>7}")
+    rows = sorted(areas.items(),
+                  key=lambda kv: -(kv[1]["tm"] / kv[1]["tp"] if kv[1]["tp"] else 0))
+    for area, r in rows:
+        tp, up = r["tp"] or 1, r["up"] or 1
+        per_kb = r["tm"] / (r["tb"] / 10000) if r["tb"] else 0.0
+        print(f"{area:<12}{r['tp']:>8}{r['tm']:>7}{r['tm']/tp:>7.2f}{per_kb:>8.2f}"
+              f"{r['up']:>11}{r['um']:>7}{r['um']/up:>7.2f}")
+
+    tm = sum(r["tm"] for r in areas.values())
+    um = sum(r["um"] for r in areas.values())
+    tp = sum(r["tp"] for r in areas.values())
+    up = sum(r["up"] for r in areas.values())
+    print()
+    print(f"{'TOTAL':<12}{tp:>8}{tm:>7}{tm/tp:>7.2f}{'':>8}{up:>11}{um:>7}{um/up:>7.2f}")
+    print(f"\n{100*tm/(tm+um):.0f}% of the marks sit on the {100*tp/(tp+up):.0f}% "
+          f"of pages worked in the changelog's window")
+    return 0
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--recency", action="store_true",
+                    help="split the census on the wiki's own changelog instead "
+                         "(see dat:0043)")
+    args = ap.parse_args()
+
+    pages = dict(load_pages())
+    if args.recency:
+        return recency_table(pages)
+
+    areas = {}
+    for path, text in pages.items():
         parts = path.split("/")
         area = parts[1] if len(parts) > 2 else "(root)"
         row = areas.setdefault(area, {"pages": 0, "errors": 0, "recheck": 0,

@@ -91,6 +91,26 @@ def main() -> int:
           abs(mind.get("per_10kb", 0) - health.get("per_10kb", 9)) < 0.05,
           f"mind/ {mind.get('per_10kb')} vs health/ {health.get('per_10kb')}")
 
+    # --recency splits the census on the wiki's own changelog. The split is
+    # what dat:0043 rests on, and it is the reason the headline table must not
+    # be read as a rate of self-correction.
+    rec = subprocess.run([sys.executable, str(CENSUS), "--recency"],
+                         capture_output=True, text=True, cwd=ROOT)
+    check("--recency runs clean", rec.returncode == 0, rec.stderr.strip())
+    check("--recency reports the changelog it split on",
+          "wiki/meta/recent-activity.md" in rec.stdout)
+    check("the split is 247 of 497 pages",
+          "247 of 497 pages listed" in rec.stdout, rec.stdout.splitlines()[:1])
+    check("91% of marks sit on 50% of pages",
+          "91% of the marks sit on the 50% of pages" in rec.stdout,
+          rec.stdout.strip().splitlines()[-1:])
+    # interests/ is the case that carries the argument: 0.11 marks per page
+    # over the whole corpus, 0.46 over the quarter of it that was worked.
+    m = re.search(r"^interests\s+\d+\s+\d+\s+([\d.]+)", rec.stdout, re.M)
+    check("interests/ quadruples once the untouched three quarters are removed",
+          m is not None and abs(float(m.group(1)) - 0.46) < 0.02,
+          f"got {m.group(1) if m else None}, expected 0.46")
+
     print(f"\n{passed} passed, {failed} failed")
     return 1 if failed else 0
 

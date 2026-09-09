@@ -8,7 +8,7 @@ only when the work below is done for all of them.
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
 | health | 6 | **5** — `dat:0018`–`0027`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `index` (stub) |
 | places | 10 | **3** — `dat:0039`, `dat:0040`, `dat:0041`. Remaining: `117-belmont-circle`, `307-e-76th-st`, `424-bedford-ave`, `90th-st-manhattan`, `seven-springs`, `derrick-avenue`, `index` |
-| meta | 12 | 0 |
+| meta | 12 | **1** — `dat:0043` (`recent-activity`). Remaining: `digest`, `index`, `instruments/index`, `journeys/` ×3, `open-questions`, `readers-digest`, `skills`, `testimony-veracity` |
 | work | 15 | 0 |
 | timeline | 42 | 0 |
 | self | 59 | 0 |
@@ -56,12 +56,22 @@ falsifier is spent and it landed against the pattern, which now carries a dated
 the first place — "corrections mark where external checks existed" is the same
 prediction about density, differently worded, so the tally could not have
 discriminated them however it came out. **Do not re-collect this by hand while
-reading.** Run the tool. What is still open is the third falsifier: whether the
-prior wiki self-audited on a schedule rather than page by page, which would
-explain the result without either reading being right. `wiki/meta/recent-activity.md`
-is a 101-entry changelog of its own corrections and is where that gets settled —
-read it early, and note that its entries are *references* to corrections on other
-pages, not corrections of its own. Counting them as its own is exactly the error
+reading.** Run the tool. The third falsifier is spent too, same day, and it is the one that matters most
+for everything still unread. `wiki/meta/recent-activity.md` turns out to be a
+247-row changelog covering only 2026-08-13 to 2026-09-04, and
+[`dat:0043`](../../kb/data/0043-correction-density-tracks-work-recency.md) splits
+the census on it: **half the corpus was never opened in that window and carries
+9% of the marks.** `bin/wb-census --recency` reproduces it.
+
+**Carry this into every remaining area.** `interests/` (96 pages) looks like the
+least self-scrutinised area in the wiki at 0.11 marks per page. Three quarters of
+it was simply not worked; its touched quarter runs 0.46. The same correction is
+due for `people/` (121 of 175 untouched) and `timeline/` (18 of 42). A low marker
+count in an unread area means *nobody got there*, not *nothing was wrong* — treat
+it as `never_observed`, never as `known_not_to_occur`.
+
+Note also that the changelog's entries are *references* to corrections on other
+pages, not corrections of its own; counting them as its own is exactly the error
 the first pass of the census made.
 
 **Two claims from `health/` are promotable out of testimony and should be.**
