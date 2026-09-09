@@ -67,7 +67,7 @@ PREFIX = {
     "syn": ("synthesis", 5),
 }
 
-REF_FIELDS = ("subject", "supersedes")
+REF_FIELDS = ("subject", "supersedes", "attributed_to")
 
 # Edge vocabulary lives in schema/edges.json so the families are data rather than
 # scattered literals. check_vocabulary() below asserts node.schema.json agrees.
@@ -459,6 +459,33 @@ def check_graph(nodes: dict[str, dict]) -> tuple[list[str], list[str]]:
                 if nodes.get(target, {}).get("sensitive"):
                     warnings.append(f"{where}: publishes but cites sensitive {target!r} — "
                                     f"confirm the body reveals nothing identifying")
+
+        # Testimony: a source whose reliability is unestablished contributes
+        # evidence about WHAT IT ASSERTED, never evidence that the assertion is
+        # true. Without this the prior system's 2M tokens of conclusions would
+        # enter as facts about a person rather than as facts about a document,
+        # and nothing downstream could tell the difference.
+        if node.get("type") == "datum":
+            attributed = node.get("attributed_to")
+            cited = node.get("cites", [])
+            for target in cited:
+                if nodes.get(target, {}).get("testimony") and not attributed:
+                    errors.append(
+                        f"{where}: cites {target!r}, which is marked `testimony`, but has no "
+                        f"`attributed_to`. Its assertions are the evidence — the claim must "
+                        f"record who asserted it, not restate it as fact.")
+                    break
+            if attributed and attributed not in cited:
+                errors.append(f"{where}: attributed_to {attributed!r} is not in `cites` — "
+                              f"a claim cannot be attributed to a source it does not cite")
+
+        if node.get("testimony") and node.get("type") != "source":
+            errors.append(f"{where}: `testimony` is an L0 source property; "
+                          f"{node.get('type')!r} nodes may not carry it")
+
+        if node.get("attributed_to") and node.get("type") != "datum":
+            errors.append(f"{where}: `attributed_to` is an L1 datum property; "
+                          f"{node.get('type')!r} nodes may not carry it")
 
         if node.get("type") == "pattern" and not node.get("counterexamples"):
             warnings.append(f"{where}: pattern has no counterexamples recorded — "

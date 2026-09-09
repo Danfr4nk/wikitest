@@ -65,6 +65,20 @@ cites = ["evt:thing", "dat:0001"]
 +++
 """
 
+# A source whose reliability is not established. Its assertions are evidence;
+# the things it asserts are not.
+TESTIMONY = """+++
+id = "src:priorsystem"
+layer = 0
+type = "source"
+title = "A prior system's conclusions"
+source_type = "document"
+provenance = "synthetic test fixture"
+reliability = "retrospective"
+testimony = true
++++
+"""
+
 BASE = {"a": SOURCE, "b": DATUM, "c": EVENT, "d": INTERPRETATION}
 
 # name -> (extra files, expect_ok, substring the diagnostic must contain)
@@ -425,6 +439,67 @@ rel = "followed"
 target = "evt:aaa"
 +++
 """}, True, ""),
+
+    # ---- testimony --------------------------------------------------------
+    # Material whose reliability is unestablished supplies evidence of what it
+    # ASSERTED, never evidence that the assertion holds. This is what lets the
+    # prior system's 2M tokens of conclusions be ingested without inheriting them.
+
+    ("a datum may not restate a testimony source's assertion as fact", {"t": TESTIMONY,
+     "x": """+++
+id = "dat:0100"
+layer = 1
+type = "datum"
+title = "Restated as fact"
+claim = "Dan met Vaughn in 2013."
+cites = ["src:priorsystem"]
++++
+"""}, False, "must record who asserted it"),
+
+    ("the same claim passes once it is attributed", {"t": TESTIMONY, "x": """+++
+id = "dat:0101"
+layer = 1
+type = "datum"
+title = "Attributed"
+claim = "The prior system asserted that Dan met Vaughn in 2013."
+cites = ["src:priorsystem"]
+attributed_to = "src:priorsystem"
++++
+"""}, True, ""),
+
+    ("a claim cannot be attributed to a source it does not cite", {"t": TESTIMONY,
+     "x": """+++
+id = "dat:0102"
+layer = 1
+type = "datum"
+title = "Attributed elsewhere"
+claim = "Something."
+cites = ["src:fixture"]
+attributed_to = "src:priorsystem"
++++
+"""}, False, "is not in `cites`"),
+
+    ("testimony is an L0 property", {"x": """+++
+id = "dat:0103"
+layer = 1
+type = "datum"
+title = "Wrong layer for testimony"
+claim = "Something."
+cites = ["src:fixture"]
+testimony = true
++++
+"""}, False, "L0 source property"),
+
+    ("attributed_to is an L1 property", {"x": """+++
+id = "evt:attributed"
+layer = 2
+type = "event"
+title = "Wrong layer for attribution"
+attributed_to = "src:fixture"
+[when]
+date = "2019-01-01"
++++
+"""}, False, "L1 datum property"),
 ]
 
 

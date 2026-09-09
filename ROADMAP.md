@@ -5,7 +5,17 @@ written before the code so the constitutional law gets considered *first* rather
 than patched around afterwards. Section 2 has since been built; 1, 3 and 4 are
 still design only.
 
-Order of work is deliberate: **1 → 2 → 4 → 3.** The edge rework (2) changes the
+**Revised order: 2 → ingestion → 1 → 4 → 3.** Ingestion was not a numbered
+section in the 82-section draft and turned out to be the actual blocker: the
+layers whose errors are *permanent* are L0 and L1, and everything above L2 is
+regeneratable by §68 and disposable by §71. So the rule is to build only what
+cannot be undone, then load. Roughly half the remaining sections — gap
+detection (§79), anomaly detection (§59), pattern detection (§60),
+cross-reference and evidence recruitment (§15–§17) — are *functions of a corpus*
+and cannot honestly be built before one exists; tuned against thirty
+hand-written nodes they would be tuned to a toy.
+
+The original reasoning, kept: The edge rework (2) changes the
 node format, so it lands before anything writes a lot of new nodes. It is now
 **built**; 1, 3 and 4 are still design only. Takeout (4)
 is the cheapest large win. Images (3) is last because it depends on both the
@@ -54,11 +64,31 @@ the layer invariant at all.
   "low sociability" (trait) and "avoids people after repeated conflict"
   (adaptation) are three different claims, and the profile must not flatten them.
 
-**Open question for Dan:** should `perspective = "self"` profile nodes rank
-*above* or *below* `external` ones by default? They disagree, often. Ranking self
-first models how he actually reasons; ranking external first is what the
-longitudinal record is *for*. Recommendation: external first, self surfaced
-alongside and labelled — the disagreement is the signal.
+**Decided 2026-09-09: external first, self surfaced alongside and labelled.**
+The question was put to the operator, who delegated it. Self-report and the
+longitudinal record disagree often, and that disagreement is among the most
+valuable things this system can express — so neither is dropped and neither is
+averaged into the other. External leads because that is what a longitudinal
+record is *for*; self is never buried, and is always labelled as self, because
+what a person believes about themselves is evidence about them regardless of
+whether it is accurate.
+
+---
+
+## Ingestion — **built**
+
+`bin/wb-ingest`. Preserves the original byte-exact under `raw/`, records sha256,
+mints the L0 source node, writes an extraction brief. It does not extract
+meaning, because that requires reading and a regex pretending to read is how a
+corpus fills with confident nonsense — extraction is an agent's job and the
+brief is its contract.
+
+The load-bearing part is `--testimony`, and the schema support beneath it
+(`testimony` on sources, `attributed_to` required on data drawn from them). It
+is what makes the prior system's ~2,000,000 tokens safe to ingest without
+auditing them first: their conclusions enter as *things that were said*, at high
+and honest confidence, and no quantity of them can become *things that are so*.
+See [ARCHITECTURE.md](ARCHITECTURE.md#testimony).
 
 ---
 

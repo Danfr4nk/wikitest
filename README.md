@@ -81,6 +81,7 @@ Full design: **[`ARCHITECTURE.md`](ARCHITECTURE.md)**.
 ## Tools
 
 ```sh
+bin/wb-ingest FILE --testimony     # front door: original preserved, L0 node minted
 bin/wb-validate                    # schema + the layer invariant
 bin/wb-build                       # compile to site/ + graph.json + llms.txt
 bin/wb-check-publish               # refuse to publish sensitive material
@@ -91,6 +92,22 @@ tests/test-invariant               # 15 regression tests on the invariant
 Standard library only — no dependencies, no build step, no database. Nodes are
 Markdown with TOML frontmatter: machine-readable head, human-readable body,
 neither destroying the other.
+
+Material enters through **`bin/wb-ingest`**, which preserves the original
+byte-exact under [`raw/`](raw/README.md), records its sha256, mints the L0
+`source` node and writes an extraction brief. It deliberately does not extract
+meaning: turning a document into atomic datapoints means reading it, and a regex
+pretending to read is how a corpus fills with confident nonsense.
+
+Sources whose reliability is unestablished — a prior system's conclusions, a
+retrospective account, a third party's summary — are ingested with
+`--testimony`. What such a source supplies is evidence of **what it asserted**,
+never evidence that the assertion holds, and `wb-validate` refuses any datum
+drawn from it that does not name whose assertion it is. So a claim reads *"the
+prior wiki asserted P"* — true and checkable — rather than *"P"*. Corroboration
+from an independent source promotes it; contradiction produces a
+`contradiction` node, which is how a prior system's mistakes become visible
+instead of inherited.
 
 Relations between nodes are **typed edges**, grouped into six families in
 [`schema/edges.json`](schema/edges.json). Edges may point in any direction —
