@@ -47,6 +47,12 @@ jobs:
       - name: Build the site
         run: python3 bin/wb-build
 
+      # The 497-page snapshot of the prior wiki, rendered browsable. Its source
+      # is tracked (raw/old-wiki-export-2026-09-04/whole.txt), so this runs
+      # everywhere the repo does.
+      - name: Build the archive
+        run: python3 bin/wb-archive
+
       # Defence in depth: wb-build already excludes sensitive nodes, so this
       # asserts the exclusion actually happened rather than trusting it did.
       # The costs are not symmetric — a builder bug is a bug, but publishing
