@@ -146,6 +146,10 @@ So the split is deliberate and enforced in three places:
 - `bin/wb-build` excludes any node marked `sensitive = true`, and the citations
   pointing at it — but *declares* the exclusion rather than hiding it, so a
   partial evidence trail never looks complete.
+- `bin/wb-query` does **not** filter. Privacy gates output, never reasoning: a
+  model reasoning over a quietly sanitised record draws confident wrong
+  conclusions and has no way to know it. `--publish-safe` opts into filtering
+  for output headed for publication, and announces what it withheld.
 - `bin/wb-check-publish` runs before deploy and asserts the exclusion actually
   happened, against the built output rather than the source.
 

@@ -99,8 +99,11 @@ def main() -> int:
     ap.add_argument("--depth", type=int, default=1, help="graph hops from the seed set")
     ap.add_argument("--max", type=int, default=20, help="cap on nodes returned")
     ap.add_argument("--format", choices=["md", "json"], default="md")
-    ap.add_argument("--include-sensitive", action="store_true",
-                    help="include nodes withheld from publication (local use only)")
+    ap.add_argument("--publish-safe", action="store_true",
+                    help="drop nodes marked sensitive, for output destined for publication. "
+                         "OFF by default: retrieval reasons over everything, because a model "
+                         "reasoning on a quietly sanitised corpus draws confident wrong "
+                         "conclusions and cannot tell that it is doing so.")
     ap.add_argument("--kb", type=pathlib.Path, default=ROOT / "kb")
     args = ap.parse_args()
 
@@ -109,8 +112,16 @@ def main() -> int:
         for error in errors:
             print(f"  {error}", file=sys.stderr)
         return 1
-    if not args.include_sensitive:
+    # Publication is a filter on OUTPUT, never on reasoning. bin/wb-build is the
+    # gate that keeps sensitive material off the public site; this tool feeds a
+    # reasoner, and withholding evidence from a reasoner does not protect anyone
+    # — it just produces a confident model of a person who does not exist.
+    if args.publish_safe:
+        withheld = sum(1 for n in nodes.values() if n.get("sensitive"))
         nodes = {i: n for i, n in nodes.items() if not n.get("sensitive")}
+        if withheld:
+            print(f"  --publish-safe: {withheld} sensitive node(s) withheld. "
+                  f"Absence below is not evidence of absence.", file=sys.stderr)
 
     question = " ".join(args.question)
     terms = tokens(question)
