@@ -1,13 +1,13 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: 9 of 497 pages extracted** (`legal/` and `health/` complete bar two index stubs, 2026-09-09). Delete this file
+**Status: 11 of 497 pages extracted** (`legal/` and `health/` complete bar index stubs; `places/` begun, 2026-09-09). Delete this file
 only when the work below is done for all of them.
 
 | Area | Pages | Extracted |
 | :--- | ---: | :--- |
 | legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
 | health | 6 | **5** — `dat:0018`–`0027`, `int:inference-from-refusal-is-unsound`, `pat:audit-strong-on-numbers-weak-on-meaning`. Remaining: `index` (stub) |
-| places | 10 | 0 |
+| places | 10 | **2** — `dat:0039`, `dat:0040`. Remaining: `the-unpapered-address`, `117-belmont-circle`, `307-e-76th-st`, `424-bedford-ave`, `90th-st-manhattan`, `seven-springs`, `derrick-avenue`, `index` |
 | meta | 12 | 0 |
 | work | 15 | 0 |
 | timeline | 42 | 0 |
@@ -88,6 +88,27 @@ and cross-referenced), then `people/` (175), then `health/` and `legal/` (10
 together, small and dense), then `mind/` and `self/` — those two are mostly the
 prior system's *conclusions* rather than its evidence, and are the pages where
 the testimony discipline does the most work.
+
+## The extraction rule, established by six checks
+
+[`pat:reasoning-sound-provenance-unreliable`](../../kb/patterns/reasoning-sound-provenance-unreliable.md)
+is the operating instruction now. Six claims have been checked against
+independent sources and **every check changed something** — but the changes fall
+on one side:
+
+- **The reasoning holds.** Nothing checked has found a bad inference from the
+  evidence the page believed it had. Arguments are worth reading and mostly
+  worth keeping.
+- **The quotations do not.** Four of six checks found a quote that does not sit
+  where the page put it — one belonging to a different speaker entirely, three
+  absent from the authoritative corpus.
+
+So: **take the argument, verify the quote.** A claim resting on reasoning
+inherits `moderate`. A claim resting on a quotation inherits nothing until
+`bin/wb-corroborate` has been run against it — against **both** channels, since
+`dat:0033` came from Facebook alone and the corpus could not see it.
+
+Run the coverage check before trusting any null.
 
 ## What extraction owes
 
