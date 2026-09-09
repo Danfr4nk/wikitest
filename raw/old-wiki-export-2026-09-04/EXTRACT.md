@@ -1,6 +1,32 @@
 # Extraction brief — `src:old-wiki-export-2026-09-04`
 
-**Status: not extracted.** Delete this file only when the work below is done.
+**Status: 4 of 497 pages extracted** (`legal/`, 2026-09-09). Delete this file
+only when the work below is done for all of them.
+
+| Area | Pages | Extracted |
+| :--- | ---: | :--- |
+| legal | 4 | **4** — `dat:0013`–`0017`, `evt:2015-02-possession-arrest`, `evt:2015-combos-retail-theft`, `con:2015-arrest-breath-test` |
+| health | 6 | 0 |
+| places | 10 | 0 |
+| meta | 12 | 0 |
+| work | 15 | 0 |
+| timeline | 42 | 0 |
+| self | 59 | 0 |
+| mind | 78 | 0 |
+| interests | 96 | 0 |
+| people | 175 | 0 |
+
+**What the first pass established, for the next one.** Extraction yield was
+roughly five data nodes per page in a dense area, and the highest-value nodes
+were not facts about the subject but the prior system's records of its own
+errors — see [`int:old-wiki-corrections-are-the-payload`](../../kb/interpretations/old-wiki-corrections-are-the-payload.md),
+which also states the reading that would falsify that. Watch for `REVISED [`,
+`CORRECTED [`, `CONTRADICTION [` and `GAP CLOSED [` blocks: they are the prior
+wiki's own error markers and each one is a datum.
+
+One retrieval would upgrade a whole cluster at once: a **Fayette County MDJS
+docket search**. It would convert `evt:2015-02-possession-arrest` from
+single-source testimony to primary record and settle `con:2015-arrest-breath-test`.
 
 | | |
 | :--- | :--- |
