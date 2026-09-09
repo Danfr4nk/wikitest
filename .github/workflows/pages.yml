@@ -39,6 +39,11 @@ jobs:
       - name: Census regression tests
         run: python3 tests/test-census
 
+      # Skips out loud here — the corpus is gitignored and the runner has none
+      # of it. Present so the checks run for anyone who does.
+      - name: Corpus regression tests
+        run: python3 tests/test-corpus
+
       - name: Build the site
         run: python3 bin/wb-build
 

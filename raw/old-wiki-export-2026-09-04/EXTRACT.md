@@ -93,6 +93,19 @@ reasoning about it. Prefer entries where a source can be READ over entries where
 two people give incompatible first-hand accounts — the latter are held open for
 the right reason and should stay open.
 
+**Next target, and the method it needs.**
+`timeline/events/august-2026-morgantown-call` records the subject stating three
+times that he sent an audio recording to a third party's parents and twice that
+he did not, within fourteen hours, and notes a proven false claim of the same
+kind the day before. The corpus holds that day — 763 messages — and a keyword
+pass over it is not good enough: the three messages such a pass surfaces are
+*conditional* ("im going to send this if you bail"), which is a threat to send
+rather than a claim of having sent. Read the day in order, whole. And note
+[`dat:0056`](../../kb/data/0056-corpus-timestamps-are-not-zero-padded.md) before
+slicing by time — 44% of timestamps write the hour unpadded, so a text
+comparison silently selects nothing and a text sort silently scrambles the
+sequence.
+
 **A retrieval worth naming before the next pass: `testimony/events.jsonl`.**
 `wiki/meta/testimony-veracity.md` is generated from it and is the prior wiki's
 best instrument — sixteen adjudicated first-person claims with outcomes, weights

@@ -97,10 +97,15 @@ def load(rows_wanted: tuple[str, str] | None):
     rows = []
     with CORPUS.open(newline="", encoding="utf-8", errors="replace") as fh:
         for row in csv.DictReader(fh):
+            # ONLY the date part, deliberately. 44% of this corpus's timestamps
+            # write the hour unpadded — "2026-08-19 1:09:33", not "01:09:33" —
+            # so the first ten characters are fixed-width and safe while the
+            # whole string is not: sorted or compared as text, 9am lands after
+            # 10am (dat:0056). Nothing here reads time of day; message order
+            # comes from the file, which is verified chronological by
+            # tests/test-corpus.
             date = (row.get("date_sent") or "")[:10]
             coverage[date[:7]] += 1
-            if rows_wanted and not (rows_wanted[0] <= date[:len(rows_wanted[0])] or True):
-                pass
             rows.append((date,
                          str(row.get("is_from_me", "")).strip() in ("1", "True", "true"),
                          (row.get("sender") or "").strip(),
