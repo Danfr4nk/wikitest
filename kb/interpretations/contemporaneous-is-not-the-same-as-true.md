@@ -11,6 +11,7 @@ cites        = ["dat:0044-old-wiki-testimony-ledger",
 confidence   = "moderate"
 importance   = 4
 created      = "2026-09-09"
+updated      = "2026-09-09"
 tags         = ["epistemics", "testimony", "old-wiki", "method"]
 falsifiers   = [
   "A systematic comparison of contemporaneous first-person claims against documents (transcripts, deeds, dockets) finds them right at a rate indistinguishable from 100%. That would make the asymmetry the ledger assumes a real one and this reading an artefact of one case.",
@@ -77,3 +78,41 @@ contemporaneous claim was for.** A class schedule, a docket entry and a delivery
 receipt were made for something other than the reader's benefit. A message
 telling an old friend that things are going great was made for a reader, and the
 reader was not an archive.
+
+---
+
+## CHECKED [2026-09-09] — the argument holds and gets a better target
+
+Written against the testimony ledger, before its underlying pages had been read.
+[`dat:0045`](../data/0045-facebook-graduation-claim-september-2009.md) now
+carries a correction: the prior wiki holds the graduation disagreement open, on
+two pages, in dated blocks, and names the artefact that would settle it.
+
+That improves this reading rather than damaging it, because the two places state
+**opposite postures on the same question** and neither references the other.
+
+On `wiki/timeline/periods/full-sail-2008-2010`:
+
+> The August date comes from … first-person testimony recorded years later. The
+> tweets are first-person and same-day. **The disagreement is held rather than
+> resolved.**
+
+The page names the asymmetry this node is about — record versus memory — and then
+explicitly declines to let it decide. `wiki/self/twitter/2009` goes further:
+*"Neither is corrected on the strength of the other."*
+
+The ledger, generated from the same corpus, scores the same class of question
+`refuted` — the record wins, and a number comes out of it. Both are the prior
+wiki. The pages hold; the ledger scores. Nothing reconciles them, and the
+headline calibration figure is computed under the posture the pages refuse.
+
+So the reservation sharpens. It is not that the prior system was naive about
+whether records can be wrong — the contradiction blocks are proof it was not. It
+is that **the instrument that produces the number does not inherit the caution
+the prose applies**, and the number is what travels: into
+[`dat:0044`](../data/0044-old-wiki-testimony-ledger.md), into any summary, into
+this repository until it was checked.
+
+The third alternative recorded above — that the hedges may live in
+`testimony/events.jsonl` — is now the load-bearing one, and it stays unresolved
+because that file is not in the export.

@@ -11,6 +11,7 @@ extraction    = "Run 2026-09-09 with bin/wb-corroborate --facebook over the 385 
 importance    = 4
 tags          = ["old-wiki", "corroboration", "facebook", "testimony"]
 created       = "2026-09-09"
+updated       = "2026-09-09"
 
 [when]
 start = "2009-08-31"
@@ -66,3 +67,49 @@ ground truth**, which is the assumption the whole ledger is built on — see
 Recorded as an open question. Settling it needs the Full Sail transcript or the
 tweet archive read directly rather than through the ledger's quotations, and
 neither is held here.
+
+---
+
+## CORRECTED [2026-09-09] — the wiki did notice, on the pages where it belonged
+
+Written hours earlier, this datum said the prior wiki cited the August-31 tweet
+and the December tweets "without remarking that they disagree" and stated its
+verdict "as though the evidence were of one piece." That is wrong, and it was
+inferred from the one page I had read.
+
+`wiki/self/twitter/2009.md` and `wiki/timeline/periods/full-sail-2008-2010.md`,
+both modified 2026-09-03, each carry a dated `CONTRADICTION` block holding
+exactly this open. From the second, verbatim:
+
+> the August 2009 graduation date is contradicted by Dan's own contemporaneous
+> public record, in two independent places. On **2009-08-31** he wrote *"so
+> weirded out i start my last month of college tomorrow"*, which puts the final
+> month in September. And across November and December 2009 he is plainly still
+> enrolled … **The disagreement is held rather than resolved**: a Full Sail
+> transcript would settle it and the corpus does not have one.
+
+It identifies the same "last month of college" reading this datum offered as
+its own observation. It refuses to resolve. It names the artefact that would
+settle it. It propagates the consequence — the "five-month Florida tail" is
+measured from the disputed date and is marked disputed with it — and it fences
+off what is *not* in dispute, the top-5% class standing.
+
+**The error I made is the one this repository keeps documenting.** I read
+`meta/testimony-veracity.md`, found its one-line summary flat, and concluded the
+system was flat. The ledger is a *generated* page — one row per claim, outcome
+and what settled it — and the reasoning was never meant to live in it. It lives
+on the pages, and on the pages it is better than my criticism of it.
+
+**What survives, and it is the part that matters.** The Facebook message of
+2009-09-26 is still not in that record. The wiki's contradiction rests on two
+independent points: a September "last month" and December coursework. This adds a
+third, on the September side and from a channel the wiki did not hold — a
+same-day, first-person *"I acually just graduated today"*, told to two people.
+The wiki said only a Full Sail transcript could move this. Something short of one
+has moved it: the September side now has two independent channels, and the
+question sharpens from *August or December?* to *what were the November and
+December classes, if he had already finished in September?*
+
+The reservation in the section above stands and is not weakened by any of this:
+the 2009-09-26 message is shaped, sent alongside a Los Angeles plan that never
+happened, and a claim made to impress is not a class schedule.

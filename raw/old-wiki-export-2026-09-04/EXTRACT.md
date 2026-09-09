@@ -84,6 +84,15 @@ is quoted with the figure the retraction retired. Read it as *what the pages
 say they do not know*, then check each item against its own page before acting
 on it.
 
+[`dat:0049`](../../kb/data/0049-old-wiki-live-contradictions-inventory.md)
+inventories the 49: mind 20, people 12, self 6, timeline 5, interests 3, legal 3.
+Two thirds sit in `mind/` and `people/`, which this extraction has barely opened
+— one page of 78 and none of 175. **One is already closed** by `dat:0031`, and
+the way it closed is the template: it was settled by reading the source, not by
+reasoning about it. Prefer entries where a source can be READ over entries where
+two people give incompatible first-hand accounts — the latter are held open for
+the right reason and should stay open.
+
 **A retrieval worth naming before the next pass: `testimony/events.jsonl`.**
 `wiki/meta/testimony-veracity.md` is generated from it and is the prior wiki's
 best instrument — sixteen adjudicated first-person claims with outcomes, weights
