@@ -29,17 +29,19 @@ the numbers there are unchanged, but what they measure is not what it said.
 Restricted to pages the changelog lists, per area:
 
 ```
-area        touched  marks   m/pg  m/10kB   untouched  marks   m/pg
-people           54     90   1.67    0.86         121     15   0.12
-legal             4      5   1.25    1.20           0      0   0.00
-places            9     11   1.22    0.99           1      0   0.00
-timeline         24     29   1.21    0.20          18      6   0.33
-mind             67     65   0.97    0.39          11      3   0.27
-work              5      4   0.80    0.54          10      1   0.10
-self             42     29   0.69    0.22          17      0   0.00
-health            6      4   0.67    0.37           0      0   0.00
-interests        24     11   0.46    0.42          72      0   0.00
-meta             12      1   0.08    0.03           0      0   0.00
+area         touched  marks   m/pg  m/10kB  untouched  marks   m/pg
+people            54     90   1.67    0.86        121     15   0.12
+legal              4      5   1.25    1.20          0      0   0.00
+places             9     11   1.22    0.99          1      0   0.00
+timeline          24     29   1.21    0.20         18      6   0.33
+mind              67     65   0.97    0.39         11      3   0.27
+work               5      4   0.80    0.54         10      1   0.10
+self              42     29   0.69    0.22         17      0   0.00
+health             6      4   0.67    0.37          0      0   0.00
+interests         24     11   0.46    0.42         72      0   0.00
+meta              12      1   0.08    0.03          0      0   0.00
+TOTAL            247    249   1.01                250     25   0.10
+91% of the marks sit on the 50% of pages worked in the changelog's window
 ```
 
 `interests/` is the case that makes the point. In the whole-corpus table it is

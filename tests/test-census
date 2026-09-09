@@ -111,6 +111,29 @@ def main() -> int:
           m is not None and abs(float(m.group(1)) - 0.46) < 0.02,
           f"got {m.group(1) if m else None}, expected 0.46")
 
+    # dat:0052, rule 2 from the prior wiki's instrument layer: a number
+    # somebody could quietly adjust is not a measurement. dat:0042 and dat:0043
+    # publish tables pasted from this tool. Nothing but this check stops the
+    # tool and the nodes from drifting apart, and a stale table in a node is a
+    # claim the repository is making and cannot see is false.
+    def table_matches(node_path, tool_stdout, label):
+        text = pathlib.Path(ROOT / node_path).read_text()
+        block = re.search(r"```\n(area.*?)```", text, re.S)
+        if not block:
+            check(f"{label} publishes a census table", False, node_path)
+            return
+        live = {l.rstrip() for l in tool_stdout.splitlines() if l.strip()}
+        missing = [l.rstrip() for l in block.group(1).splitlines()
+                   if l.strip() and l.rstrip() not in live]
+        check(f"{label}'s table still matches the tool",
+              not missing,
+              f"rows in the node that the tool no longer produces: {missing[:3]}")
+
+    table_matches("kb/data/0042-marker-census-does-not-support-the-pattern.md",
+                  out, "dat:0042")
+    table_matches("kb/data/0043-correction-density-tracks-work-recency.md",
+                  rec.stdout, "dat:0043")
+
     print(f"\n{passed} passed, {failed} failed")
     return 1 if failed else 0
 
