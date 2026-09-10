@@ -77,3 +77,10 @@
 - johnny-dealer: thread recounts at 7,090 rows (page's 3,462 is a floor); page typo flagged ("Johnny is mia" 2018-04-14 → corpus 2019-04-14).
 - Attribution correction: "I'm in love with Annie Ulmer" is Annie's coaching script for Dan, not his declaration (dat:0541).
 - jamie-mohler: Ethan Kray alias in 2012 Twitter archive; post-transition refs begin March 2025, earlier than page's Sept 2025 floor.
+
+## Wave 3 partial (w12 done: dat:0569–0591, 15 pages, 23 nodes)
+- Note: worker's final report mentioned only the last 9 nodes; the first 14 (0569–0582) were verified present and committed separately. All 15 pages covered.
+- jerad-friedline: March 2026 AI-jailbreak note is DAN's, not Jerad's; Roe-prediction attribution to Jerad has no support (dat:0585).
+- john-felix: thread 156 rows to Jan 2018 (page said Jun 2016); 2026-08-18 revision's specific 2018 quotes have zero held hits.
+- dec-2025-spike: strongest verification of the wave — Dec 4,620 vs 4,657, ratios replicate (dat:0591).
+- calibrated-confidence: "22x" claim not reproducible (dat:0580).

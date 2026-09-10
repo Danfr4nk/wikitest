@@ -247,7 +247,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/a-day-to-remember.md",
   "corpus_line": 10240,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -303,7 +303,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/coldplay.md",
   "corpus_line": 10557,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -317,7 +317,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/elliott-smith.md",
   "corpus_line": 10629,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -891,7 +891,7 @@
  {
   "slug": "wiki/mind/concepts/erotic-architecture.md",
   "corpus_line": 21841,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -905,7 +905,7 @@
  {
   "slug": "wiki/mind/concepts/forensic-method.md",
   "corpus_line": 22254,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -926,7 +926,7 @@
  {
   "slug": "wiki/mind/concepts/phenomenology-lens.md",
   "corpus_line": 22848,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -1899,7 +1899,7 @@
  {
   "slug": "wiki/people/jason-cole.md",
   "corpus_line": 58957,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -1913,14 +1913,14 @@
  {
   "slug": "wiki/people/jenn-lynn.md",
   "corpus_line": 59189,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/people/jerad-friedline.md",
   "corpus_line": 59284,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -1955,7 +1955,7 @@
  {
   "slug": "wiki/people/jimmy.md",
   "corpus_line": 60129,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -1997,7 +1997,7 @@
  {
   "slug": "wiki/people/john-felix.md",
   "corpus_line": 60554,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -3285,7 +3285,7 @@
  {
   "slug": "wiki/timeline/periods/2010s.md",
   "corpus_line": 117224,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -3320,7 +3320,7 @@
  {
   "slug": "wiki/timeline/periods/2021-2023-employment-block.md",
   "corpus_line": 117882,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
@@ -3341,14 +3341,14 @@
  {
   "slug": "wiki/timeline/periods/dark-era-2007-2008.md",
   "corpus_line": 118256,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/timeline/periods/dec-2025-spike.md",
   "corpus_line": 118412,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w12",
   "dat_range": "0569-0613"
  },
