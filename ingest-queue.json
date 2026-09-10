@@ -658,7 +658,7 @@
  {
   "slug": "wiki/interests/food-and-diet.md",
   "corpus_line": 12989,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 413
@@ -690,7 +690,7 @@
  {
   "slug": "wiki/interests/language/vocabulary-lexicon.md",
   "corpus_line": 13648,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 486
@@ -810,7 +810,7 @@
  {
   "slug": "wiki/interests/video-games.md",
   "corpus_line": 16159,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 174
@@ -1306,7 +1306,7 @@
  {
   "slug": "wiki/mind/synthesis/block-unblock-loop.md",
   "corpus_line": 30580,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 799
@@ -1346,7 +1346,7 @@
  {
   "slug": "wiki/mind/synthesis/estate-money-spine.md",
   "corpus_line": 33506,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 544
@@ -1402,7 +1402,7 @@
  {
   "slug": "wiki/mind/synthesis/message-circadian-latency.md",
   "corpus_line": 35982,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 270
@@ -1506,7 +1506,7 @@
  {
   "slug": "wiki/mind/synthesis/the-deferred-audit.md",
   "corpus_line": 40928,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 697
@@ -1522,7 +1522,7 @@
  {
   "slug": "wiki/mind/synthesis/the-rescue-premise.md",
   "corpus_line": 42088,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 608
@@ -2834,7 +2834,7 @@
  {
   "slug": "wiki/people/the-unnamed-man.md",
   "corpus_line": 69348,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 226
@@ -2850,7 +2850,7 @@
  {
   "slug": "wiki/people/tom-wallisch.md",
   "corpus_line": 69666,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 49
@@ -2858,7 +2858,7 @@
  {
   "slug": "wiki/people/tom.md",
   "corpus_line": 69715,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 328
@@ -2890,7 +2890,7 @@
  {
   "slug": "wiki/people/urpaaa-at-yahoo-com.md",
   "corpus_line": 70479,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 115
@@ -2906,7 +2906,7 @@
  {
   "slug": "wiki/people/vanessa-frank.md",
   "corpus_line": 70778,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 184
@@ -2914,7 +2914,7 @@
  {
   "slug": "wiki/people/vaughn.md",
   "corpus_line": 70962,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 123
@@ -2970,7 +2970,7 @@
  {
   "slug": "wiki/places/117-belmont-circle.md",
   "corpus_line": 71920,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 300
@@ -3018,7 +3018,7 @@
  {
   "slug": "wiki/places/derrick-avenue.md",
   "corpus_line": 72997,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 129
@@ -3026,7 +3026,7 @@
  {
   "slug": "wiki/places/index.md",
   "corpus_line": 73126,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 30
@@ -3330,7 +3330,7 @@
  {
   "slug": "wiki/self/message-corpora/source-coverage-index.md",
   "corpus_line": 79694,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 206
@@ -3362,7 +3362,7 @@
  {
   "slug": "wiki/self/twitter/2009.md",
   "corpus_line": 81176,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 2008
@@ -3458,7 +3458,7 @@
  {
   "slug": "wiki/self/twitter/2021.md",
   "corpus_line": 96170,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 360
@@ -3474,7 +3474,7 @@
  {
   "slug": "wiki/self/twitter/2023.md",
   "corpus_line": 97705,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 1199
@@ -3914,7 +3914,7 @@
  {
   "slug": "wiki/work/tech/ai-video-essays.md",
   "corpus_line": 120575,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 138
@@ -3930,7 +3930,7 @@
  {
   "slug": "wiki/work/tech/grok-build/overview.md",
   "corpus_line": 120881,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 74
@@ -3938,7 +3938,7 @@
  {
   "slug": "wiki/work/tech/imessage-tooling/overview.md",
   "corpus_line": 120955,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 83
@@ -3962,7 +3962,7 @@
  {
   "slug": "wiki/work/tech/mneme/overview.md",
   "corpus_line": 121307,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w28",
   "dat_range": "1289-1333",
   "span": 94

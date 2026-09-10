@@ -166,3 +166,10 @@
 - tan-calabrese: page's 2000-12-31 anchor is spurious — the message exists in held corpus dated 2020-03-12; childhood origin survives only via retrospective testimony (dat:1388).
 - gripnotic/mogzart/sloppp counts (3/8/1) reproduce exactly in held slice.
 - twitter/2026: 31 May runaway iMessage agent noted (unverified against messages.csv).
+
+## Wave 6 partial (w28 done: dat:1289–1311, 25 pages, 23 nodes)
+- block-unblock: final recount 129 episodes / 128 resumed / median 36s — but page still carries stale 127/110 unreconciled; neither may be quoted without the other (dat:1292).
+- rescue-premise: page (2026-08-28) still reads the 72-min SOS sequence through the latency asymmetry retracted 2026-08-15 — stale by 13 days (dat:1296).
+- grok-build 2026-06-22 log: iMessage responder glitched and spammed an ex (dat:1309).
+- twitter/2021: free-speech-absolutism exit moves five months earlier (2021-10-26 Lenny Bruce/Chappelle distinction).
+- source-coverage-index: 52 sources, 1,786,124 rows vs ~187k unique (9.6x deliberate duplication) (dat:1304).
