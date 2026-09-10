@@ -275,7 +275,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/barenaked-ladies.md",
   "corpus_line": 10402,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -345,7 +345,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/gym-class-heroes.md",
   "corpus_line": 11047,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -828,7 +828,7 @@
  {
   "slug": "wiki/mind/concepts/acquisition-drive.md",
   "corpus_line": 19519,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -842,7 +842,7 @@
  {
   "slug": "wiki/mind/concepts/bunker-core.md",
   "corpus_line": 20175,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -877,14 +877,14 @@
  {
   "slug": "wiki/mind/concepts/dans-law.md",
   "corpus_line": 21578,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/mind/concepts/document-fabrication.md",
   "corpus_line": 21661,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -1822,7 +1822,7 @@
  {
   "slug": "wiki/people/index.md",
   "corpus_line": 57395,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -1857,7 +1857,7 @@
  {
   "slug": "wiki/people/jajuan-davis.md",
   "corpus_line": 58049,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -1934,7 +1934,7 @@
  {
   "slug": "wiki/people/jess.md",
   "corpus_line": 59977,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -1962,7 +1962,7 @@
  {
   "slug": "wiki/people/joe-croftcheck.md",
   "corpus_line": 60172,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -3299,7 +3299,7 @@
  {
   "slug": "wiki/timeline/periods/2017-poverty-floor.md",
   "corpus_line": 117592,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -3334,7 +3334,7 @@
  {
   "slug": "wiki/timeline/periods/covid-era-2020.md",
   "corpus_line": 118152,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
@@ -3362,14 +3362,14 @@
  {
   "slug": "wiki/timeline/periods/full-sail-2008-2010.md",
   "corpus_line": 118588,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/timeline/periods/uniontown-return-2013-2015.md",
   "corpus_line": 118901,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w15",
   "dat_range": "0704-0748"
  },

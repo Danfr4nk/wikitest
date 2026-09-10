@@ -63,3 +63,10 @@
 - attachment-model RESOLVED 2026-08-23: 129 exit episodes corroborate dossiers' 127; 110-of-127 withdrawn (dat:0622).
 - schrute-farms secret show primary-verified via 2019-09-02 iMessage (dat:0617), extends web verification.
 - Honest gaps: folie-a-deux 2025 quotes absent from held corpus (dat:0618); node-locking/chaos-preference/institutional-out counts rest on unheld Gemini/dox/dansynth (dat:0623/0626/0627); jack-rusko thread entirely unheld (dat:0630).
+
+## Wave 3 partial (w15 done: dat:0704–0731, 14 pages, 28 nodes)
+- New schema gotcha: wb-validate rejects `measurement` + `attributed_to` together — remove `measurement` from relay-style count datums (broadcast to running workers).
+- Full Sail page still prints August 2009 graduation with unresolved 2026-09-03 contradiction block — stale against dat:0058's September correction (propagation failure again).
+- Uniontown-return: earliest-rows gap verified exactly — one attachment-only row 2011-03-19, first text 2015-11-12: a 4.5-year primary-source void covering all 2011–2015 claims.
+- jajuan/jess threads: inherited MASTER dump's "everything Received" artifact; threads are two-way, not one-way.
+- Dan's Law Lex-collapse: held export confirms the Casey attribution the page only inferred.
