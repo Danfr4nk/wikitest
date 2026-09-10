@@ -154,3 +154,10 @@
 - steve-kezmarsky: thread 162 rows; "alive" correction 2018-12-09; elder fall Jan–Apr 2018 (dat:1087–1089).
 - nick-mattie: 324 rows both sides; Annie handoff 2017-05-02 (dat:1081/1082).
 - 23andme-genomics: extraction correction 2026-08-14 (dat:1091).
+
+## Wave 5 complete (w21 done: dat:0974–0989, 15 pages, 16 nodes)
+- Four more "received-only" readings reversed by held corpus: mike-hinkle 85 (64/21), mohammed-bin-salman 643 (362/281), new-jim-shaffer 1,845 (951/894), rj-ritchey 1,103 (585/518). Pattern: the page's number was right as the received half; the shape claim was wrong.
+- august-grievance-verdict: ledger reproduced nearly exactly; grievance 6 scored FALSE by the page itself; "He didn't rape me" retraction timestamp verified (2026-08-19 06:33 EDT).
+- favorites.md: deliberately no node — legacy totals covered by dat:0438; breadth correction in dat:1021.
+
+## Wave 5 totals: 373/497 pages done, dat:0974–1168 minted.

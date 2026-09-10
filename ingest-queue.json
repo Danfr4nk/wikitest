@@ -610,7 +610,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/we-the-kings.md",
   "corpus_line": 12471,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 38
@@ -642,177 +642,177 @@
  {
   "slug": "wiki/interests/favorites/taste-profile.md",
   "corpus_line": 12821,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 40
  },
  {
   "slug": "wiki/interests/film-canon.md",
   "corpus_line": 12861,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 128
  },
  {
   "slug": "wiki/interests/food-and-diet.md",
   "corpus_line": 12989,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 413
  },
  {
   "slug": "wiki/interests/golf.md",
   "corpus_line": 13402,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 77
  },
  {
   "slug": "wiki/interests/gore-vidal.md",
   "corpus_line": 13479,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 79
  },
  {
   "slug": "wiki/interests/index.md",
   "corpus_line": 13558,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 90
  },
  {
   "slug": "wiki/interests/language/vocabulary-lexicon.md",
   "corpus_line": 13648,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 486
  },
  {
   "slug": "wiki/interests/music/aliases/gripnotic.md",
   "corpus_line": 14134,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 120
  },
  {
   "slug": "wiki/interests/music/aliases/mogged-up.md",
   "corpus_line": 14254,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 51
  },
  {
   "slug": "wiki/interests/music/aliases/mogzart.md",
   "corpus_line": 14305,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 82
  },
  {
   "slug": "wiki/interests/music/aliases/sloppp.md",
   "corpus_line": 14387,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 368
  },
  {
   "slug": "wiki/interests/music/bands/batteries-not-included.md",
   "corpus_line": 14755,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 109
  },
  {
   "slug": "wiki/interests/music/concepts/lyrics-as-timbre.md",
   "corpus_line": 14864,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 153
  },
  {
   "slug": "wiki/interests/music/concepts/sub-bass-signature.md",
   "corpus_line": 15017,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 71
  },
  {
   "slug": "wiki/interests/music/index.md",
   "corpus_line": 15088,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 48
  },
  {
   "slug": "wiki/interests/music/overview.md",
   "corpus_line": 15136,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 277
  },
  {
   "slug": "wiki/interests/opie-and-anthony.md",
   "corpus_line": 15413,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 224
  },
  {
   "slug": "wiki/interests/rock-irrelevance-thesis.md",
   "corpus_line": 15637,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 76
  },
  {
   "slug": "wiki/interests/roman-republic.md",
   "corpus_line": 15713,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 183
  },
  {
   "slug": "wiki/interests/stand-up-comedy.md",
   "corpus_line": 15896,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 135
  },
  {
   "slug": "wiki/interests/the-office.md",
   "corpus_line": 16031,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 128
  },
  {
   "slug": "wiki/interests/video-games.md",
   "corpus_line": 16159,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 174
  },
  {
@@ -1298,7 +1298,7 @@
  {
   "slug": "wiki/mind/synthesis/august-grievance-verdict.md",
   "corpus_line": 29986,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 594
@@ -1306,265 +1306,265 @@
  {
   "slug": "wiki/mind/synthesis/block-unblock-loop.md",
   "corpus_line": 30580,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 799
  },
  {
   "slug": "wiki/mind/synthesis/bond-switch-2015.md",
   "corpus_line": 31379,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 362
  },
  {
   "slug": "wiki/mind/synthesis/closing-the-set.md",
   "corpus_line": 31741,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 442
  },
  {
   "slug": "wiki/mind/synthesis/dan-annie-fallout-verdict.md",
   "corpus_line": 32183,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 556
  },
  {
   "slug": "wiki/mind/synthesis/dormancy-not-exit.md",
   "corpus_line": 32739,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 767
  },
  {
   "slug": "wiki/mind/synthesis/estate-money-spine.md",
   "corpus_line": 33506,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 544
  },
  {
   "slug": "wiki/mind/synthesis/failure-to-launch.md",
   "corpus_line": 34050,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 683
  },
  {
   "slug": "wiki/mind/synthesis/fayette-return.md",
   "corpus_line": 34733,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 400
  },
  {
   "slug": "wiki/mind/synthesis/instrument-is-subject.md",
   "corpus_line": 35133,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 297
  },
  {
   "slug": "wiki/mind/synthesis/intake-constancy.md",
   "corpus_line": 35430,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 264
  },
  {
   "slug": "wiki/mind/synthesis/intensity-is-no-longer-the-only-mode.md",
   "corpus_line": 35694,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 112
  },
  {
   "slug": "wiki/mind/synthesis/interests-as-era-markers.md",
   "corpus_line": 35806,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 176
  },
  {
   "slug": "wiki/mind/synthesis/message-circadian-latency.md",
   "corpus_line": 35982,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 270
  },
  {
   "slug": "wiki/mind/synthesis/millennial-digital-witness.md",
   "corpus_line": 36252,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 240
  },
  {
   "slug": "wiki/mind/synthesis/morgantown-call-three-participant-ethical-analysis.md",
   "corpus_line": 36492,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 709
  },
  {
   "slug": "wiki/mind/synthesis/music-as-identity.md",
   "corpus_line": 37201,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 214
  },
  {
   "slug": "wiki/mind/synthesis/no-platonic-channel.md",
   "corpus_line": 37415,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 269
  },
  {
   "slug": "wiki/mind/synthesis/political-psyops.md",
   "corpus_line": 37684,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 272
  },
  {
   "slug": "wiki/mind/synthesis/read-receipt-forensics.md",
   "corpus_line": 37956,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 290
  },
  {
   "slug": "wiki/mind/synthesis/single-channel.md",
   "corpus_line": 38246,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 601
  },
  {
   "slug": "wiki/mind/synthesis/spatial-behavior.md",
   "corpus_line": 38847,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 128
  },
  {
   "slug": "wiki/mind/synthesis/supply-network.md",
   "corpus_line": 38975,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 611
  },
  {
   "slug": "wiki/mind/synthesis/the-binary-verdict.md",
   "corpus_line": 39586,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 520
  },
  {
   "slug": "wiki/mind/synthesis/the-cato-seat.md",
   "corpus_line": 40106,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 334
  },
  {
   "slug": "wiki/mind/synthesis/the-commissioned-self.md",
   "corpus_line": 40440,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 488
  },
  {
   "slug": "wiki/mind/synthesis/the-deferred-audit.md",
   "corpus_line": 40928,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 697
  },
  {
   "slug": "wiki/mind/synthesis/the-embedded-objective.md",
   "corpus_line": 41625,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 463
  },
  {
   "slug": "wiki/mind/synthesis/the-rescue-premise.md",
   "corpus_line": 42088,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 608
  },
  {
   "slug": "wiki/mind/synthesis/the-serial-monogamist.md",
   "corpus_line": 42696,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 261
  },
  {
   "slug": "wiki/mind/synthesis/the-unbroken-bond.md",
   "corpus_line": 42957,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 619
  },
  {
   "slug": "wiki/mind/synthesis/totality-themes.md",
   "corpus_line": 43576,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 1111
  },
  {
   "slug": "wiki/mind/synthesis/twitter-2024-cognitive-state.md",
   "corpus_line": 44687,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 491
  },
  {
   "slug": "wiki/mind/synthesis/vertical-authority-skepticism.md",
   "corpus_line": 45178,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 431
  },
  {
@@ -2562,7 +2562,7 @@
  {
   "slug": "wiki/people/michael-hinkle.md",
   "corpus_line": 64414,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 37
@@ -2578,7 +2578,7 @@
  {
   "slug": "wiki/people/mike-hinkle.md",
   "corpus_line": 64499,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 49
@@ -2594,7 +2594,7 @@
  {
   "slug": "wiki/people/milo.md",
   "corpus_line": 64589,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 302
@@ -2602,7 +2602,7 @@
  {
   "slug": "wiki/people/mohammed-bin-salman.md",
   "corpus_line": 64891,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 49
@@ -2626,7 +2626,7 @@
  {
   "slug": "wiki/people/new-jim-shaffer.md",
   "corpus_line": 65118,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 75
@@ -2658,7 +2658,7 @@
  {
   "slug": "wiki/people/renae-holland.md",
   "corpus_line": 65480,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 68
@@ -2674,7 +2674,7 @@
  {
   "slug": "wiki/people/rj-ritchey.md",
   "corpus_line": 66053,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 127
@@ -2682,7 +2682,7 @@
  {
   "slug": "wiki/people/rob-orange.md",
   "corpus_line": 66180,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 98
@@ -2690,7 +2690,7 @@
  {
   "slug": "wiki/people/rod-banks.md",
   "corpus_line": 66278,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 165
@@ -2714,7 +2714,7 @@
  {
   "slug": "wiki/people/sadie-harris.md",
   "corpus_line": 66561,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 129
@@ -2778,7 +2778,7 @@
  {
   "slug": "wiki/people/stephanie-nalbone.md",
   "corpus_line": 67319,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 97
@@ -2794,257 +2794,257 @@
  {
   "slug": "wiki/people/suzanne-frank-personality-assessment.md",
   "corpus_line": 67549,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 361
  },
  {
   "slug": "wiki/people/suzanne-frank.md",
   "corpus_line": 67910,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 1146
  },
  {
   "slug": "wiki/people/tan-calabrese.md",
   "corpus_line": 69056,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 66
  },
  {
   "slug": "wiki/people/tarik-fallous.md",
   "corpus_line": 69122,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 96
  },
  {
   "slug": "wiki/people/teddy.md",
   "corpus_line": 69218,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 130
  },
  {
   "slug": "wiki/people/the-unnamed-man.md",
   "corpus_line": 69348,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 226
  },
  {
   "slug": "wiki/people/timmy.md",
   "corpus_line": 69574,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 92
  },
  {
   "slug": "wiki/people/tom-wallisch.md",
   "corpus_line": 69666,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 49
  },
  {
   "slug": "wiki/people/tom.md",
   "corpus_line": 69715,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 328
  },
  {
   "slug": "wiki/people/trevor.md",
   "corpus_line": 70043,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 130
  },
  {
   "slug": "wiki/people/trinity-st-clair.md",
   "corpus_line": 70173,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 92
  },
  {
   "slug": "wiki/people/tuquick-17248123683.md",
   "corpus_line": 70265,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 214
  },
  {
   "slug": "wiki/people/urpaaa-at-yahoo-com.md",
   "corpus_line": 70479,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 115
  },
  {
   "slug": "wiki/people/valeria-iglesias-cid.md",
   "corpus_line": 70594,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 184
  },
  {
   "slug": "wiki/people/vanessa-frank.md",
   "corpus_line": 70778,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 184
  },
  {
   "slug": "wiki/people/vaughn.md",
   "corpus_line": 70962,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 123
  },
  {
   "slug": "wiki/people/vicki.md",
   "corpus_line": 71085,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 103
  },
  {
   "slug": "wiki/people/zach-clabaugh.md",
   "corpus_line": 71188,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 46
  },
  {
   "slug": "wiki/people/zach-clingan.md",
   "corpus_line": 71234,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 301
  },
  {
   "slug": "wiki/people/zach-hendricks.md",
   "corpus_line": 71535,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 47
  },
  {
   "slug": "wiki/people/zachariah-harshman.md",
   "corpus_line": 71582,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 221
  },
  {
   "slug": "wiki/people/zaco.md",
   "corpus_line": 71803,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 117
  },
  {
   "slug": "wiki/places/117-belmont-circle.md",
   "corpus_line": 71920,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 300
  },
  {
   "slug": "wiki/places/155-virginia-ave.md",
   "corpus_line": 72220,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 174
  },
  {
   "slug": "wiki/places/307-e-76th-st.md",
   "corpus_line": 72394,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 200
  },
  {
   "slug": "wiki/places/337-saratoga-drive.md",
   "corpus_line": 72594,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 145
  },
  {
   "slug": "wiki/places/424-bedford-ave.md",
   "corpus_line": 72739,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 132
  },
  {
   "slug": "wiki/places/90th-st-manhattan.md",
   "corpus_line": 72871,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 126
  },
  {
   "slug": "wiki/places/derrick-avenue.md",
   "corpus_line": 72997,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 129
  },
  {
   "slug": "wiki/places/index.md",
   "corpus_line": 73126,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 30
  },
  {
   "slug": "wiki/places/seven-springs.md",
   "corpus_line": 73156,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 120
  },
  {
   "slug": "wiki/places/the-unpapered-address.md",
   "corpus_line": 73276,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 563
  },
  {
@@ -3170,7 +3170,7 @@
  {
   "slug": "wiki/self/concepts/claude.md",
   "corpus_line": 76169,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 287
@@ -3250,7 +3250,7 @@
  {
   "slug": "wiki/self/favorites.md",
   "corpus_line": 77876,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w21",
   "dat_range": "0974-1018",
   "span": 168
@@ -3290,233 +3290,233 @@
  {
   "slug": "wiki/self/lineage/family-tree.md",
   "corpus_line": 78633,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 420
  },
  {
   "slug": "wiki/self/lineage/hybrid-analysis.md",
   "corpus_line": 79053,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 121
  },
  {
   "slug": "wiki/self/lineage/index.md",
   "corpus_line": 79174,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 29
  },
  {
   "slug": "wiki/self/location-history.md",
   "corpus_line": 79203,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 301
  },
  {
   "slug": "wiki/self/message-corpora/master-message-dump.md",
   "corpus_line": 79504,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 190
  },
  {
   "slug": "wiki/self/message-corpora/source-coverage-index.md",
   "corpus_line": 79694,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 206
  },
  {
   "slug": "wiki/self/overview.md",
   "corpus_line": 79900,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 181
  },
  {
   "slug": "wiki/self/tattoos.md",
   "corpus_line": 80081,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 306
  },
  {
   "slug": "wiki/self/twitter/2008.md",
   "corpus_line": 80387,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 789
  },
  {
   "slug": "wiki/self/twitter/2009.md",
   "corpus_line": 81176,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 2008
  },
  {
   "slug": "wiki/self/twitter/2010.md",
   "corpus_line": 83184,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 2413
  },
  {
   "slug": "wiki/self/twitter/2011.md",
   "corpus_line": 85597,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 1681
  },
  {
   "slug": "wiki/self/twitter/2012.md",
   "corpus_line": 87278,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 1543
  },
  {
   "slug": "wiki/self/twitter/2013.md",
   "corpus_line": 88821,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 2396
  },
  {
   "slug": "wiki/self/twitter/2014.md",
   "corpus_line": 91217,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 1301
  },
  {
   "slug": "wiki/self/twitter/2015.md",
   "corpus_line": 92518,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 521
  },
  {
   "slug": "wiki/self/twitter/2016.md",
   "corpus_line": 93039,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 665
  },
  {
   "slug": "wiki/self/twitter/2017.md",
   "corpus_line": 93704,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 873
  },
  {
   "slug": "wiki/self/twitter/2018.md",
   "corpus_line": 94577,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 724
  },
  {
   "slug": "wiki/self/twitter/2019.md",
   "corpus_line": 95301,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 557
  },
  {
   "slug": "wiki/self/twitter/2020.md",
   "corpus_line": 95858,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 312
  },
  {
   "slug": "wiki/self/twitter/2021.md",
   "corpus_line": 96170,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 360
  },
  {
   "slug": "wiki/self/twitter/2022.md",
   "corpus_line": 96530,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w27",
+  "dat_range": "1244-1288",
   "span": 1175
  },
  {
   "slug": "wiki/self/twitter/2023.md",
   "corpus_line": 97705,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 1199
  },
  {
   "slug": "wiki/self/twitter/2024.md",
   "corpus_line": 98904,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 1727
  },
  {
   "slug": "wiki/self/twitter/2025.md",
   "corpus_line": 100631,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 190
  },
  {
   "slug": "wiki/self/twitter/2026.md",
   "corpus_line": 100821,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 341
  },
  {
   "slug": "wiki/self/twitter.md",
   "corpus_line": 101162,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 345
  },
  {
   "slug": "wiki/self/youtube-watch-history.md",
   "corpus_line": 101507,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 341
  },
  {
@@ -3914,65 +3914,65 @@
  {
   "slug": "wiki/work/tech/ai-video-essays.md",
   "corpus_line": 120575,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 138
  },
  {
   "slug": "wiki/work/tech/danmodel.md",
   "corpus_line": 120713,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w26",
+  "dat_range": "1199-1243",
   "span": 168
  },
  {
   "slug": "wiki/work/tech/grok-build/overview.md",
   "corpus_line": 120881,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 74
  },
  {
   "slug": "wiki/work/tech/imessage-tooling/overview.md",
   "corpus_line": 120955,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 83
  },
  {
   "slug": "wiki/work/tech/index.md",
   "corpus_line": 121038,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w29",
+  "dat_range": "1334-1378",
   "span": 88
  },
  {
   "slug": "wiki/work/tech/max-framework/overview.md",
   "corpus_line": 121126,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 181
  },
  {
   "slug": "wiki/work/tech/mneme/overview.md",
   "corpus_line": 121307,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w28",
+  "dat_range": "1289-1333",
   "span": 94
  },
  {
   "slug": "wiki/work/tech/vibe-coding-games.md",
   "corpus_line": 121401,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null,
+  "status": "in_progress",
+  "worker": "w30",
+  "dat_range": "1379-1423",
   "span": 56
  }
 ]
