@@ -120,3 +120,12 @@
 - neurodivergence: dated 2025-09-15 "SHUT UP I'M AUTISTIC" makes page's "undated" framing stale; no clinical evidence held.
 - cool-metric: universal-jurisdiction thesis contradicted in-page (food exempt); key citations zero held hits.
 - ally-destiny: 375/154 burst replicates; corpus 2,073 rows (page's 1,987 stale).
+
+## Wave 4 complete (w18 done: dat:0839–0854, 15 pages, 16 nodes)
+- gemini-13: major contradiction — old wiki itself corrected the Uniontown novel to *Doorposts of Your House*, not *The Bend of the World*; tenancy Jan 2015–Feb 2019 not "~2012–2015".
+- josh-coccagna: 77 rows (45/32), not 32 one-way; DMT exchange falsifies one-way framing.
+- kelly-johansson: 129 rows (65/64), not 64 direction-unreliable.
+- lisa-frank: earliest "Lisa" hit 2015-12-02, 25 days before page's floor.
+- chatgpt: GPT-5 shipped 2025-08-07, so the decline narrative is untestable by construction.
+
+## Wave 4 totals: 298/497 pages done, dat:0749–0955 minted.

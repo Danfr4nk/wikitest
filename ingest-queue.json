@@ -418,7 +418,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/him.md",
   "corpus_line": 11196,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 33
@@ -1082,7 +1082,7 @@
  {
   "slug": "wiki/mind/concepts/the-handed-mirror.md",
   "corpus_line": 23834,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 221
@@ -2314,7 +2314,7 @@
  {
   "slug": "wiki/people/josh-coccagna.md",
   "corpus_line": 61144,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 41
@@ -2330,7 +2330,7 @@
  {
   "slug": "wiki/people/katie-fletcher.md",
   "corpus_line": 61262,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 155
@@ -2338,7 +2338,7 @@
  {
   "slug": "wiki/people/kelly-johansson.md",
   "corpus_line": 61417,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 57
@@ -2378,7 +2378,7 @@
  {
   "slug": "wiki/people/lauryn-ashly.md",
   "corpus_line": 62251,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 92
@@ -2410,7 +2410,7 @@
  {
   "slug": "wiki/people/lisa-durbin.md",
   "corpus_line": 62736,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 45
@@ -2418,7 +2418,7 @@
  {
   "slug": "wiki/people/lisa-frank.md",
   "corpus_line": 62781,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 65
@@ -2426,7 +2426,7 @@
  {
   "slug": "wiki/people/lucas-thomas.md",
   "corpus_line": 62846,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 74
@@ -2450,7 +2450,7 @@
  {
   "slug": "wiki/people/lukyan-mraz.md",
   "corpus_line": 63084,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 84
@@ -2514,7 +2514,7 @@
  {
   "slug": "wiki/people/matt-dunn.md",
   "corpus_line": 63605,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 125
@@ -3090,7 +3090,7 @@
  {
   "slug": "wiki/self/chats/gemini-13.md",
   "corpus_line": 74509,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 54
@@ -3106,7 +3106,7 @@
  {
   "slug": "wiki/self/chats/gemini-21.md",
   "corpus_line": 74672,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 107
@@ -3154,7 +3154,7 @@
  {
   "slug": "wiki/self/concepts/chatgpt.md",
   "corpus_line": 75462,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 403
@@ -3162,7 +3162,7 @@
  {
   "slug": "wiki/self/concepts/claude-code.md",
   "corpus_line": 75865,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w18",
   "dat_range": "0839-0883",
   "span": 304
