@@ -149,7 +149,7 @@
  {
   "slug": "wiki/interests/favorites/books/authors/bob-woodward.md",
   "corpus_line": 8909,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -233,7 +233,7 @@
  {
   "slug": "wiki/interests/favorites/eclecticism.md",
   "corpus_line": 9677,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -779,7 +779,7 @@
  {
   "slug": "wiki/meta/journeys/the-supply-line.md",
   "corpus_line": 17591,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -1584,7 +1584,7 @@
  {
   "slug": "wiki/people/chad-johnson.md",
   "corpus_line": 53132,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -1605,7 +1605,7 @@
  {
   "slug": "wiki/people/christo-coan.md",
   "corpus_line": 53288,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -1633,14 +1633,14 @@
  {
   "slug": "wiki/people/dan-polyak.md",
   "corpus_line": 53567,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
  {
   "slug": "wiki/people/danielle-onesi.md",
   "corpus_line": 53719,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -1703,14 +1703,14 @@
  {
   "slug": "wiki/people/drew-mcgettigan.md",
   "corpus_line": 54908,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
  {
   "slug": "wiki/people/drew.md",
   "corpus_line": 54967,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -1724,14 +1724,14 @@
  {
   "slug": "wiki/people/eli.md",
   "corpus_line": 55086,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
  {
   "slug": "wiki/people/elizabeth-eleanor.md",
   "corpus_line": 55205,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -3187,7 +3187,7 @@
  {
   "slug": "wiki/timeline/events/franki-fireworks-day-2013.md",
   "corpus_line": 106752,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -3250,7 +3250,7 @@
  {
   "slug": "wiki/timeline/events/the-fall-of-fran.md",
   "corpus_line": 108928,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -3264,7 +3264,7 @@
  {
   "slug": "wiki/timeline/events/uniontown-hospital-vape-alarm.md",
   "corpus_line": 109220,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -3383,21 +3383,21 @@
  {
   "slug": "wiki/work/bfs-foods.md",
   "corpus_line": 119337,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
  {
   "slug": "wiki/work/caviar-courier.md",
   "corpus_line": 119830,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
  {
   "slug": "wiki/work/creative-license.md",
   "corpus_line": 119887,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
@@ -3411,7 +3411,7 @@
  {
   "slug": "wiki/work/index.md",
   "corpus_line": 120355,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w10",
   "dat_range": "0479-0523"
  },
