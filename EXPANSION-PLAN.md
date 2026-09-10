@@ -60,7 +60,7 @@ Status: complete 2026-09-09. 40 entities committed (E1–E5), wb-validate clean 
 Every event must carry a `[when]` block derived from dat: evidence. Derive
 dates from the evidence; do not guess.
 
-Status: pending.
+Status: dispatched 2026-09-09 (5 workers, V1–V5).
 
 ## Wave 3 — Interpretations (~32) + Syntheses (~10) — 5 workers
 
