@@ -570,7 +570,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/taking-back-sunday.md",
   "corpus_line": 12202,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 95
@@ -578,7 +578,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/the-academy-is.md",
   "corpus_line": 12297,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 44
@@ -618,7 +618,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/wiki.md",
   "corpus_line": 12509,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 37
@@ -1186,7 +1186,7 @@
  {
   "slug": "wiki/mind/profile/texting-deviance-audit.md",
   "corpus_line": 26431,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 353
@@ -1218,7 +1218,7 @@
  {
   "slug": "wiki/mind/psychosexual/emotional-imprinting.md",
   "corpus_line": 27423,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 122
@@ -1290,7 +1290,7 @@
  {
   "slug": "wiki/mind/synthesis/attachment-trauma-bond.md",
   "corpus_line": 29543,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 443
@@ -2610,7 +2610,7 @@
  {
   "slug": "wiki/people/morley-frank.md",
   "corpus_line": 64940,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 137
@@ -2618,7 +2618,7 @@
  {
   "slug": "wiki/people/nathan-king.md",
   "corpus_line": 65077,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 41
@@ -2754,7 +2754,7 @@
  {
   "slug": "wiki/people/shannon.md",
   "corpus_line": 67068,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 55
@@ -2762,7 +2762,7 @@
  {
   "slug": "wiki/people/shelbie-breakiron.md",
   "corpus_line": 67123,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 150
@@ -3186,7 +3186,7 @@
  {
   "slug": "wiki/self/concepts/llm.md",
   "corpus_line": 76670,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 261
@@ -3194,7 +3194,7 @@
  {
   "slug": "wiki/self/concepts/wiki-brain.md",
   "corpus_line": 76931,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 185
@@ -3218,7 +3218,7 @@
  {
   "slug": "wiki/self/facebook/interests.md",
   "corpus_line": 77500,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 65
@@ -3266,7 +3266,7 @@
  {
   "slug": "wiki/self/gemini-activity/gemini-activity.md",
   "corpus_line": 78167,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 87
@@ -3274,7 +3274,7 @@
  {
   "slug": "wiki/self/index.md",
   "corpus_line": 78254,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w24",
   "dat_range": "1109-1153",
   "span": 109

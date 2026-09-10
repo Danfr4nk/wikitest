@@ -129,3 +129,11 @@
 - chatgpt: GPT-5 shipped 2025-08-07, so the decline narrative is untestable by construction.
 
 ## Wave 4 totals: 298/497 pages done, dat:0749–0955 minted.
+
+## Wave 5 partial (w24 done: dat:1109–1122, 15 pages, 13 nodes)
+- texting-deviance-audit: all six recipient complaints verified verbatim; audit's headline measurements come from unheld 183,787-row export — unreproducible, relayed as testimony (dat:1112). Two UTC-vs-Eastern dating slips noted.
+- morley-frank: new held find — 2018-04-28 "if there's one lesson morley taught me it was / don't be an asshole, be a sonofabitch" (primary contact, absent from page).
+- shannon: page says "Shannon's side only" but held corpus has 38 rows (23 inbound + 15 outbound) — correction (dat:1117).
+- shelbie-breakiron: 639 held rows vs page's 685 (different extracts, both recorded).
+- attachment-trauma-bond: 187:191 procurement statistic withdrawn (97.2% base rate).
+- wiki(rapper): no new node — already covered by dat:0149. self/index: index page, figures belong to summarized pages.
