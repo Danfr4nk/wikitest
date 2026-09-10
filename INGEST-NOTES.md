@@ -104,3 +104,10 @@
 - kristin thread: 20,014 held rows (dat:0801); surname self-attested, "Kayden" absent.
 - lucy: Suz's euthanasia-of-the-dog message verbatim 2018-04-23 (dat:0808).
 - libby: rate contradiction unresolved; arc absent from held corpus (dat:0806/0807).
+
+## Wave 4 partial (w16 done: dat:0749–0764, 15 pages, 16 nodes)
+- reassurance-architecture: crisis-day table replicates exactly once day boundaries are Eastern; but "call me" 170→129, "goodbye" 57→207 under documented normalizer — page used a different export (106,629 sent vs held 99,360) with unspecified normalizer. 106-ultimatum/127-false-exit/299-affirmation unresolved (dat:0754/0755).
+- linguistic-profile: CORRECTED 2026-08-23 block corroborated in direction (held TTR 0.0478 Dan vs 0.0526 interlocutors).
+- lindsay-carolla: 85 messages (44/41), not 41 (dat:0760).
+- REDACTION FLAG: corpus snapshot prints katherine-palakovich's phone handle unmasked in infobox; node treats as [phone redacted].
+- gemini-07: incident timestamps verified to the minute after Eastern/UTC conversion.
