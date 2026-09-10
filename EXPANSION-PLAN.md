@@ -45,7 +45,7 @@ NEW article-nodes in `kb/` only. Sources are never edited.
 | E4 | Au Za'atar crew + orbit | `ent:dimitri`, `ent:tarik-fallous`, `ent:ismaila-barry`, `ent:manuel`, `ent:valeria-iglesias-cid`, `ent:shelbie-breakiron`, `ent:jay-lauer`, `ent:new-jim-shaffer` |
 | E5 | pets + places + work entities | `ent:milo`, `ent:gabe`, `ent:au-zaatar`, `ent:nemacolin`, `ent:full-sail`, `ent:seven-springs`, `ent:morgantown-st-463`, `ent:gripnotic` |
 
-Status: pending.
+Status: dispatched 2026-09-09 (5 workers, E1–E5).
 
 ## Wave 2 — Events (~44) — 5 workers
 
@@ -79,5 +79,7 @@ Interpretations need `perspective` (self/external/llm), `falsifiers`, and
 Status: pending.
 
 ## Coordination log
+
+- 2026-09-09: plan committed. Wave 1 dispatched (E1–E5).
 
 - 2026-09-09: plan committed. Wave 1 dispatched (E1–E5).
