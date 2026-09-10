@@ -170,14 +170,14 @@
  {
   "slug": "wiki/interests/favorites/books/authors/michael-wolff.md",
   "corpus_line": 9037,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
  {
   "slug": "wiki/interests/favorites/books/topics/ancient-history.md",
   "corpus_line": 9079,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -191,14 +191,14 @@
  {
   "slug": "wiki/interests/favorites/books/topics/journalism.md",
   "corpus_line": 9131,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
  {
   "slug": "wiki/interests/favorites/books/topics/politics.md",
   "corpus_line": 9157,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -793,7 +793,7 @@
  {
   "slug": "wiki/meta/open-questions.md",
   "corpus_line": 17823,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -807,21 +807,21 @@
  {
   "slug": "wiki/meta/recent-activity.md",
   "corpus_line": 18766,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
  {
   "slug": "wiki/meta/skills.md",
   "corpus_line": 19144,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
  {
   "slug": "wiki/meta/testimony-veracity.md",
   "corpus_line": 19384,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -1598,7 +1598,7 @@
  {
   "slug": "wiki/people/christian-hanson.md",
   "corpus_line": 53239,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -1626,7 +1626,7 @@
  {
   "slug": "wiki/people/dakota.md",
   "corpus_line": 53518,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -1654,7 +1654,7 @@
  {
   "slug": "wiki/people/dave-moore.md",
   "corpus_line": 53970,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -1675,7 +1675,7 @@
  {
   "slug": "wiki/people/david-j-frank.md",
   "corpus_line": 54317,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -1717,7 +1717,7 @@
  {
   "slug": "wiki/people/ej-rags.md",
   "corpus_line": 55008,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -1794,7 +1794,7 @@
  {
   "slug": "wiki/people/franki-faris.md",
   "corpus_line": 56721,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -3208,7 +3208,7 @@
  {
   "slug": "wiki/timeline/events/july-2026-recontact.md",
   "corpus_line": 107333,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -3222,14 +3222,14 @@
  {
   "slug": "wiki/timeline/events/march-2026-terminal-phase.md",
   "corpus_line": 108211,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
  {
   "slug": "wiki/timeline/events/robotussin-s-last-dance.md",
   "corpus_line": 108403,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -3243,7 +3243,7 @@
  {
   "slug": "wiki/timeline/events/teen-concert-years.md",
   "corpus_line": 108741,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },
@@ -3271,7 +3271,7 @@
  {
   "slug": "wiki/timeline/index.md",
   "corpus_line": 109495,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w7",
   "dat_range": "0344-0388"
  },

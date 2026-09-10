@@ -40,3 +40,8 @@
 - 22 findings on the 7,654-line master timeline, committed as 080cf57, validates clean.
 - Worker self-caught the `src:old-wiki-export-2026-09-09` typo pre-commit after the coordinator heads-up.
 - Remaining repo errors (0357–0359, `src:imessage-corpus` typo) are w7's in-flight files; heads-up sent.
+
+## Wave 2 partial (w7 done: dat:0344–0362, 19 pages)
+- Direct Python CSV scans over corpus/messages.csv proved faster/more precise than bin/corpus-query (worker note).
+- New contradictions: franki-faris 2016-05-09 "I just saw Franki" (held iMessage) vs page's "no contact after 2013" (dat:0357); timeline/index stats drift (3,249/360 vs master 3,661/386, dat:0362); july-2026-recontact count gap (page 624 vs held 430, dat:0358).
+- ej-rags page rests entirely on unheld Facebook thread — load-bearing 2013-return dating has no re-verifiable anchor (dat:0356).
