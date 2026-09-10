@@ -82,5 +82,3 @@ Status: pending.
 
 - 2026-09-09: plan committed. Wave 1 dispatched (E1–E5).
 - 2026-09-09: wave 1 complete — 40 entities, validate clean, 0 new publish exposures. Wave 2 dispatched (V1–V5).
-
-- 2026-09-09: plan committed. Wave 1 dispatched (E1–E5).
