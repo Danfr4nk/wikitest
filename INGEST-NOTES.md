@@ -173,3 +173,9 @@
 - grok-build 2026-06-22 log: iMessage responder glitched and spammed an ex (dat:1309).
 - twitter/2021: free-speech-absolutism exit moves five months earlier (2021-10-26 Lenny Bruce/Chappelle distinction).
 - source-coverage-index: 52 sources, 1,786,124 rows vs ~187k unique (9.6x deliberate duplication) (dat:1304).
+
+## Wave 6 partial (w26 done: dat:1199–1223, 25 pages, 25 nodes)
+- vicki: "234 messages" is the received side only; 512 total (281/231) (dat:1211).
+- suzanne-frank: July-2026 (14) and Aug-1–11-2026 (28) verify exactly.
+- twitter-2025 11-month blackout filed LOW — export-incompleteness (dat:1218) makes it unresolved, not fact.
+- DUP-FLAG: dat 1344/1345 duplicated (w29's committed batch-2 vs its own untracked drafts) — w29 notified to renumber before committing.

@@ -666,7 +666,7 @@
  {
   "slug": "wiki/interests/golf.md",
   "corpus_line": 13402,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 77
@@ -674,7 +674,7 @@
  {
   "slug": "wiki/interests/gore-vidal.md",
   "corpus_line": 13479,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 79
@@ -722,7 +722,7 @@
  {
   "slug": "wiki/interests/music/aliases/sloppp.md",
   "corpus_line": 14387,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 368
@@ -730,7 +730,7 @@
  {
   "slug": "wiki/interests/music/bands/batteries-not-included.md",
   "corpus_line": 14755,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 109
@@ -738,7 +738,7 @@
  {
   "slug": "wiki/interests/music/concepts/lyrics-as-timbre.md",
   "corpus_line": 14864,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 153
@@ -802,7 +802,7 @@
  {
   "slug": "wiki/interests/the-office.md",
   "corpus_line": 16031,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 128
@@ -1314,7 +1314,7 @@
  {
   "slug": "wiki/mind/synthesis/bond-switch-2015.md",
   "corpus_line": 31379,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 362
@@ -1378,7 +1378,7 @@
  {
   "slug": "wiki/mind/synthesis/intake-constancy.md",
   "corpus_line": 35430,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 264
@@ -1466,7 +1466,7 @@
  {
   "slug": "wiki/mind/synthesis/spatial-behavior.md",
   "corpus_line": 38847,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 128
@@ -1482,7 +1482,7 @@
  {
   "slug": "wiki/mind/synthesis/the-binary-verdict.md",
   "corpus_line": 39586,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 520
@@ -1530,7 +1530,7 @@
  {
   "slug": "wiki/mind/synthesis/the-serial-monogamist.md",
   "corpus_line": 42696,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 261
@@ -1538,7 +1538,7 @@
  {
   "slug": "wiki/mind/synthesis/the-unbroken-bond.md",
   "corpus_line": 42957,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 619
@@ -1546,7 +1546,7 @@
  {
   "slug": "wiki/mind/synthesis/totality-themes.md",
   "corpus_line": 43576,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 1111
@@ -1554,7 +1554,7 @@
  {
   "slug": "wiki/mind/synthesis/twitter-2024-cognitive-state.md",
   "corpus_line": 44687,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 491
@@ -2802,7 +2802,7 @@
  {
   "slug": "wiki/people/suzanne-frank.md",
   "corpus_line": 67910,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 1146
@@ -2922,7 +2922,7 @@
  {
   "slug": "wiki/people/vicki.md",
   "corpus_line": 71085,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 103
@@ -2930,7 +2930,7 @@
  {
   "slug": "wiki/people/zach-clabaugh.md",
   "corpus_line": 71188,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 46
@@ -2938,7 +2938,7 @@
  {
   "slug": "wiki/people/zach-clingan.md",
   "corpus_line": 71234,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 301
@@ -2946,7 +2946,7 @@
  {
   "slug": "wiki/people/zach-hendricks.md",
   "corpus_line": 71535,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 47
@@ -3322,7 +3322,7 @@
  {
   "slug": "wiki/self/message-corpora/master-message-dump.md",
   "corpus_line": 79504,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 190
@@ -3346,7 +3346,7 @@
  {
   "slug": "wiki/self/tattoos.md",
   "corpus_line": 80081,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 306
@@ -3370,7 +3370,7 @@
  {
   "slug": "wiki/self/twitter/2010.md",
   "corpus_line": 83184,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 2413
@@ -3418,7 +3418,7 @@
  {
   "slug": "wiki/self/twitter/2016.md",
   "corpus_line": 93039,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 665
@@ -3490,7 +3490,7 @@
  {
   "slug": "wiki/self/twitter/2025.md",
   "corpus_line": 100631,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 190
@@ -3922,7 +3922,7 @@
  {
   "slug": "wiki/work/tech/danmodel.md",
   "corpus_line": 120713,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w26",
   "dat_range": "1199-1243",
   "span": 168
