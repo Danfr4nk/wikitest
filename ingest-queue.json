@@ -247,107 +247,107 @@
  {
   "slug": "wiki/interests/favorites/music/artists/a-day-to-remember.md",
   "corpus_line": 10240,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/afi.md",
   "corpus_line": 10277,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/all-time-low.md",
   "corpus_line": 10314,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/anberlin.md",
   "corpus_line": 10359,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/barenaked-ladies.md",
   "corpus_line": 10402,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/bloc-party.md",
   "corpus_line": 10443,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/cobra-starship.md",
   "corpus_line": 10476,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/coheed-and-cambria.md",
   "corpus_line": 10514,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/coldplay.md",
   "corpus_line": 10557,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/default.md",
   "corpus_line": 10592,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/elliott-smith.md",
   "corpus_line": 10629,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/fall-out-boy.md",
   "corpus_line": 10741,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/flight-of-the-conchords.md",
   "corpus_line": 10960,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/guster.md",
   "corpus_line": 11009,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/gym-class-heroes.md",
   "corpus_line": 11047,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/interests/favorites/music/artists/hawthorne-heights.md",
@@ -828,107 +828,107 @@
  {
   "slug": "wiki/mind/concepts/acquisition-drive.md",
   "corpus_line": 19519,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/mind/concepts/attachment-model.md",
   "corpus_line": 19834,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/mind/concepts/bunker-core.md",
   "corpus_line": 20175,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/mind/concepts/calibrated-confidence.md",
   "corpus_line": 20317,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/mind/concepts/chaos-preference.md",
   "corpus_line": 20633,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/mind/concepts/conflict-architecture.md",
   "corpus_line": 20904,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/mind/concepts/contact-gini.md",
   "corpus_line": 21083,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/mind/concepts/dans-law.md",
   "corpus_line": 21578,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/mind/concepts/document-fabrication.md",
   "corpus_line": 21661,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/mind/concepts/erotic-architecture.md",
   "corpus_line": 21841,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/mind/concepts/exocortex.md",
   "corpus_line": 22079,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/mind/concepts/forensic-method.md",
   "corpus_line": 22254,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/mind/concepts/institutional-out.md",
   "corpus_line": 22615,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/mind/concepts/node-locking.md",
   "corpus_line": 22717,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/mind/concepts/phenomenology-lens.md",
   "corpus_line": 22848,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/mind/concepts/reassurance-architecture.md",
@@ -1808,121 +1808,121 @@
  {
   "slug": "wiki/people/gabe.md",
   "corpus_line": 57211,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/garrett.md",
   "corpus_line": 57305,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/people/index.md",
   "corpus_line": 57395,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/people/ismaila-barry.md",
   "corpus_line": 57585,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/people/jack-connor.md",
   "corpus_line": 57657,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/jack-rusko.md",
   "corpus_line": 57718,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/people/jacob-bacharach.md",
   "corpus_line": 57767,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/jajuan-davis.md",
   "corpus_line": 58049,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/people/james-dee.md",
   "corpus_line": 58094,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/james.md",
   "corpus_line": 58244,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/people/jamie-mohler.md",
   "corpus_line": 58396,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/jaredtricia.md",
   "corpus_line": 58642,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/people/jason-bermejo.md",
   "corpus_line": 58753,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/jason-cole.md",
   "corpus_line": 58957,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/people/jay-lauer.md",
   "corpus_line": 59010,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/jenn-lynn.md",
   "corpus_line": 59189,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/people/jerad-friedline.md",
   "corpus_line": 59284,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/people/jerel-coles.md",
@@ -1934,93 +1934,93 @@
  {
   "slug": "wiki/people/jess.md",
   "corpus_line": 59977,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/people/jim-blanchard.md",
   "corpus_line": 60022,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/jim-vrabel.md",
   "corpus_line": 60084,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/jimmy.md",
   "corpus_line": 60129,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/people/joe-croftcheck.md",
   "corpus_line": 60172,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/people/joe-oshnack.md",
   "corpus_line": 60259,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/joey-superick.md",
   "corpus_line": 60383,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w13",
+  "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/people/john-anderson.md",
   "corpus_line": 60424,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/john-carney.md",
   "corpus_line": 60465,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/john-felix.md",
   "corpus_line": 60554,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/people/john-paci.md",
   "corpus_line": 60620,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/johnny-dealer.md",
   "corpus_line": 60865,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/josh-brannan.md",
   "corpus_line": 61033,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/people/josh-coccagna.md",
@@ -3285,93 +3285,93 @@
  {
   "slug": "wiki/timeline/periods/2010s.md",
   "corpus_line": 117224,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/timeline/periods/2015-2016-annie-relationship-start.md",
   "corpus_line": 117475,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/timeline/periods/2017-poverty-floor.md",
   "corpus_line": 117592,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/timeline/periods/2018-deep-cycle.md",
   "corpus_line": 117697,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/timeline/periods/2020-2021-market-era.md",
   "corpus_line": 117779,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/timeline/periods/2021-2023-employment-block.md",
   "corpus_line": 117882,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/timeline/periods/2025-collapse.md",
   "corpus_line": 118060,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w11",
+  "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/timeline/periods/covid-era-2020.md",
   "corpus_line": 118152,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/timeline/periods/dark-era-2007-2008.md",
   "corpus_line": 118256,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/timeline/periods/dec-2025-spike.md",
   "corpus_line": 118412,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w12",
+  "dat_range": "0569-0613"
  },
  {
   "slug": "wiki/timeline/periods/feb-apr-2025-return-and-rupture.md",
   "corpus_line": 118455,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w14",
+  "dat_range": "0659-0703"
  },
  {
   "slug": "wiki/timeline/periods/full-sail-2008-2010.md",
   "corpus_line": 118588,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/timeline/periods/uniontown-return-2013-2015.md",
   "corpus_line": 118901,
-  "status": "pending",
-  "worker": null,
-  "dat_range": null
+  "status": "in_progress",
+  "worker": "w15",
+  "dat_range": "0704-0748"
  },
  {
   "slug": "wiki/work/au-zaatar.md",
