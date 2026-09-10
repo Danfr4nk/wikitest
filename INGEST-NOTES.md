@@ -84,3 +84,10 @@
 - john-felix: thread 156 rows to Jan 2018 (page said Jun 2016); 2026-08-18 revision's specific 2018 quotes have zero held hits.
 - dec-2025-spike: strongest verification of the wave — Dec 4,620 vs 4,657, ratios replicate (dat:0591).
 - calibrated-confidence: "22x" claim not reproducible (dat:0580).
+
+## Wave 3 complete (w14 done: dat:0659–0681, 14 pages, 23 nodes)
+- Direction-correction pattern: jay-lauer 11:07 runs Annie→Dan (corrects page AND dat:0064 — dat:0064 needs amendment); jim-vrabel 612 two-way not 313 one-way; jason-bermejo 761 not 1,200; james-dee dormancy framing contradicted by 147 post-July-21 messages.
+- josh-brannan wav artifact verified; 2018 volume 40,500 held vs 40,514 claimed.
+- Highest-value unheld sources: Jay Lauer Rick exchange (page's "single most important fact"), Bacharach discovery thread, Paci-arranged eviction.
+
+## Wave 3 totals: 223/497 pages done, dat:0524–0731 minted.
