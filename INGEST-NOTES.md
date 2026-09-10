@@ -30,3 +30,8 @@
 - 75 pages, dat 0284–0523. w6 = master-timeline.md solo (7654 lines, dat 0284–0343).
 - Must-includes: jerel-coles.md (w8 — confirm "never says yes" patch per validation report §441), uniontown-hospital-vape-alarm.md (w10 — cross-check summons MJ-14101-NT-0000082-2018).
 - w1's unused 0079–0103 held as spare overflow.
+
+## Wave 2 partial (w10 done: dat:0479–0499)
+- Vape-alarm must-include resolved: dat:0495 — summons MJ-14101-NT-0000082-2018 fully tabled, legal index carries nothing the page lacked; disposition still unknown, filed honestly.
+- BFS Foods 2026-08-26 corrected sequence (cut first, killing retaliation theory) — corpus revision is newer than old-wiki export; nodes taken from fresher revision with divergence noted.
+- New schema gotcha (in-progress drafts, w6/w7): invented source ids fail — `src:old-wiki-export-2026-09-09` does not exist (correct: `src:old-wiki-export-2026-09-04`); `src:imessage-corpus` does not exist (correct: `src:imessage-corpus-2026`).
