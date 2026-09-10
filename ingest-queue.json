@@ -642,7 +642,7 @@
  {
   "slug": "wiki/interests/favorites/taste-profile.md",
   "corpus_line": 12821,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 40
@@ -650,7 +650,7 @@
  {
   "slug": "wiki/interests/film-canon.md",
   "corpus_line": 12861,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 128
@@ -714,7 +714,7 @@
  {
   "slug": "wiki/interests/music/aliases/mogzart.md",
   "corpus_line": 14305,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 82
@@ -754,7 +754,7 @@
  {
   "slug": "wiki/interests/music/index.md",
   "corpus_line": 15088,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 48
@@ -778,7 +778,7 @@
  {
   "slug": "wiki/interests/rock-irrelevance-thesis.md",
   "corpus_line": 15637,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 76
@@ -1354,7 +1354,7 @@
  {
   "slug": "wiki/mind/synthesis/failure-to-launch.md",
   "corpus_line": 34050,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 683
@@ -1362,7 +1362,7 @@
  {
   "slug": "wiki/mind/synthesis/fayette-return.md",
   "corpus_line": 34733,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 400
@@ -1386,7 +1386,7 @@
  {
   "slug": "wiki/mind/synthesis/intensity-is-no-longer-the-only-mode.md",
   "corpus_line": 35694,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 112
@@ -1410,7 +1410,7 @@
  {
   "slug": "wiki/mind/synthesis/millennial-digital-witness.md",
   "corpus_line": 36252,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 240
@@ -1434,7 +1434,7 @@
  {
   "slug": "wiki/mind/synthesis/no-platonic-channel.md",
   "corpus_line": 37415,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 269
@@ -1474,7 +1474,7 @@
  {
   "slug": "wiki/mind/synthesis/supply-network.md",
   "corpus_line": 38975,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 611
@@ -1498,7 +1498,7 @@
  {
   "slug": "wiki/mind/synthesis/the-commissioned-self.md",
   "corpus_line": 40440,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 488
@@ -2794,7 +2794,7 @@
  {
   "slug": "wiki/people/suzanne-frank-personality-assessment.md",
   "corpus_line": 67549,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 361
@@ -2818,7 +2818,7 @@
  {
   "slug": "wiki/people/tarik-fallous.md",
   "corpus_line": 69122,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 96
@@ -2898,7 +2898,7 @@
  {
   "slug": "wiki/people/valeria-iglesias-cid.md",
   "corpus_line": 70594,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 184
@@ -2978,7 +2978,7 @@
  {
   "slug": "wiki/places/155-virginia-ave.md",
   "corpus_line": 72220,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 174
@@ -2986,7 +2986,7 @@
  {
   "slug": "wiki/places/307-e-76th-st.md",
   "corpus_line": 72394,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 200
@@ -2994,7 +2994,7 @@
  {
   "slug": "wiki/places/337-saratoga-drive.md",
   "corpus_line": 72594,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 145
@@ -3010,7 +3010,7 @@
  {
   "slug": "wiki/places/90th-st-manhattan.md",
   "corpus_line": 72871,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 126
@@ -3314,7 +3314,7 @@
  {
   "slug": "wiki/self/location-history.md",
   "corpus_line": 79203,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 301
@@ -3394,7 +3394,7 @@
  {
   "slug": "wiki/self/twitter/2013.md",
   "corpus_line": 88821,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 2396
@@ -3410,7 +3410,7 @@
  {
   "slug": "wiki/self/twitter/2015.md",
   "corpus_line": 92518,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 521
@@ -3426,7 +3426,7 @@
  {
   "slug": "wiki/self/twitter/2017.md",
   "corpus_line": 93704,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 873
@@ -3450,7 +3450,7 @@
  {
   "slug": "wiki/self/twitter/2020.md",
   "corpus_line": 95858,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 312
@@ -3466,7 +3466,7 @@
  {
   "slug": "wiki/self/twitter/2022.md",
   "corpus_line": 96530,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w27",
   "dat_range": "1244-1288",
   "span": 1175

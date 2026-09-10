@@ -179,3 +179,11 @@
 - suzanne-frank: July-2026 (14) and Aug-1–11-2026 (28) verify exactly.
 - twitter-2025 11-month blackout filed LOW — export-incompleteness (dat:1218) makes it unresolved, not fact.
 - DUP-FLAG: dat 1344/1345 duplicated (w29's committed batch-2 vs its own untracked drafts) — w29 notified to renumber before committing.
+
+## Wave 6 partial (w27 done: dat:1244–1269, 25 pages, 26 nodes)
+- tarik-fallous: fully verified — 80 messages (59/21), 2023-08-11–2026-04-12, all key quotes present.
+- saratoga: web-corroborated MLS #1721561 — sold 2026-06-24 for $465,000 (page said June 23; one-day discrepancy, unresolved).
+- film-canon: 2 of 7 quoted lines absent from held corpus — the two most load-bearing quotes for the canon-as-obligation argument.
+- valeria: all four iMessage anchors absent; "valeria" appears once corpus-wide.
+- suzanne-personality-assessment: 1-for-5 ("It's time for you to go." verified 2026-08-11).
+- music index: MOGZART "closed" status stale vs verified March 2026 revival.
