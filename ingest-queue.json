@@ -58,14 +58,14 @@
  {
   "slug": "wiki/interests/concert-record/festivals/high-tide-4.md",
   "corpus_line": 8096,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
  {
   "slug": "wiki/interests/concert-record/festivals/nintendo-fusion-tour.md",
   "corpus_line": 8132,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -79,7 +79,7 @@
  {
   "slug": "wiki/interests/concert-record/festivals/rolling-rock-town-fair.md",
   "corpus_line": 8229,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -107,7 +107,7 @@
  {
   "slug": "wiki/interests/concert-record/performers/dave-chappelle.md",
   "corpus_line": 8594,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -1381,7 +1381,7 @@
  {
   "slug": "wiki/people/al.md",
   "corpus_line": 45689,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -1416,7 +1416,7 @@
  {
   "slug": "wiki/people/ally-lubin-2026-08-26-update.md",
   "corpus_line": 47041,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -1486,14 +1486,14 @@
  {
   "slug": "wiki/people/arnu.md",
   "corpus_line": 51974,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
  {
   "slug": "wiki/people/bekah-fullem.md",
   "corpus_line": 52060,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -1521,7 +1521,7 @@
  {
   "slug": "wiki/people/bobby-cole.md",
   "corpus_line": 52399,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -3089,21 +3089,21 @@
  {
   "slug": "wiki/timeline/annie-read-notes.md",
   "corpus_line": 102283,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
  {
   "slug": "wiki/timeline/annie-record.md",
   "corpus_line": 102792,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
  {
   "slug": "wiki/timeline/events/2026-08-26-dan-consistency-test.md",
   "corpus_line": 104070,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -3117,7 +3117,7 @@
  {
   "slug": "wiki/timeline/events/2026-08-26-visible-change.md",
   "corpus_line": 104386,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -3138,7 +3138,7 @@
  {
   "slug": "wiki/timeline/events/august-2026-morgantown-call-source-amendment.md",
   "corpus_line": 104666,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
@@ -3180,7 +3180,7 @@
  {
   "slug": "wiki/timeline/events/fran-death-vigil.md",
   "corpus_line": 106370,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w3",
   "dat_range": "0149-0193"
  },
