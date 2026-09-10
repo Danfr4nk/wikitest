@@ -76,9 +76,11 @@ Interpretations need `perspective` (self/external/llm), `falsifiers`, and
 `alternatives` like the existing ones. Syntheses cite the layer below them
 (interpretations, patterns, events) plus the dat nodes.
 
-Status: dispatched 2026-09-09 (5 workers, I1–I4 interpretations, S1 syntheses).
+Status: complete 2026-09-09. 32 interpretations (I1–I4) + 10 syntheses (S1) committed, wb-validate clean (856 nodes, 0 errors, 0 warnings), 0 new publish exposures, no duplicate ids.
 
 ## Coordination log
 
 - 2026-09-09: plan committed. Wave 1 dispatched (E1–E5).
 - 2026-09-09: wave 1 complete — 40 entities, validate clean, 0 new publish exposures. Wave 2 dispatched (V1–V5).
+- 2026-09-09: wave 2 complete — 44 events; coordinator rename evt:2026-08-bfs-firing → evt:2026-05-bfs-firing; grok-build slug kept (genuine ambiguity). Wave 3 dispatched (I1–I4, S1).
+- 2026-09-09: wave 3 complete — 42 articles. EXPANSION DONE. Final state: 856 nodes (L0:13 L1:702 L2:88 L3:39 L4:3 L5:11), 44 edges, validate clean, 368 pre-existing publish problems / 0 new from upper layers.
