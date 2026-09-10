@@ -41,12 +41,13 @@ the locus of the claim
 [`dat:0206`](../data/0206-brandon-hill-bfs-drawer-shortage.md),
 [`dat:0249`](../data/0249-anita-bfs-gm-shortage-claim.md)).
 
-**Note on this article's id:** it carries "2026-08", but every piece of
+**Note on this article's id:** it was renamed 2026-09-09 from
+`evt:2026-08-bfs-firing` to `evt:2026-05-bfs-firing` because every piece of
 evidence dates the termination to **mid-May 2026**. August 11, 2026 is the
 *reversal* of the termination (covered on
 [`evt:2026-08-11-bfs-rehire-offered`](2026-08-11-bfs-rehire-offered.md)); the
-2026-08-26 date is the page's CORRECTED-sequence revision. The id is kept as
-assigned; the dates below follow the evidence.
+2026-08-26 date is the page's CORRECTED-sequence revision. The dates below
+follow the evidence.
 
 ## Dated sequence (CORRECTED [2026-08-26] revision)
 
