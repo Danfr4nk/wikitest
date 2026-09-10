@@ -15,3 +15,7 @@
 ## Wave 2 must-include
 - wiki/timeline/events/uniontown-hospital-vape-alarm.md — cross-check the 2018 vape-alarm summons MJ-14101-NT-0000082-2018 flagged by the legal/index reader (w1), docket disposition unknown.
 - dat ranges continue at 0284. w1 left 0079–0103 unused (its pages done); treat as spare overflow.
+
+## Flags from w5 (dat:0239–0257)
+- Privacy: `raw/old-wiki-export-2026-09-04/whole.txt` carries third-party phone handles UNREDACTED (verified: Bill Ulmer, Brad Hubeaut, Brennan Meadows, Bruce Burish, Morgantown-call page) where the corpus snapshot redacts them as [phone redacted]. Workers followed the corpus convention (no numbers reproduced). Anything built directly from whole.txt must be redacted before publish — noted in dat:0251.
+- Validation-report follow-up: the Morgantown validation report (2026-09-09) independently validated the Morgantown page's core claims; its one failing assertion ("never says yes") is on the **Jerel Coles people page**, which the Morgantown page had already corrected 2026-08-20. Wave 2: when the Coles page is ingested, confirm whether it has since been patched (report §441 recommends the patch).

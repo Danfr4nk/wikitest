@@ -51,7 +51,7 @@
  {
   "slug": "wiki/interests/concert-record/festivals/final-show-2011.md",
   "corpus_line": 8064,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -86,21 +86,21 @@
  {
   "slug": "wiki/interests/concert-record/festivals/the-bamboozle-2011.md",
   "corpus_line": 8279,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
  {
   "slug": "wiki/interests/concert-record/festivals/vans-warped-tour.md",
   "corpus_line": 8321,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
  {
   "slug": "wiki/interests/concert-record/index.md",
   "corpus_line": 8396,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -1395,14 +1395,14 @@
  {
   "slug": "wiki/people/alexander-jackson.md",
   "corpus_line": 45846,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
  {
   "slug": "wiki/people/alexis-armel.md",
   "corpus_line": 45941,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -1444,14 +1444,14 @@
  {
   "slug": "wiki/people/anita.md",
   "corpus_line": 48928,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
  {
   "slug": "wiki/people/annie-ulmer-2026-08-26-update.md",
   "corpus_line": 49045,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -1507,7 +1507,7 @@
  {
   "slug": "wiki/people/bill-ulmer.md",
   "corpus_line": 52298,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -1528,7 +1528,7 @@
  {
   "slug": "wiki/people/brad-hubeaut.md",
   "corpus_line": 52510,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -1542,7 +1542,7 @@
  {
   "slug": "wiki/people/brennan-meadows.md",
   "corpus_line": 52655,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -1556,7 +1556,7 @@
  {
   "slug": "wiki/people/bruce-burish.md",
   "corpus_line": 52750,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -3110,7 +3110,7 @@
  {
   "slug": "wiki/timeline/events/2026-08-26-visible-change-2.md",
   "corpus_line": 104208,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -3131,7 +3131,7 @@
  {
   "slug": "wiki/timeline/events/april-may-2026-final-weeks.md",
   "corpus_line": 104587,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
@@ -3145,7 +3145,7 @@
  {
   "slug": "wiki/timeline/events/august-2026-morgantown-call.md",
   "corpus_line": 104750,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w5",
   "dat_range": "0239-0283"
  },
