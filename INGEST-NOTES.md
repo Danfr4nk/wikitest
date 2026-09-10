@@ -111,3 +111,12 @@
 - lindsay-carolla: 85 messages (44/41), not 41 (dat:0760).
 - REDACTION FLAG: corpus snapshot prints katherine-palakovich's phone handle unmasked in infobox; node treats as [phone redacted].
 - gemini-07: incident timestamps verified to the minute after Eastern/UTC conversion.
+
+## Wave 4 partial (w20 done: dat:0929–0955, 15 pages, 27 nodes)
+- jpegmafia: "Darkskin Maniac" doesn't exist — it's "Darkskin Manson" (2014 Devon Hendryx project).
+- kya-hansen: Jerad's "I don't think that's her" was about a Vanessa Labi ID attempt, not Kya — identity question built on misattached quote.
+- marla: thread is two-way (74 rows), not one-way.
+- marty-martin: May 24 account is in the SUZ thread, not Annie's; "make the store whole" has zero held hits.
+- neurodivergence: dated 2025-09-15 "SHUT UP I'M AUTISTIC" makes page's "undated" framing stale; no clinical evidence held.
+- cool-metric: universal-jurisdiction thesis contradicted in-page (food exempt); key citations zero held hits.
+- ally-destiny: 375/154 burst replicates; corpus 2,073 rows (page's 1,987 stale).

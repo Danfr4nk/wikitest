@@ -442,7 +442,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/jedi-mind-tricks.md",
   "corpus_line": 11302,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 54
@@ -458,7 +458,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/jpegmafia.md",
   "corpus_line": 11410,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 42
@@ -498,7 +498,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/motion-city-soundtrack.md",
   "corpus_line": 11671,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 42
@@ -1074,7 +1074,7 @@
  {
   "slug": "wiki/mind/concepts/the-cool-metric.md",
   "corpus_line": 23480,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 354
@@ -1130,7 +1130,7 @@
  {
   "slug": "wiki/mind/profile/enneagram-5w4.md",
   "corpus_line": 25128,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 209
@@ -1170,7 +1170,7 @@
  {
   "slug": "wiki/mind/profile/neurodivergence.md",
   "corpus_line": 26110,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 185
@@ -2370,7 +2370,7 @@
  {
   "slug": "wiki/people/kya-hansen.md",
   "corpus_line": 62162,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 89
@@ -2482,7 +2482,7 @@
  {
   "slug": "wiki/people/marla.md",
   "corpus_line": 63341,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 68
@@ -2490,7 +2490,7 @@
  {
   "slug": "wiki/people/marty-jackson.md",
   "corpus_line": 63409,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 68
@@ -2498,7 +2498,7 @@
  {
   "slug": "wiki/people/marty-martin.md",
   "corpus_line": 63477,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 88
@@ -2522,7 +2522,7 @@
  {
   "slug": "wiki/people/matt-kraus.md",
   "corpus_line": 63730,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 56
@@ -3074,7 +3074,7 @@
  {
   "slug": "wiki/self/chats/extract-messages-pinned.md",
   "corpus_line": 74344,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 33
@@ -3098,7 +3098,7 @@
  {
   "slug": "wiki/self/chats/gemini-18.md",
   "corpus_line": 74563,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 109
@@ -3138,7 +3138,7 @@
  {
   "slug": "wiki/self/concepts/ally-and-dan-love-as-destiny.md",
   "corpus_line": 74984,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 362
@@ -3146,7 +3146,7 @@
  {
   "slug": "wiki/self/concepts/astrology-star-signs.md",
   "corpus_line": 75346,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w20",
   "dat_range": "0929-0973",
   "span": 116
