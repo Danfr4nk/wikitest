@@ -45,3 +45,10 @@
 - Direct Python CSV scans over corpus/messages.csv proved faster/more precise than bin/corpus-query (worker note).
 - New contradictions: franki-faris 2016-05-09 "I just saw Franki" (held iMessage) vs page's "no contact after 2013" (dat:0357); timeline/index stats drift (3,249/360 vs master 3,661/386, dat:0362); july-2026-recontact count gap (page 624 vs held 430, dat:0358).
 - ej-rags page rests entirely on unheld Facebook thread — load-bearing 2013-return dating has no re-verifiable anchor (dat:0356).
+
+## Wave 2 partial (w9 done: dat:0434–0453, 18 pages)
+- Recurring count-correction pattern: people pages counted one side only (clyde 256 not 125; davey 839 both-sides; dimitri 71 not 116; eric-springer 93 both-sides). Downstream volume work must re-derive from corpus.
+- Structural held-corpus window gaps: Suz thread has 0 rows in 2016-06 and 2020-05; 11 of 16 Fred Adams rows live only in the richer 2026-09-04 export (dat:0448 extends dat:0291).
+- fran-coldren death-moment story + its ~3h-later retraction both verified (dat:0446).
+- Duplicate `synthesizes:` YAML bug fixed on 3 pages (fastly-fsly worker).
+- dat:0454–0478 free for follow-on work.

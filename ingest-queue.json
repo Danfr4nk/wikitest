@@ -184,7 +184,7 @@
  {
   "slug": "wiki/interests/favorites/books/topics/history.md",
   "corpus_line": 9102,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -219,14 +219,14 @@
  {
   "slug": "wiki/interests/favorites/books/want-to-read.md",
   "corpus_line": 9248,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
  {
   "slug": "wiki/interests/favorites/books.md",
   "corpus_line": 9477,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -240,7 +240,7 @@
  {
   "slug": "wiki/interests/favorites/index.md",
   "corpus_line": 10190,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -786,7 +786,7 @@
  {
   "slug": "wiki/meta/journeys/the-type-machine.md",
   "corpus_line": 17709,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -1591,7 +1591,7 @@
  {
   "slug": "wiki/people/charles-davenport.md",
   "corpus_line": 53177,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -1619,7 +1619,7 @@
  {
   "slug": "wiki/people/clyde.md",
   "corpus_line": 53472,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -1661,7 +1661,7 @@
  {
   "slug": "wiki/people/davey-fitzpatrick.md",
   "corpus_line": 54105,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -1696,7 +1696,7 @@
  {
   "slug": "wiki/people/dimitri.md",
   "corpus_line": 54811,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -1766,7 +1766,7 @@
  {
   "slug": "wiki/people/eric-springer.md",
   "corpus_line": 56146,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -1780,14 +1780,14 @@
  {
   "slug": "wiki/people/felix.md",
   "corpus_line": 56236,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
  {
   "slug": "wiki/people/fran-coldren.md",
   "corpus_line": 56277,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -1801,7 +1801,7 @@
  {
   "slug": "wiki/people/fred-adams.md",
   "corpus_line": 56958,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -3194,7 +3194,7 @@
  {
   "slug": "wiki/timeline/events/group-chat-closure.md",
   "corpus_line": 106968,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -3215,7 +3215,7 @@
  {
   "slug": "wiki/timeline/events/july-august-2026-reentanglement.md",
   "corpus_line": 107686,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -3257,7 +3257,7 @@
  {
   "slug": "wiki/timeline/events/timeline.md",
   "corpus_line": 109132,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -3376,7 +3376,7 @@
  {
   "slug": "wiki/work/au-zaatar.md",
   "corpus_line": 119039,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
@@ -3404,7 +3404,7 @@
  {
   "slug": "wiki/work/fastly-fsly.md",
   "corpus_line": 120185,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w9",
   "dat_range": "0434-0478"
  },
