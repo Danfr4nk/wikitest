@@ -91,3 +91,10 @@
 - Highest-value unheld sources: Jay Lauer Rick exchange (page's "single most important fact"), Bacharach discovery thread, Paci-arranged eviction.
 
 ## Wave 3 totals: 223/497 pages done, dat:0524–0731 minted.
+
+## Wave 4 partial (w19 done: dat:0884–0898+0900–0901, 15 pages, 17 nodes)
+- hey-monday: 2008-12-28 BackBooth bill independently confirmed via setlist.fm (dat:0884).
+- john-mayer: date ambiguity resolved to 2008-08-20 by order number; Post-Gazette Pavilion show with Paramore support.
+- MD: 24-message thread verified exactly (count, range, one-way) in held corpus (dat:0896).
+- big-five: first-person self-typing verified (msg id 14417, 2024-11-04, "INTP 5w6sx RLOEI"); categorical Ti-dominance re-derived 13/0 on held slice (dat:0890).
+- 0899 left unused.

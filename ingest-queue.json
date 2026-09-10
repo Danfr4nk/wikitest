@@ -410,7 +410,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/hey-monday.md",
   "corpus_line": 11124,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 72
@@ -434,7 +434,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/jacks-mannequin.md",
   "corpus_line": 11269,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 33
@@ -450,7 +450,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/john-mayer.md",
   "corpus_line": 11356,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 54
@@ -1090,7 +1090,7 @@
  {
   "slug": "wiki/mind/index.md",
   "corpus_line": 24055,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 121
@@ -1106,7 +1106,7 @@
  {
   "slug": "wiki/mind/politics/index.md",
   "corpus_line": 24457,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 90
@@ -1114,7 +1114,7 @@
  {
   "slug": "wiki/mind/profile/big-five-psychometrics.md",
   "corpus_line": 24547,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 372
@@ -1122,7 +1122,7 @@
  {
   "slug": "wiki/mind/profile/deviance-mapping.md",
   "corpus_line": 24919,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 209
@@ -2346,7 +2346,7 @@
  {
   "slug": "wiki/people/kevin-mckiernan.md",
   "corpus_line": 61474,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 161
@@ -2354,7 +2354,7 @@
  {
   "slug": "wiki/people/kim.md",
   "corpus_line": 61635,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 56
@@ -2474,7 +2474,7 @@
  {
   "slug": "wiki/people/marc-charles.md",
   "corpus_line": 63274,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 67
@@ -2530,7 +2530,7 @@
  {
   "slug": "wiki/people/matthew-palermo.md",
   "corpus_line": 63786,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 85
@@ -2546,7 +2546,7 @@
  {
   "slug": "wiki/people/md.md",
   "corpus_line": 63951,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 45
@@ -3050,7 +3050,7 @@
  {
   "slug": "wiki/self/ancestry.md",
   "corpus_line": 73839,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 350
@@ -3066,7 +3066,7 @@
  {
   "slug": "wiki/self/chats/danfrank-isms-pinned.md",
   "corpus_line": 74236,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 108
@@ -3130,7 +3130,7 @@
  {
   "slug": "wiki/self/chats/photo-ingest-pinned.md",
   "corpus_line": 74942,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w19",
   "dat_range": "0884-0928",
   "span": 42
