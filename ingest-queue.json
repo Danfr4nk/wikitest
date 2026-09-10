@@ -682,7 +682,7 @@
  {
   "slug": "wiki/interests/index.md",
   "corpus_line": 13558,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 90
@@ -698,7 +698,7 @@
  {
   "slug": "wiki/interests/music/aliases/gripnotic.md",
   "corpus_line": 14134,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 120
@@ -762,7 +762,7 @@
  {
   "slug": "wiki/interests/music/overview.md",
   "corpus_line": 15136,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 277
@@ -1322,7 +1322,7 @@
  {
   "slug": "wiki/mind/synthesis/closing-the-set.md",
   "corpus_line": 31741,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 442
@@ -1338,7 +1338,7 @@
  {
   "slug": "wiki/mind/synthesis/dormancy-not-exit.md",
   "corpus_line": 32739,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 767
@@ -1426,7 +1426,7 @@
  {
   "slug": "wiki/mind/synthesis/music-as-identity.md",
   "corpus_line": 37201,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 214
@@ -1450,7 +1450,7 @@
  {
   "slug": "wiki/mind/synthesis/read-receipt-forensics.md",
   "corpus_line": 37956,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 290
@@ -1562,7 +1562,7 @@
  {
   "slug": "wiki/mind/synthesis/vertical-authority-skepticism.md",
   "corpus_line": 45178,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 431
@@ -2810,7 +2810,7 @@
  {
   "slug": "wiki/people/tan-calabrese.md",
   "corpus_line": 69056,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 66
@@ -2826,7 +2826,7 @@
  {
   "slug": "wiki/people/teddy.md",
   "corpus_line": 69218,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 130
@@ -2874,7 +2874,7 @@
  {
   "slug": "wiki/people/trinity-st-clair.md",
   "corpus_line": 70173,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 92
@@ -2954,7 +2954,7 @@
  {
   "slug": "wiki/people/zachariah-harshman.md",
   "corpus_line": 71582,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 221
@@ -3002,7 +3002,7 @@
  {
   "slug": "wiki/places/424-bedford-ave.md",
   "corpus_line": 72739,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 132
@@ -3034,7 +3034,7 @@
  {
   "slug": "wiki/places/seven-springs.md",
   "corpus_line": 73156,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 120
@@ -3042,7 +3042,7 @@
  {
   "slug": "wiki/places/the-unpapered-address.md",
   "corpus_line": 73276,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 563
@@ -3338,7 +3338,7 @@
  {
   "slug": "wiki/self/overview.md",
   "corpus_line": 79900,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 181
@@ -3378,7 +3378,7 @@
  {
   "slug": "wiki/self/twitter/2011.md",
   "corpus_line": 85597,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 1681
@@ -3386,7 +3386,7 @@
  {
   "slug": "wiki/self/twitter/2012.md",
   "corpus_line": 87278,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 1543
@@ -3434,7 +3434,7 @@
  {
   "slug": "wiki/self/twitter/2018.md",
   "corpus_line": 94577,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 724
@@ -3442,7 +3442,7 @@
  {
   "slug": "wiki/self/twitter/2019.md",
   "corpus_line": 95301,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 557
@@ -3498,7 +3498,7 @@
  {
   "slug": "wiki/self/twitter/2026.md",
   "corpus_line": 100821,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 341
@@ -3514,7 +3514,7 @@
  {
   "slug": "wiki/self/youtube-watch-history.md",
   "corpus_line": 101507,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 341
@@ -3954,7 +3954,7 @@
  {
   "slug": "wiki/work/tech/max-framework/overview.md",
   "corpus_line": 121126,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 181
@@ -3970,7 +3970,7 @@
  {
   "slug": "wiki/work/tech/vibe-coding-games.md",
   "corpus_line": 121401,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w30",
   "dat_range": "1379-1423",
   "span": 56

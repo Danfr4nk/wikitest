@@ -161,3 +161,8 @@
 - favorites.md: deliberately no node — legacy totals covered by dat:0438; breadth correction in dat:1021.
 
 ## Wave 5 totals: 373/497 pages done, dat:0974–1168 minted.
+
+## Wave 6 partial (w30 done: dat:1379–1403, 24 pages, 25 nodes)
+- tan-calabrese: page's 2000-12-31 anchor is spurious — the message exists in held corpus dated 2020-03-12; childhood origin survives only via retrospective testimony (dat:1388).
+- gripnotic/mogzart/sloppp counts (3/8/1) reproduce exactly in held slice.
+- twitter/2026: 31 May runaway iMessage agent noted (unverified against messages.csv).
