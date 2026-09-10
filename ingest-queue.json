@@ -522,7 +522,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/nofx.md",
   "corpus_line": 11893,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 37
@@ -602,7 +602,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/vertical-horizon.md",
   "corpus_line": 12433,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 38
@@ -634,7 +634,7 @@
  {
   "slug": "wiki/interests/favorites/music.md",
   "corpus_line": 12638,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 183
@@ -1210,7 +1210,7 @@
  {
   "slug": "wiki/mind/psychosexual/developmental-origins.md",
   "corpus_line": 27293,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 130
@@ -1242,7 +1242,7 @@
  {
   "slug": "wiki/mind/psychosexual/taboo-and-boundary-testing.md",
   "corpus_line": 27846,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 163
@@ -1266,7 +1266,7 @@
  {
   "slug": "wiki/mind/synthesis/alias-as-periodization.md",
   "corpus_line": 28881,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 272
@@ -2570,7 +2570,7 @@
  {
   "slug": "wiki/people/mike-cordaro.md",
   "corpus_line": 64451,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 48
@@ -2650,7 +2650,7 @@
  {
   "slug": "wiki/people/otto.md",
   "corpus_line": 65400,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 80
@@ -2666,7 +2666,7 @@
  {
   "slug": "wiki/people/rick-frank.md",
   "corpus_line": 65548,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 505
@@ -2706,7 +2706,7 @@
  {
   "slug": "wiki/people/ryan-scherich.md",
   "corpus_line": 66494,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 67
@@ -2730,7 +2730,7 @@
  {
   "slug": "wiki/people/sean-teets.md",
   "corpus_line": 66829,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 50
@@ -3202,7 +3202,7 @@
  {
   "slug": "wiki/self/context-core.md",
   "corpus_line": 77116,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 317
@@ -3226,7 +3226,7 @@
  {
   "slug": "wiki/self/facebook/messages.md",
   "corpus_line": 77565,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 99
@@ -3234,7 +3234,7 @@
  {
   "slug": "wiki/self/facebook/posts.md",
   "corpus_line": 77664,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 97
@@ -3258,7 +3258,7 @@
  {
   "slug": "wiki/self/gemini-activity/archive/v1-extract.md",
   "corpus_line": 78044,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w22",
   "dat_range": "1019-1063",
   "span": 123

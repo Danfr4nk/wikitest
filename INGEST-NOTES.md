@@ -142,3 +142,9 @@
 - menore: 4,413 rows held exactly; re-entry/final delivery verified to the minute (dat:1163). "270 menor mentions" → 36 held hits (corpus-gap).
 - sam: 576 held rows vs page's 374; mike-zollinger: 121 vs 51 (dat:1164/1165).
 - Bitcoin address located, deliberately not reproduced; Mike Zollinger phone handle redacted per convention.
+
+## Wave 5 partial (w22 done: dat:1019–1033, 15 pages, 15 nodes)
+- HIGH-VALUE: dat:1024 — Rick silence BROKEN 2026-09-01: 2026-08-31 Rick "Can you do dinner Tuesday?" → 2026-09-01 00:33 Dan replies, first Dan→Rick message in held corpus since Feb 2025; dinner being arranged 2026-09-02. Page (snapshot 2026-09-04) was built on an older dump. (Also flags dat:1032's 2026-08-16 staleness audit as now stale.)
+- alias-as-periodization: "zero about a studio" fails literally — 15 Dan-sent studio mentions in held slice (all gear/AI-shaped, never a session booked); GRIPNOTIC "3 lifetime mentions" replicated exactly (dat:1025).
+- otto: held slice has 28 mentions 2025-10-31→2026-08-03 in Annie's thread only — extends record 8 months past page's end; disjoint seam at Oct 2025.
+- NO w22 validator errors (16 current errors all in w23's 1066–1089 uncommitted drafts — w23 still running).
