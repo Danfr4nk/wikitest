@@ -70,3 +70,10 @@
 - Uniontown-return: earliest-rows gap verified exactly — one attachment-only row 2011-03-19, first text 2015-11-12: a 4.5-year primary-source void covering all 2011–2015 claims.
 - jajuan/jess threads: inherited MASTER dump's "everything Received" artifact; threads are two-way, not one-way.
 - Dan's Law Lex-collapse: held export confirms the Casey attribution the page only inferred.
+
+## Wave 3 partial (w11 done: dat:0524–0542, 15 pages)
+- contact-gini INDEPENDENTLY REPLICATED from held corpus: inbound Gini 0.9556, top-1 33.6%, top-5 68.0%, per-year 2015–2026 (dat:0528–0531). Two-sided imputation impossible (outbound rows lack recipient handle; MASTER dump unheld).
+- john-paci: 11 message artifacts verified verbatim, timestamps to the minute (dat:0539); staged-eviction arrangement stays operator testimony.
+- johnny-dealer: thread recounts at 7,090 rows (page's 3,462 is a floor); page typo flagged ("Johnny is mia" 2018-04-14 → corpus 2019-04-14).
+- Attribution correction: "I'm in love with Annie Ulmer" is Annie's coaching script for Dan, not his declaration (dat:0541).
+- jamie-mohler: Ethan Kray alias in 2012 Twitter archive; post-transition refs begin March 2025, earlier than page's Sept 2025 floor.

@@ -254,7 +254,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/afi.md",
   "corpus_line": 10277,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -268,7 +268,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/anberlin.md",
   "corpus_line": 10359,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -296,7 +296,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/coheed-and-cambria.md",
   "corpus_line": 10514,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -310,7 +310,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/default.md",
   "corpus_line": 10592,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -870,7 +870,7 @@
  {
   "slug": "wiki/mind/concepts/contact-gini.md",
   "corpus_line": 21083,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -898,7 +898,7 @@
  {
   "slug": "wiki/mind/concepts/exocortex.md",
   "corpus_line": 22079,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -1808,7 +1808,7 @@
  {
   "slug": "wiki/people/gabe.md",
   "corpus_line": 57211,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -1836,7 +1836,7 @@
  {
   "slug": "wiki/people/jack-connor.md",
   "corpus_line": 57657,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -1878,7 +1878,7 @@
  {
   "slug": "wiki/people/jamie-mohler.md",
   "corpus_line": 58396,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -1941,7 +1941,7 @@
  {
   "slug": "wiki/people/jim-blanchard.md",
   "corpus_line": 60022,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -1969,7 +1969,7 @@
  {
   "slug": "wiki/people/joe-oshnack.md",
   "corpus_line": 60259,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -2004,14 +2004,14 @@
  {
   "slug": "wiki/people/john-paci.md",
   "corpus_line": 60620,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
  {
   "slug": "wiki/people/johnny-dealer.md",
   "corpus_line": 60865,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -3292,7 +3292,7 @@
  {
   "slug": "wiki/timeline/periods/2015-2016-annie-relationship-start.md",
   "corpus_line": 117475,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
@@ -3327,7 +3327,7 @@
  {
   "slug": "wiki/timeline/periods/2025-collapse.md",
   "corpus_line": 118060,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w11",
   "dat_range": "0524-0568"
  },
