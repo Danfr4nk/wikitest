@@ -98,3 +98,9 @@
 - MD: 24-message thread verified exactly (count, range, one-way) in held corpus (dat:0896).
 - big-five: first-person self-typing verified (msg id 14417, 2024-11-04, "INTP 5w6sx RLOEI"); categorical Ti-dominance re-derived 13/0 on held slice (dat:0890).
 - 0899 left unused.
+
+## Wave 4 partial (w17 done: dat:0794–0813+, 15 pages, 19 nodes)
+- Worker's full final report didn't arrive (only a background-note handoff); verified via its 3 batch commits — all 15 pages covered, validator clean.
+- kristin thread: 20,014 held rows (dat:0801); surname self-attested, "Kayden" absent.
+- lucy: Suz's euthanasia-of-the-dog message verbatim 2018-04-23 (dat:0808).
+- libby: rate contradiction unresolved; arc absent from held corpus (dat:0806/0807).

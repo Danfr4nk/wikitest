@@ -402,7 +402,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/hawthorne-heights.md",
   "corpus_line": 11087,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 37
@@ -466,7 +466,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/kanye-west.md",
   "corpus_line": 11452,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 46
@@ -482,7 +482,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/lyny.md",
   "corpus_line": 11558,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 75
@@ -1098,7 +1098,7 @@
  {
   "slug": "wiki/mind/politics/axioms.md",
   "corpus_line": 24176,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 281
@@ -1138,7 +1138,7 @@
  {
   "slug": "wiki/mind/profile/index.md",
   "corpus_line": 25337,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 128
@@ -1154,7 +1154,7 @@
  {
   "slug": "wiki/mind/profile/lexicon.md",
   "corpus_line": 25717,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 142
@@ -2362,7 +2362,7 @@
  {
   "slug": "wiki/people/kristin.md",
   "corpus_line": 61691,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 471
@@ -2386,7 +2386,7 @@
  {
   "slug": "wiki/people/lewis-strosnider.md",
   "corpus_line": 62343,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 102
@@ -2394,7 +2394,7 @@
  {
   "slug": "wiki/people/libby.md",
   "corpus_line": 62445,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 244
@@ -2442,7 +2442,7 @@
  {
   "slug": "wiki/people/lucy.md",
   "corpus_line": 63022,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 62
@@ -2458,7 +2458,7 @@
  {
   "slug": "wiki/people/maddox.md",
   "corpus_line": 63168,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 58
@@ -2466,7 +2466,7 @@
  {
   "slug": "wiki/people/manuel.md",
   "corpus_line": 63226,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 48
@@ -2506,7 +2506,7 @@
  {
   "slug": "wiki/people/mary-kate.md",
   "corpus_line": 63565,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 40
@@ -2538,7 +2538,7 @@
  {
   "slug": "wiki/people/max.md",
   "corpus_line": 63871,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 80
@@ -3122,7 +3122,7 @@
  {
   "slug": "wiki/self/chats/j6-chat.md",
   "corpus_line": 74841,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w17",
   "dat_range": "0794-0838",
   "span": 101
