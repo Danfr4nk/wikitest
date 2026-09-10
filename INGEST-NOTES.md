@@ -35,3 +35,8 @@
 - Vape-alarm must-include resolved: dat:0495 — summons MJ-14101-NT-0000082-2018 fully tabled, legal index carries nothing the page lacked; disposition still unknown, filed honestly.
 - BFS Foods 2026-08-26 corrected sequence (cut first, killing retaliation theory) — corpus revision is newer than old-wiki export; nodes taken from fresher revision with divergence noted.
 - New schema gotcha (in-progress drafts, w6/w7): invented source ids fail — `src:old-wiki-export-2026-09-09` does not exist (correct: `src:old-wiki-export-2026-09-04`); `src:imessage-corpus` does not exist (correct: `src:imessage-corpus-2026`).
+
+## Wave 2 partial (w6 done: dat:0284–0305, master-timeline.md solo)
+- 22 findings on the 7,654-line master timeline, committed as 080cf57, validates clean.
+- Worker self-caught the `src:old-wiki-export-2026-09-09` typo pre-commit after the coordinator heads-up.
+- Remaining repo errors (0357–0359, `src:imessage-corpus` typo) are w7's in-flight files; heads-up sent.
