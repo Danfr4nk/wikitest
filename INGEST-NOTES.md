@@ -187,3 +187,13 @@
 - valeria: all four iMessage anchors absent; "valeria" appears once corpus-wide.
 - suzanne-personality-assessment: 1-for-5 ("It's time for you to go." verified 2026-08-11).
 - music index: MOGZART "closed" status stale vs verified March 2026 revival.
+
+## Wave 6 complete (w29 done: dat:1334–1365, 25 pages, 32 nodes)
+- stand-up: page's "only direct evidence of a completed set" is false vs Dan's own 2020-03-29 message (dat:1340).
+- tuquick: "claimed verbatim" quotes and "97 messages" are from the unheld merged export; held slice differs (dat:1344/1345). 1344/1345 collision resolved by worker (stale drafts trashed, committed versions carry corrected numbers).
+- zaco: 58:7 ratio wrong vs held chat (58:48) (dat:1357).
+- family-tree: "14 corrected" vs 13-row table (dat:1358).
+- dan-annie-fallout-verdict: severance 258→129; "sic semper lupanis" is Dan's (rows 223934–39) (dat:1342/1343).
+- Stale-scan lesson: worker re-derived all corpus nodes after discovering pre-compaction scans were stale (192,140 rows, inconsistent timestamp zero-padding) — tuple counts changed (tuquick 297 not 354).
+
+## ALL 497 PAGES INGESTED. dat:0059–1403 (minus intentionally unused headroom).
