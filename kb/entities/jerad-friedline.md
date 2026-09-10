@@ -12,7 +12,7 @@ cites       = ["dat:0585-jerad-friedline-thread-held-corpus-corrections",
 confidence  = "high"
 importance  = 4
 created     = "2026-09-09"
-rechecked    = "2026-09-09"
+rechecked    = "2026-09-10"
 tags        = ["friends", "uniontown", "market-era"]
 +++
 

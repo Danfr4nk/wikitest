@@ -8,7 +8,7 @@ cites       = ["dat:0935-matt-kraus-childhood-friend-testimony"]
 confidence  = "low"
 importance  = 2
 created     = "2026-09-09"
-rechecked    = "2026-09-09"
+rechecked    = "2026-09-10"
 tags        = ["friends", "childhood", "seven-springs"]
 +++
 
