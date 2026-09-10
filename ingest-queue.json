@@ -538,7 +538,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/panic-at-the-disco.md",
   "corpus_line": 11967,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 58
@@ -546,7 +546,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/paramore.md",
   "corpus_line": 12025,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 43
@@ -586,7 +586,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/the-early-november.md",
   "corpus_line": 12341,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 35
@@ -594,7 +594,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/the-starting-line.md",
   "corpus_line": 12376,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 57
@@ -626,7 +626,7 @@
  {
   "slug": "wiki/interests/favorites/music/electronic-bass.md",
   "corpus_line": 12546,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 92
@@ -1226,7 +1226,7 @@
  {
   "slug": "wiki/mind/psychosexual/index.md",
   "corpus_line": 27545,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 117
@@ -1258,7 +1258,7 @@
  {
   "slug": "wiki/mind/synthesis/ai-collaborative-analysis.md",
   "corpus_line": 28481,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 400
@@ -1274,7 +1274,7 @@
  {
   "slug": "wiki/mind/synthesis/ancestral-dialectic.md",
   "corpus_line": 29153,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 250
@@ -1282,7 +1282,7 @@
  {
   "slug": "wiki/mind/synthesis/annual-volume-suz.md",
   "corpus_line": 29403,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 140
@@ -2554,7 +2554,7 @@
  {
   "slug": "wiki/people/menore.md",
   "corpus_line": 63996,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 418
@@ -2586,7 +2586,7 @@
  {
   "slug": "wiki/people/mike-zollinger.md",
   "corpus_line": 64548,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 41
@@ -2722,7 +2722,7 @@
  {
   "slug": "wiki/people/sam.md",
   "corpus_line": 66690,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 139
@@ -2738,7 +2738,7 @@
  {
   "slug": "wiki/people/seth-ledonne.md",
   "corpus_line": 66879,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 88
@@ -3178,7 +3178,7 @@
  {
   "slug": "wiki/self/concepts/gemini.md",
   "corpus_line": 76456,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 214
@@ -3242,7 +3242,7 @@
  {
   "slug": "wiki/self/facebook.md",
   "corpus_line": 77761,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w25",
   "dat_range": "1154-1198",
   "span": 115

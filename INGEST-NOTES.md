@@ -137,3 +137,8 @@
 - shelbie-breakiron: 639 held rows vs page's 685 (different extracts, both recorded).
 - attachment-trauma-bond: 187:191 procurement statistic withdrawn (97.2% base rate).
 - wiki(rapper): no new node — already covered by dat:0149. self/index: index page, figures belong to summarized pages.
+
+## Wave 5 partial (w25 done: dat:1154–1168, 15 pages, 15 nodes)
+- menore: 4,413 rows held exactly; re-entry/final delivery verified to the minute (dat:1163). "270 menor mentions" → 36 held hits (corpus-gap).
+- sam: 576 held rows vs page's 374; mike-zollinger: 121 vs 51 (dat:1164/1165).
+- Bitcoin address located, deliberately not reproduced; Mike Zollinger phone handle redacted per convention.
