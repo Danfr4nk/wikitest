@@ -76,7 +76,7 @@ Interpretations need `perspective` (self/external/llm), `falsifiers`, and
 `alternatives` like the existing ones. Syntheses cite the layer below them
 (interpretations, patterns, events) plus the dat nodes.
 
-Status: pending.
+Status: dispatched 2026-09-09 (5 workers, I1–I4 interpretations, S1 syntheses).
 
 ## Coordination log
 
