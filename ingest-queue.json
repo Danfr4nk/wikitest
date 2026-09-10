@@ -261,7 +261,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/all-time-low.md",
   "corpus_line": 10314,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -282,7 +282,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/bloc-party.md",
   "corpus_line": 10443,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -324,7 +324,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/fall-out-boy.md",
   "corpus_line": 10741,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -338,7 +338,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/guster.md",
   "corpus_line": 11009,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -835,7 +835,7 @@
  {
   "slug": "wiki/mind/concepts/attachment-model.md",
   "corpus_line": 19834,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -856,14 +856,14 @@
  {
   "slug": "wiki/mind/concepts/chaos-preference.md",
   "corpus_line": 20633,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/mind/concepts/conflict-architecture.md",
   "corpus_line": 20904,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -912,14 +912,14 @@
  {
   "slug": "wiki/mind/concepts/institutional-out.md",
   "corpus_line": 22615,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
  {
   "slug": "wiki/mind/concepts/node-locking.md",
   "corpus_line": 22717,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -1815,7 +1815,7 @@
  {
   "slug": "wiki/people/garrett.md",
   "corpus_line": 57305,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -1829,7 +1829,7 @@
  {
   "slug": "wiki/people/ismaila-barry.md",
   "corpus_line": 57585,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -1843,7 +1843,7 @@
  {
   "slug": "wiki/people/jack-rusko.md",
   "corpus_line": 57718,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -1871,7 +1871,7 @@
  {
   "slug": "wiki/people/james.md",
   "corpus_line": 58244,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -1885,7 +1885,7 @@
  {
   "slug": "wiki/people/jaredtricia.md",
   "corpus_line": 58642,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },
@@ -1976,7 +1976,7 @@
  {
   "slug": "wiki/people/joey-superick.md",
   "corpus_line": 60383,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w13",
   "dat_range": "0614-0658"
  },

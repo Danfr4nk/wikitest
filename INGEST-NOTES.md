@@ -57,3 +57,9 @@
 - Jerel Coles patch-state check (dat:0412): page is UNPATCHED as of 2026-09-04 snapshot — 'never says yes' categorical survives (defeated by 'Yes, save it' at 04:43), stale T2 disclaimer, stale fourteen-repetition count and timestamps. Validation report §441 rec #1 unaddressed. Flag for operator: the patch must happen in the wiki source itself.
 - diane-moore, ellen-ulmer, emaly-minerd, eric-jester, felipe: thread-count corrections + verified quotes filed; unheld stories kept separate.
 - james-analysis-pdf: sequence verified; aftermath superseded; unheld material flagged.
+
+## Wave 3 partial (w13 done: dat:0614–0633, 15 pages)
+- conflict-architecture's Aug 18, 2026 "love bomb" exchange verified verbatim to the second (dat:0624) — n=1 with primary backing.
+- attachment-model RESOLVED 2026-08-23: 129 exit episodes corroborate dossiers' 127; 110-of-127 withdrawn (dat:0622).
+- schrute-farms secret show primary-verified via 2019-09-02 iMessage (dat:0617), extends web verification.
+- Honest gaps: folie-a-deux 2025 quotes absent from held corpus (dat:0618); node-locking/chaos-preference/institutional-out counts rest on unheld Gemini/dox/dansynth (dat:0623/0626/0627); jack-rusko thread entirely unheld (dat:0630).
