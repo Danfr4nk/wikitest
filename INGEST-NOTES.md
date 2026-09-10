@@ -52,3 +52,8 @@
 - fran-coldren death-moment story + its ~3h-later retraction both verified (dat:0446).
 - Duplicate `synthesizes:` YAML bug fixed on 3 pages (fastly-fsly worker).
 - dat:0454–0478 free for follow-on work.
+
+## Wave 2 partial (w8 done: dat:0389–0420, 19 pages)
+- Jerel Coles patch-state check (dat:0412): page is UNPATCHED as of 2026-09-04 snapshot — 'never says yes' categorical survives (defeated by 'Yes, save it' at 04:43), stale T2 disclaimer, stale fourteen-repetition count and timestamps. Validation report §441 rec #1 unaddressed. Flag for operator: the patch must happen in the wiki source itself.
+- diane-moore, ellen-ulmer, emaly-minerd, eric-jester, felipe: thread-count corrections + verified quotes filed; unheld stories kept separate.
+- james-analysis-pdf: sequence verified; aftermath superseded; unheld material flagged.
