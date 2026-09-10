@@ -1,5 +1,5 @@
 +++
-id         = "evt:2026-08-bfs-firing"
+id         = "evt:2026-05-bfs-firing"
 layer      = 2
 type       = "event"
 title      = "BFS Foods termination over the disputed 0 drawer shortage (May 2026)"

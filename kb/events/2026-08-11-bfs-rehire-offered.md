@@ -20,7 +20,7 @@ asserted_by = "external"
 
 [[edges]]
 rel         = "resulted_from"
-target      = "evt:2026-08-bfs-firing"
+target      = "evt:2026-05-bfs-firing"
 strength    = "strong"
 basis       = "stated"
 asserted_by = "other"
@@ -81,5 +81,5 @@ account, held-verified.
 
 ## Cross-links
 
-- [`evt:2026-08-bfs-firing`](2026-08-bfs-firing.md) — the termination this
+- [`evt:2026-05-bfs-firing`](2026-05-bfs-firing.md) — the termination this
   reverses (dated mid-May 2026 despite that node's id; see its note).
