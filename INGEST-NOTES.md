@@ -148,3 +148,9 @@
 - alias-as-periodization: "zero about a studio" fails literally — 15 Dan-sent studio mentions in held slice (all gear/AI-shaped, never a session booked); GRIPNOTIC "3 lifetime mentions" replicated exactly (dat:1025).
 - otto: held slice has 28 mentions 2025-10-31→2026-08-03 in Annie's thread only — extends record 8 months past page's end; disjoint seam at Oct 2025.
 - NO w22 validator errors (16 current errors all in w23's 1066–1089 uncommitted drafts — w23 still running).
+
+## Wave 5 partial (w23 done: dat:1064–1091, 15 pages, 28 nodes)
+- Worker's full final report didn't arrive (only a background-note handoff); verified via 4 commits — all 15 pages covered, validator clean (the 16 attributed_to errors seen earlier were uncommitted drafts; fixed before commit).
+- steve-kezmarsky: thread 162 rows; "alive" correction 2018-12-09; elder fall Jan–Apr 2018 (dat:1087–1089).
+- nick-mattie: 324 rows both sides; Annie handoff 2017-05-02 (dat:1081/1082).
+- 23andme-genomics: extraction correction 2026-08-14 (dat:1091).

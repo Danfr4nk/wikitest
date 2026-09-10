@@ -530,7 +530,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/outkast.md",
   "corpus_line": 11930,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 37
@@ -554,7 +554,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/saosin.md",
   "corpus_line": 12068,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 38
@@ -562,7 +562,7 @@
  {
   "slug": "wiki/interests/favorites/music/artists/say-anything.md",
   "corpus_line": 12106,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 96
@@ -1194,7 +1194,7 @@
  {
   "slug": "wiki/mind/profile/voice-modes.md",
   "corpus_line": 26784,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 159
@@ -1202,7 +1202,7 @@
  {
   "slug": "wiki/mind/psychosexual/arrangement-history.md",
   "corpus_line": 26943,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 350
@@ -1234,7 +1234,7 @@
  {
   "slug": "wiki/mind/psychosexual/orchestration-and-voyeurism.md",
   "corpus_line": 27662,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 184
@@ -1250,7 +1250,7 @@
  {
   "slug": "wiki/mind/synthesis/2020-left-turn.md",
   "corpus_line": 28009,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 472
@@ -2634,7 +2634,7 @@
  {
   "slug": "wiki/people/nick-mattie.md",
   "corpus_line": 65193,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 122
@@ -2642,7 +2642,7 @@
  {
   "slug": "wiki/people/oscar-lindquist.md",
   "corpus_line": 65315,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 85
@@ -2698,7 +2698,7 @@
  {
   "slug": "wiki/people/ryan-lisac.md",
   "corpus_line": 66443,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 51
@@ -2746,7 +2746,7 @@
  {
   "slug": "wiki/people/shane-brannan.md",
   "corpus_line": 66967,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 101
@@ -2770,7 +2770,7 @@
  {
   "slug": "wiki/people/slim.md",
   "corpus_line": 67273,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 46
@@ -2786,7 +2786,7 @@
  {
   "slug": "wiki/people/steve-kezmarsky.md",
   "corpus_line": 67416,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 133
@@ -3210,7 +3210,7 @@
  {
   "slug": "wiki/self/facebook/friends.md",
   "corpus_line": 77433,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 67
@@ -3282,7 +3282,7 @@
  {
   "slug": "wiki/self/lineage/23andme-genomics.md",
   "corpus_line": 78363,
-  "status": "in_progress",
+  "status": "done",
   "worker": "w23",
   "dat_range": "1064-1108",
   "span": 270
