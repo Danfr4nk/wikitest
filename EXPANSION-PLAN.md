@@ -60,7 +60,7 @@ Status: complete 2026-09-09. 40 entities committed (E1–E5), wb-validate clean 
 Every event must carry a `[when]` block derived from dat: evidence. Derive
 dates from the evidence; do not guess.
 
-Status: dispatched 2026-09-09 (5 workers, V1–V5).
+Status: complete 2026-09-09. 44 events committed (V1–V5), wb-validate clean (814 nodes, 0 errors, 0 warnings), 0 new publish exposures, no duplicate ids. Coordinator rename: evt:2026-08-bfs-firing → evt:2026-05-bfs-firing (evidence is May 2026; cross-refs updated). evt:2026-03-grok-build-imessage-spam slug kept: May-31 vs June-22 ambiguity genuine, documented in-article. Substantive flag for operator: 2025-10-26 stop docket names Annie (MJ-14101-CR-0000631-2025) — UJS lookup settles attribution.
 
 ## Wave 3 — Interpretations (~32) + Syntheses (~10) — 5 workers
 
