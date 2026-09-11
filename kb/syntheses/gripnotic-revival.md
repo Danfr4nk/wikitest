@@ -4,11 +4,16 @@ layer      = 5
 type       = "synthesis"
 title      = "GRIPNOTIC and the alias clock: the music as held self-concept, not activity"
 cites      = ["ent:gripnotic", "dat:1380-gripnotic-alias-corpus-mentions",
-              "dat:1025-alias-dates-held-checks", "ent:frances-coldren"]
+              "dat:1025-alias-dates-held-checks", "ent:frances-coldren",
+              "dat:music-djing-true-love-not-production",
+              "dat:music-lyric-timbre-qualifier",
+              "dat:music-selector-archetype-diplo-shadow",
+              "dat:music-2025-crate-filter-stack",
+              "int:music-dj-selector-philosophy"]
 confidence = "moderate"
 importance = 3
 created    = "2026-09-09"
-updated    = "2026-09-09"
+updated    = "2026-09-11"
 rechecked  = "2026-09-10"
 tags       = ["music", "gripnotic", "alias", "identity"]
 
@@ -21,10 +26,34 @@ falsifiers = [
 open_questions = [
   "What the 'oof' set on soundcloud.com/gripnotic/sets/oof/ contains, and whether anything under the GRIPNOTIC name has been released beyond links shared to contacts.",
   "Whether the March 2026 MOGZART revival produced finished work or only handle activity — the held corpus shows links shared, not music made.",
-  "What the thirteen-year 'never sung original lyrics' pattern means: constraint, aesthetic, or avoidance — the record describes it, it does not explain it.",
   "Whether GRIPNOTIC survives the severance: the name entered the corpus April 6, 2026, ten weeks before the June 1 closure, and the current project status is unobserved.",
 ]
 +++
+
+## CORRECTION 2026-09-11 — DJ-first, not producer-first
+
+Dan corrected this synthesis's framing directly: **DJing is his true
+love, not production** — "the physical manifestation of my internal
+music experience with a video game like muscle memory / rhythmic beat
+match physical element. It was like what I went to college for but done
+in real-time and as a performance"
+([`dat:music-djing-true-love-not-production`](../data/dat-music-djing-true-love-not-production.md)).
+Everywhere below reads "producer identity," read "DJ identity held
+through a producer-shaped record." The aliases are DJ brands first,
+producer brands second; the 2025 re-entry is a selector restocking the
+bag, not a producer returning to the DAW. The alias-clock thesis
+(renames do biographical work) is untouched — what the name timestamps
+is now correctly seated.
+
+The same night resolved the third open question the synthesis carried:
+the thirteen-year "never sung original lyrics" pattern. His lyric
+qualifier — sung words arrive as *timbre*, never as language, with
+~3 lifetime exceptions
+([`dat:music-lyric-timbre-qualifier`](../data/dat-music-lyric-timbre-qualifier.md))
+— means sung originals were never in the possibility space. The pattern
+is downstream of the phenomenology, not a separate puzzle. It is
+removed from open questions above; it was answered by testimony, not by
+new evidence.
 
 ## The argument
 
@@ -87,16 +116,23 @@ biography that is not chemical: Full Sail 2008–2010, the aliases
 rotating since, the thirteen-year pattern of remixes and AI voice drops
 never breaking. What is new in 2026 is the reactivation signal, landing
 in the same spring as the Grok iMessage-spam build and the AI-agent
-work — the producer identity re-entering alongside the builder
-identity.
+work — the DJ identity re-entering alongside the builder
+identity. *(CORRECTION 2026-09-11: this paragraph originally read
+"producer identity." Per Dan's direct correction, the held identity is
+DJ-first; production is secondary.)*
 
 ## What it explains that the parts don't
 
 The entity node counts the mentions; the datum verifies them. Neither
 states what the pattern means, and the meaning is the synthesis:
-**the production identity is held as self-concept and almost
-unmentioned as activity.** Eleven years, 192,140 messages, fifteen
-'studio' mentions — all gear, school, or AI tooling, zero sessions.
+**the DJ identity is held as self-concept and almost
+unmentioned as activity** — corrected 2026-09-11 from "production
+identity" per Dan's direct testimony
+([`dat:music-djing-true-love-not-production`](../data/dat-music-djing-true-love-not-production.md));
+the record's production-shaped traces (home gear, schoolwork, AI
+tooling) are the visible part of a DJ-shaped identity. Eleven years,
+192,140 messages, fifteen 'studio' mentions — all gear, school, or AI
+tooling, zero sessions.
 The alias clock explains why: renames do biographical work. A new alias
 is not a new musical direction; it is a timestamp — a way of marking
 that an era has begun. GRIPNOTIC's three rows on April 6, 2026 are the
