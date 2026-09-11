@@ -87,6 +87,19 @@ context: Dan's Nov 29 "Things are collapsing with lex. You might be seeing
 a lot more Annie very soon"
 ([`dat:0729`](../data/0729-uniontown-return-annie-thread-genesis.md)).
 
+## 2019-02-25: the 307 E 76th St lease signing
+
+The start of the shared Manhattan tenancy is pinned by contemporaneous
+evidence, not testimony: two iPhone photos taken 75 seconds apart on Monday
+evening 2019-02-25 (~20:19–20:20 EST), GPS-fixed to the E 76th St block,
+supplied by Dan as "pictures of our nyc apartment when we went there to
+sign the lease." The unit was unfurnished at signing — worn hardwood,
+window AC, exposed brick, equipped kitchen
+([`dat:1404`](../data/1404-307-e-76th-lease-signing-visit-2019-02-25.md),
+[`dat:1405`](../data/1405-307-e-76th-apartment-condition-2019-02-25.md)).
+The tenancy ran to February 2025; the address is carried as
+[ent:307-e-76th-st](307-e-76th-st.md).
+
 ## The arrangement era and the read's evidence
 
 The relationship ran an authored non-monogamous "arrangement" with paid and
