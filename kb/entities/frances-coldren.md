@@ -139,6 +139,31 @@ did aaaaaanything i asked her to, so the least i could do was be there for
 her"* (2018-04-06 19:22 EDT)
 ([`dat:0447`](../data/0447-fran-coldren-gedcom-golf-gift-protocol-unverifiable-rows.md)).
 
+## 2017: the Palm City letters and the $20,000 ask
+
+Two typed letters from Diane to Fran, photographed at Fran's house days
+after they were written, survive as document photos
+([`src:fran-coldren-photos-2015-12-11-and-diane-letters-2017`](../sources/fran-coldren-photos-2015-12-11-and-diane-letters-2017.md)):
+
+- **2017-08-25** ([`dat:1410`](../data/1410-diane-moore-palm-city-letter-2017-08-25.md)):
+  Diane presses Fran to cooperate in selling the Palm City vacation house —
+  Fran uses it less each year, the travel is hard, caregiver Vicki must
+  leave her family to accompany her, and the vacant house is expensive to
+  keep. Diane and Dave plan a November trip and want permission to bring in
+  a realtor to price and list it; Fred Adams (the estate trustee) reportedly
+  agrees. First appearance of the Palm City house anywhere in the held
+  record.
+- **2017-11-01** ([`dat:1411`](../data/1411-diane-moore-20k-loan-letter-2017-11-01.md)):
+  Diane writes that shoulder replacement surgery is scheduled for November
+  13 (3 months' recovery), the Palm City trip is off, and asks for a
+  **$20,000 loan against her inheritance** for the surgery plus in-home
+  nursing and therapy — cc'ing Fred Adams formally. Ten weeks after the
+  sale push, the ask shifts from asset disposition to a cash advance
+  against the estate.
+
+Both letters predate the winter-2017–18 paid-caregiver rotation and the
+April 2018 vigil at which Diane barred Dan from the house.
+
 ## Contradictions and open questions
 
 - Two evidence-table rows are absent from the held corpus (192,140 rows

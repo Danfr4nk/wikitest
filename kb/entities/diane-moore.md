@@ -78,6 +78,26 @@ The operator's 2026-08-17 identification of the feared "grandparents who
 already hated you" as "Dian and Dave" is operator testimony from an unheld
 capture.
 
+## 2017: the Palm City letters (new held documents)
+
+Two typed letters from Diane to Fran, photographed at Fran's house days
+after writing, are now held as document photos
+([`src:fran-coldren-photos-2015-12-11-and-diane-letters-2017`](../sources/fran-coldren-photos-2015-12-11-and-diane-letters-2017.md)):
+
+- **2017-08-25** ([`dat:1410`](../data/1410-diane-moore-palm-city-letter-2017-08-25.md)):
+  Diane presses Fran to cooperate in selling the Palm City vacation house
+  and to authorize a realtor to price and list it during a planned November
+  trip; Fred Adams reportedly agrees. First appearance of the Palm City
+  house anywhere in the held record.
+- **2017-11-01** ([`dat:1411`](../data/1411-diane-moore-20k-loan-letter-2017-11-01.md)):
+  shoulder replacement scheduled November 13, the Palm City trip cancelled,
+  and a **$20,000 loan against her inheritance** requested for surgery plus
+  in-home nursing/therapy — cc'ing Fred Adams formally.
+
+Possible lead on the flagged gap below: the old wiki's undocumented
+Florida-condo sale. Palm City is in Florida; whether the Palm City house
+*is* that condo is unconfirmed — treat as a lead, not an identification.
+
 ## What the record cannot carry
 
 The page's quoted 2018 caregiver messages return zero held-corpus hits —
